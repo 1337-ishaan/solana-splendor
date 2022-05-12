@@ -49,11 +49,11 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .connect-wallet-button {
-  background: -webkit-linear-gradient(left, #60c657, #35aee2);
+  background: -webkit-linear-gradient(left, #8003e6, #7149ce);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
 }
