@@ -62,7 +62,7 @@ const App = () => {
 
   const renderNotConnectedContainer = () => (
     <button className="cta-button connect-wattet-button"
-    onclick={connectWallet()}>
+    onClick={connectWallet()}>
       Connect 🔌
     </button>
   );
