@@ -17,7 +17,9 @@ const TEST_GIFS = [
 
 const { SystemProgram, Keypair } = web3;
 
-let baseAccount = Keypair.generate();
+const arr = Object.values(kp._keypair.secretKey)
+const secret = new Uint8Array(arr)
+const baseAccount = web3.Keypair.fromSecretKey(secret)
 
 const programID = new PublicKey(idl.metadata.address);
 
