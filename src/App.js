@@ -4,6 +4,7 @@ import idl from "./idl.json";
 import './App.css';
 import { Connection, PublicKey, clusterApiUrl } from "@solana/web3.js"
 import { Program, Provider, web3 } from "@project-serum/anchor";
+import kp from './keypair.json'
 
 const TWITTER_LINK = `https://twitter.com/Rafael41603219`;
 
