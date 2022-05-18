@@ -1,6 +1,6 @@
 .App {
   height: 100vh;
-  background-color: #000000;
+  background-color: #1a202c;
   overflow: scroll;
   text-align: center;
 }
@@ -49,11 +49,11 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: white;
 }
 
 .connect-wallet-button {
-  background: -webkit-linear-gradient(left, #8003e6, #7149ce);
+  background: -webkit-linear-gradient(left, #60c657, #35aee2);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
 }
@@ -111,11 +111,11 @@
   object-fit: cover;
 }
 
-.connected-container input[type="text"] {
+.connected-container input[type='text'] {
   display: inline-block;
   color: white;
   padding: 10px;
-  width: 30%;
+  width: 50%;
   height: 60px;
   font-size: 16px;
   box-sizing: border-box;
