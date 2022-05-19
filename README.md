@@ -10,7 +10,7 @@ Solana Dapp with the deploy on testnet and also built on React.js and javascript
 
 Solana Dapp has the wallet indexed and is a unique project where the smart contract is working on Solana testnet localhost.
 
-![Image](https://github.com/RafaBlockDev/Solana-Dapp/blob/main/public/Screen%20Shot%202022-05-13%20at%2011.36.31.png)
+![Image](https://raw.githubusercontent.com/RafaBlockDev/Solana-Dapp/main/pages/assets/SS.png)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
