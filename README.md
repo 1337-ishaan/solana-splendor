@@ -6,7 +6,7 @@ Solana Dapp with the deploy on testnet and also built on React.js and javascript
 2. Run `npm run start` to start the project
 3. Start coding!
 
-# Solana-Dapp
+# Solana-Dapp 😎
 
 Solana Dapp has the wallet indexed and is a unique project where the smart contract is working on Solana testnet localhost.
 
