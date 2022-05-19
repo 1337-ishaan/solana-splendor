@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useEffect, useState } from "react";
 import { Connection, PublicKey, clusterApiUrl } from '@solana/web3.js';
 import { Program, Provider, web3 } from '@project-serum/anchor';
@@ -186,7 +187,7 @@ export default function Home() {
               {/* We use index as the key instead, also, the src is now item.gifLink */}
               {gifList.map((item, index) => (
                 <div className="gif-item" key={index}>
-                  <img src={item.gifLink} />
+                  <Image alt="GIFs" src={item.gifLink}/>
                 </div>
               ))}
             </div>
@@ -222,9 +223,9 @@ export default function Home() {
   useEffect(() => {
     if (walletAddress) {
       console.log('Fetching GIF list...');
-      getGifList()
+      getGifList();
     }
-  }, [walletAddress]);
+  }, );
 
   return (
   <div className="App">
