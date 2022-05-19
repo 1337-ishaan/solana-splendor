@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import twitterLogo from './assets/twitter-logo.svg';
-import idl from "./idl.json";
-import './App.css';
+import React, { useEffect, useState } from "react";
 import { Connection, PublicKey, clusterApiUrl } from '@solana/web3.js';
 import { Program, Provider, web3 } from '@project-serum/anchor';
-import { Buffer } from 'buffer';
-import kp from "./keypair.json";
+import kp from "./keypair.json"
 
-window.Buffer = Buffer;
+import idl from "./idl.json";
 
 // SystemProgram is a reference to the Solana runtime!
 const { SystemProgram, Keypair } = web3;
@@ -28,7 +24,6 @@ const opts = {
   preflightCommitment: "processed"
 }
 
-// Change this up to be your Twitter if you want.
 const TWITTER_HANDLE = 'rafaelfuentes.eth';
 const TWITTER_LINK = `https://twitter.com/Rafael41603219`;
 
@@ -39,7 +34,8 @@ const TEST_GIFS = [
 	'https://i.giphy.com/media/PAqjdPkJLDsmBRSYUp/giphy.webp'
 ]
 
-const App = () => {
+export default function Home() {
+
   // State
   const [walletAddress, setWalletAddress] = useState(null);
   const [inputValue, setInputValue] = useState('');
@@ -49,16 +45,17 @@ const App = () => {
    * This function holds the logic for deciding if a Phantom Wallet is
    * connected or not
    */
+  // Actions
   const checkIfWalletIsConnected = async () => {
     try {
       const { solana } = window;
   
       if (solana) {
         if (solana.isPhantom) {
-          console.log('Phantom wallet found!');
+          console.log('Phantom wallet found! 🥳s');
           const response = await solana.connect({ onlyIfTrusted: true });
           console.log(
-            'Connected with Public Key:',
+            'Connected with Public Key 🔑 :',
             response.publicKey.toString()
           );
   
@@ -74,16 +71,13 @@ const App = () => {
       console.error(error);
     }
   };
-  /*
-   * Let's define this method so our code doesn't break.
-   * We will write the logic for this next!
-   */
+
   const connectWallet = async () => {
     const { solana } = window;
   
     if (solana) {
       const response = await solana.connect();
-      console.log('Connected with Public Key:', response.publicKey.toString());
+      console.log('Connected with Public Key 🔑 :', response.publicKey.toString());
       setWalletAddress(response.publicKey.toString());
     }
   };
@@ -112,6 +106,7 @@ const App = () => {
       console.log("Error sending GIF:", error)
     }
   };
+  
 
   const onInputChange = (event) => {
     const { value } = event.target;
@@ -120,8 +115,8 @@ const App = () => {
 
   const getProvider = () => {
     const connection = new Connection(network, opts.preflightCommitment);
-    const provider = new Provider(
-      connection, window.solana, opts.preflightCommitment,
+    const provider = new Provider (
+    connection, window.solana, opts.preflightCommitment,
     );
     return provider;
   }
@@ -147,10 +142,6 @@ const App = () => {
     }
   }
 
-  /*
-   * We want to render this UI when the user hasn't connected
-   * their wallet to our app yet.
-   */
   const renderNotConnectedContainer = () => (
     <button
       className="cta-button connect-wallet-button"
@@ -204,10 +195,7 @@ const App = () => {
       }
     }
 
-  /*
-   * When our component first mounts, let's check to see if we have a connected
-   * Phantom Wallet
-   */
+  // UseEffects
   useEffect(() => {
     const onLoad = async () => {
       await checkIfWalletIsConnected();
@@ -239,31 +227,28 @@ const App = () => {
   }, [walletAddress]);
 
   return (
-    <div className="App">
-      {/**This was solely added for some styling faciness */}
-      <div className={walletAddress ? 'authed-container' : 'container'}>
-        <div className="header-container">
-          <p className="header">👾 Cypherpunk Revolution</p>
-          <p className="sub-text">
-            View your role on cypherpunk revolution
-          </p>
-          {/**Render your connect to wallet button right here */}
-          {!walletAddress && renderNotConnectedContainer()}
-          {/** We just need to add the inverse here */}
-          {walletAddress && renderConnectedContainer()}
-        </div>
-        <div className="footer-container">
-          <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
-          <a
-            className="footer-text"
-            href={TWITTER_LINK}
-            target="_blank"
-            rel="noreferrer"
-          >{`Built for @${TWITTER_HANDLE} 😎`}</a>
-        </div>
+  <div className="App">
+    {/** This was solely added for some styling fanciness*/}
+    <div className={walletAddress ? 'authed-container' : 'container'}>
+      <div className="header-container">
+        <p className="header">👾 Cypherpunk Movement</p>
+        <p className="sub-text">
+          Join to the Cypherpunk movement and be part of the best IT revolution 🏴‍☠️
+        </p>
+        {/** Render yout connects to wallet button right here */}
+        {!walletAddress && renderNotConnectedContainer()}
+        {/** We just need to add the inverse here! */}
+        {walletAddress && renderConnectedContainer()}
+      </div>
+      <div className="footer-container">
+        <a
+          className="footer-text"
+          href={TWITTER_LINK}
+          target="_blank"
+          rel="noreferrer"
+        >{`🐣 built by @${TWITTER_HANDLE}`}</a>
       </div>
     </div>
-  );
-};
-
-export default App;
+  </div>
+);
+}
