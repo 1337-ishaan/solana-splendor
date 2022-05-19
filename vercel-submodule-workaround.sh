@@ -1,5 +1,5 @@
 # github submodule repo address without https:// prefix
-SUBMODULE_GITHUB=github.com/beeinger/vercel-private-submodule
+SUBMODULE_GITHUB=https://github.com/RafaBlockDev/Solana-Dapp/myepicproject.git
 
 # .gitmodules submodule path
 SUBMODULE_PATH=library

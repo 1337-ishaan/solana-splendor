@@ -5,7 +5,8 @@
     "dev": "next dev",
     "build": "next build --output public",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "vercel-install": "./vercel-submodule-workaround.sh && yarn --ignore-scripts --production=false"
   },
   "dependencies": {
     "@project-serum/anchor": "0.18.2",
