@@ -1,0 +1,25 @@
+.WhyChooseUsMain .learMoreContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.WhyChooseUsItem{
+    border-bottom-width: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.WhyChooseUsItem .WhyChooseUsItemIcon{
+    margin: 30px 0 0 0;
+}
+
+.WhyChooseUs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}

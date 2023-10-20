@@ -1,0 +1,28 @@
+.exploreEcoSectionSection{
+    padding-bottom: 40px;
+    margin: 0 200px;
+}
+
+.exploreEcoSectionSection .contentBlocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.exploreEcoSectionSection .contentItem{
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 1000px) {
+    .exploreEcoSectionSection {
+        margin: 0 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .exploreEcoSectionSection{
+        margin: 0 15px;
+    }
+}

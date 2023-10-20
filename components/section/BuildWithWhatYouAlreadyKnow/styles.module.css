@@ -1,0 +1,28 @@
+.buildWithWhatYouAlreadyKnow .languagesContent{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buildWithWhatYouAlreadyKnow .weAreHiringContainer{
+    margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+    .buildWithWhatYouAlreadyKnow .languagesContent img{
+        margin-top: 20px;
+    }
+
+    .buildWithWhatYouAlreadyKnow {
+        padding: 0;
+    }
+
+    .buildWithWhatYouAlreadyKnow h1{
+        text-align: center;
+    }
+
+    .buildWithWhatYouAlreadyKnow p{
+        text-align: center;
+    }
+}
