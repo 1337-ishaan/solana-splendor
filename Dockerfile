@@ -1,28 +1,34 @@
-# Base image
-FROM node:16
+# Usar una imagen oficial de Node.js como imagen base
+FROM node:16 as builder
 
-# Create app directory
+# Establecer el directorio de trabajo en el contenedor
 WORKDIR /app
 
-# Install app dependencies by copying
-# package.json and package-lock.json
-COPY package.json ./
+# Copiar el archivo package.json y package-lock.json (si está disponible)
+COPY package*.json ./
 
-# If you are using yarn, copy yarn.lock instead
-# COPY package.json yarn.lock ./
-
+# Instalar las dependencias del proyecto
 RUN npm install
-# If you are using yarn, then use the command below instead
-# RUN yarn install
 
-# Bundle app source
+# Copiar el código fuente del proyecto al contenedor
 COPY . .
 
-# Transpile TypeScript to JavaScript
+# Construir el proyecto
 RUN npm run build
 
-# Expose the port
+# Fase de producción: Usar una imagen ligera de Node.js
+FROM node:16-slim
+
+WORKDIR /app
+
+# Copiar las dependencias y el código construido desde la fase de construcción
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
+
+# Exponer el puerto que utiliza Next.js (por defecto es el 3000)
 EXPOSE 3000
 
-# Start the app
-CMD [ "npm", "start" ]
+# Comando para ejecutar el servidor de Next.js
+CMD ["npm", "start"]
+
