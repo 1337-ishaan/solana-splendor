@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const StartMining: NextPage = () => {
   return (
-    <section id="about" className="about-area pt-[100px] bg-white mt-[100px] flex flex-col items-center
+    <section id="about" className="pt-[100px] bg-white mt-[100px] flex flex-col items-center
     justify-center text-black text-center max-[800px]:pt-[50px]">
-      <div className="container ">
+      <div className="px-[15px] ">
           <h1 className={"text-[70px] font-normal text-left text-[#073B4C] mx-[200px] max-[800px]:text-[50px] " +
               "max-[800px]:text-center max-[800px]:mx-0"}>
               <span className={"font-bold"}>Start </span>
@@ -28,7 +28,7 @@ const StartMining: NextPage = () => {
                       Download
                   </button>
               </div>
-              <Image className={"ml-[30px] mt-[50px] max-[800px]:ml-0"} src={Dashboard} width={800} alt={"Dashboard"} />
+              <Image className={"ml-[30px] mt-[50px] max-[800px]:ml-0"} src={Dashboard} width={1000} alt={"Dashboard"} />
           </div>
       </div>
     </section>

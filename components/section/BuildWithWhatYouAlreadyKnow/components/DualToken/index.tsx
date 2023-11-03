@@ -11,8 +11,8 @@ const DualToken: NextPage = () => {
     )
 
     return (
-        <section className="choose-area pt-130 flex items-center justify-center">
-            <div className="container flex items-center justify-center">
+        <section className="pt-[130px] flex items-center justify-center">
+            <div className="px-[15px] flex items-center justify-center">
                 <div className={"rounded-[15px] ease-in-out delay-[0.3s] flex flex-row justify-center"}>
                     <div className={"flex flex-col pb-[60px] px-[40px] items-start max-[767px]:p-[0] " +
                         "max-[767px]:items-center"}>

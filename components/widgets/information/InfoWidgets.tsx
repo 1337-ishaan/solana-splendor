@@ -1,11 +1,35 @@
 import {TWidgetInfo} from "./types";
+import {ApiAdminPanel} from "../../../api/bittensor";
 import wallet from "../../../assets/icons/dashboard/wallet.svg";
 import planet from "../../../assets/icons/dashboard/planet.svg";
 import document from "../../../assets/icons/dashboard/document.svg";
 import sales from "../../../assets/icons/dashboard/sales.svg";
 import InfoWidget from "../info/InfoWidget";
+import {useEffect, useState} from "react";
+
+async function fetchBTCPriceAndBuildObject() {
+    const btcData = await ApiAdminPanel.getBTCPrice();
+    const obj = {
+        title: "BTC Price",
+        completed: 100,
+        value: `$${btcData.BTC_price_usd.toFixed(2)}`,
+        icon: sales
+    };
+
+    return obj;
+}
 
 const InfoWidgets = () => {
+    const [btcPrice, setBTCPrice] = useState("0.00");
+
+    useEffect(() => {
+        const fetchBTCData = async () => {
+            const btcData = await ApiAdminPanel.getBTCPrice();
+            setBTCPrice(btcData.BTC_price_usd.toFixed(2));
+        };
+        fetchBTCData();
+    }, []);
+
     const testInfoDataWidgets: TWidgetInfo[] = [
         {
             id: 1,
@@ -26,7 +50,7 @@ const InfoWidgets = () => {
         {
             id: 3,
             title: "Bitcoin Price in 24 Hours",
-            value: "$23,052",
+            value: `$${btcPrice}`,
             rate: -14,
             icon: document,
             link: '/',

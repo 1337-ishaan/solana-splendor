@@ -2,11 +2,11 @@ import Menu from "../../components/menu/dashboard/DashboardMenu";
 import {useEffect} from "react";
 import {useSelector} from "react-redux";
 import {selectAuthState} from "../../store/autStore/selectors";
-import {useRouter} from 'next/navigation';
 import classes from "./styles.module.css"
 import Tokenomics from "../../components/tabs/tokenomics/TokenomicsTab";
 import {NextPage} from "next";
 import LayoutOne from "../../components/layouts/LayoutOne";
+import {useRouter} from "next/router";
 
 const Dashboard: NextPage = () => {
     const authState = useSelector(selectAuthState);

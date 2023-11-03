@@ -19,7 +19,7 @@ services:
       - web
     restart: always
     environment:
-      DOMAINS: 'splendor.network -> http://web:3000, www.splendor.network -> http://web:3000'
+      DOMAINS: 'splendor.org -> http://web:3000, www.splendor.org -> http://web:3000'
       # STAGE: 'production' # Don't use production until staging works
       # FORCE_RENEW: 'true'
     env_file:

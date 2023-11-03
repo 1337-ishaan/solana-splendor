@@ -8,7 +8,6 @@ import splendor_ai from "../../../assets/icons/home/images/splendorExploreSectio
 import search_engine from "../../../assets/icons/home/images/splendorExploreSection/search engine.svg";
 import spacenet from "../../../assets/icons/home/images/splendorExploreSection/spacenet.svg";
 import vinegram_logo from "../../../assets/icons/home/images/splendorExploreSection/vinegram_logo.svg";
-import classes from "./styles.module.css"
 import WhyChooseUsItemIcon from "./WhyChooseUsItemIcon/WhyChooseUsItemIcon";
 
 const WhyChooseUs = () => {
@@ -61,10 +60,9 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section id="ecosystem" className={`${classes.WhyChooseUsMain} choose-area pt-130 wow fadeInUp flex 
-    items-center justify-center pb-[100px] bg-[#F7F8FC] pt-[200px]`}
-             data-wow-delay=".5s">
-      <div className="container">
+    <section id="ecosystem" className={`pt-[130px] wow fadeInUp flex 
+    items-center justify-center pb-[100px] bg-[#F7F8FC] pt-[200px]`}>
+      <div className="px-[15px]">
         <div className="row justify-content-center">
           <h1 className={"text-[70px] font-normal text-center text-[#073B4C] mx-[200px] max-[800px]:text-[50px] max-[800px]:mx-0"}>
             <span className={"font-bold"}>Explore </span>
@@ -72,7 +70,7 @@ const WhyChooseUs = () => {
           </h1>
         </div>
 
-        <div className={`${classes.WhyChooseUs} mt-[100px]`}>
+        <div className={`flex flex-wrap items-center justify-center mt-[50px] mx-[8%]`}>
           {slider_items.map((item, index) => (
               <WhyChooseUsItemIcon key={index} {...item} />
           ))}

@@ -9,7 +9,7 @@ const WelcomeWidget = () => {
                     Glad to see you again!<br />
                     Check your last earnings
                 </p>
-                <p className={"text-[14px] text-[#a0aec0] mt-[40px]"}>
+                <p className={"text-[14px] text-[#a0aec0] mt-[40px] break-all"}>
                     0x5F5438fF981544bef19A9dc15C1eB31829dd97F6
                 </p>
             </div>

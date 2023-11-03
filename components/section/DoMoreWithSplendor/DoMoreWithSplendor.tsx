@@ -7,16 +7,17 @@ import Image from "next/image";
 
 const DoMoreWithSplendor: NextPage = () => {
   return (
-    <section id="about" className="about-area py-[100px] bg-white mt-[100px] flex flex-col items-center
+    <section id="about" className="py-[100px] bg-white mt-[100px] flex flex-col items-center
     justify-center text-black text-center max-[800px]:mt-[50px]">
-      <div className="container ">
+      <div className="px-[15px] ">
           <h1 className={"text-[70px] font-normal text-center text-[#073B4C] mx-[200px] max-[800px]:text-[50px] max-[800px]:mx-0"}>
               <span className={"font-bold"}>Do more with </span>
               SPLENDOR
           </h1>
           <div className={"mt-[100px] flex flex-row justify-between mx-[200px] max-[800px]:mx-0 max-[800px]:flex-col max-[800px]:mt-0 " +
               "max-[800px]:justify-center max-[800px]:items-center"}>
-              <div className={"flex flex-col w-[300px] h-[250px] p-[25px] shadow-2xl rounded-[10px] max-[800px]:mt-[50px]"}>
+              <div className={"flex flex-col w-[300px] h-[250px] p-[25px] shadow-2xl rounded-[10px] mr-[25px] " +
+                  "max-[800px]:mt-[50px]"}>
                 <div className={"flex flex-row items-center"}>
                     <div className={"flex flex-row items-start h-[60px]"}>
                         <div className={"w-[6px] h-[60px] bg-[#447CD5]"}></div>
@@ -34,7 +35,7 @@ const DoMoreWithSplendor: NextPage = () => {
                 </div>
               </div>
 
-              <div className={"flex flex-col w-[300px] p-[25px] shadow-2xl rounded-[10px] max-[800px]:mt-[50px]"}>
+              <div className={"flex flex-col w-[300px] p-[25px] shadow-2xl rounded-[10px] mr-[25px] max-[800px]:mt-[50px]"}>
                   <div className={"flex flex-row items-center"}>
                       <div className={"flex flex-row items-start h-[60px]"}>
                           <div className={"w-[6px] h-[60px] bg-[#447CD5]"}></div>

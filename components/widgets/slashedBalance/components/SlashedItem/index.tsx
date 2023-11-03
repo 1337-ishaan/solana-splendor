@@ -5,7 +5,9 @@ const SlashedItem = ({title, icon, completed, value}:any) => {
         <div>
             <div className={"flex flex-row"}>
                 <div className={"rounded-[5px] bg-[#654c91] p-[5px]"}>
-                    <Image src={icon} alt={"SlashedItemImg"}/>
+                    <div className={"w-[20px] h-[20px] text-center"}>
+                        <Image src={icon} alt={"SlashedItemImg"}/>
+                    </div>
                 </div>
                 <p className={"ml-[10px] text-[#a0aec0] text-[14px]"}>{title}</p>
             </div>

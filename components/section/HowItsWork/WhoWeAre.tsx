@@ -14,18 +14,20 @@ const HowItsWork: NextPage = () => {
   return (
     <section id="about" className="about-area py-[100px] bg-[#F7F8FC] mt-[100px] flex flex-col items-center
     justify-center text-black text-center">
-      <div className="container ">
+      <div className="px-[15px] w-full">
           <h1 className={"text-[70px] font-normal text-left text-[#073B4C] mx-[200px] max-[800px]:mx-0 " +
               "max-[800px]:text-center max-[800px]:text-[50px]"}>
               <span className={"font-bold"}>How </span>
               it works
           </h1>
-          <div className={"mt-[100px] flex flex-row justify-between mx-[200px] max-[800px]:flex-col max-[800px]:mx-0 " +
+          <div className={"mt-[100px] flex flex-row justify-center max-[800px]:flex-col max-[800px]:mx-0 " +
               "max-[800px]:items-center max-[800px]:mt-0"}>
-              <div className={"flex flex-col w-[240px] max-[800px]:mt-[50px]"}>
+              <div className={"flex mr-[40px] flex-col min-w-[240px] w-[240px] max-[800px]:mt-[50px]"}>
                 <div className={"flex flex-row items-start h-[80px]"}>
                     <div className={"w-[6px] h-[60px] bg-[#447CD5]"}></div>
-                    <Image className={"ml-[20px]"} src={Wallet} alt={"Wallet"} />
+                    <div className={"ml-[20px]"}>
+                        <Image src={Wallet} alt={"Wallet"} />
+                    </div>
                 </div>
                 <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[80%] h-[60px]"}>
                     Get one of the following wallets
@@ -56,10 +58,12 @@ const HowItsWork: NextPage = () => {
                 </div>
             </div>
 
-              <div className={"flex flex-col w-[240px] max-[800px]:mt-[50px]"}>
+              <div className={"flex mr-[40px] flex-col min-w-[240px] w-[240px] max-[800px]:mt-[50px]"}>
                   <div className={"flex flex-row items-start h-[80px]"}>
                       <div className={"w-[6px] h-[60px] bg-[#447CD5]"}></div>
-                      <Image className={"ml-[20px]"} src={Connect} alt={"Wallet"} />
+                      <div className={"ml-[10px]"}>
+                          <Image src={Connect} alt={"Wallet"} />
+                      </div>
                   </div>
                   <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[80%] h-[60px]"}>
                       CONNECT
@@ -73,10 +77,12 @@ const HowItsWork: NextPage = () => {
                   </div>
               </div>
 
-              <div className={"flex flex-col w-[240px] max-[800px]:mt-[50px]"}>
+              <div className={"flex mr-[40px] flex-col min-w-[240px] w-[240px] max-[800px]:mt-[50px]"}>
                   <div className={"flex flex-row items-start h-[80px]"}>
                       <div className={"w-[6px] h-[60px] bg-[#447CD5]"}></div>
-                      <Image className={"ml-[20px]"} src={Transact} alt={"Wallet"} />
+                      <div className={"ml-[20px]"}>
+                        <Image src={Transact} alt={"Wallet"} />
+                      </div>
                   </div>
                   <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[80%] h-[60px]"}>
                       TRANSACT
@@ -92,10 +98,12 @@ const HowItsWork: NextPage = () => {
                   </div>
               </div>
 
-              <div className={"flex flex-col w-[240px] max-[800px]:mt-[50px]"}>
+              <div className={"flex mr-[40px] flex-col min-w-[240px] w-[240px] max-[800px]:mt-[50px]"}>
                   <div className={"flex flex-row items-start h-[80px]"}>
                       <div className={"w-[6px] h-[60px] bg-[#447CD5]"}></div>
-                      <Image className={"ml-[20px]"} src={Use} alt={"Wallet"} />
+                      <div className={"ml-[20px]"}>
+                        <Image src={Use} alt={"Wallet"} />
+                      </div>
                   </div>
                   <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[80%] h-[60px]"}>
                       USE

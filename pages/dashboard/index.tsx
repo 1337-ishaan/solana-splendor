@@ -3,10 +3,10 @@ import {useEffect} from "react";
 import Home from "../../components/tabs/home/HomeTab";
 import {useSelector} from "react-redux";
 import {selectAuthState} from "../../store/autStore/selectors";
-import {useRouter} from 'next/navigation';
 import classes from "./styles.module.css"
 import LayoutOne from "../../components/layouts/LayoutOne";
 import {NextPage} from "next";
+import {useRouter} from "next/router";
 
 const Dashboard: NextPage = () => {
     const authState = useSelector(selectAuthState);

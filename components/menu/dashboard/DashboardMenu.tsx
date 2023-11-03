@@ -8,10 +8,10 @@ import tokenomicsIcon from "../../../assets/icons/tokenomics/tokenomics.svg";
 import MenuButton from "../../buttons/menu/MenuButton";
 import {IMenuItem} from "./types";
 import backgroundBottomMenuWidget from "../../../assets/icons/dashboard/backgroundBottomMenuWidget.svg";
-import {usePathname} from "next/navigation";
+import {useRouter} from "next/router";
 
 const Menu = () => {
-    const pathname = usePathname();
+    const {pathname} = useRouter();
     const menuDefaultItems:IMenuItem[] = [
         {
             id: 1,
@@ -39,9 +39,15 @@ const Menu = () => {
             "max-[1100px]:w-[200px] max-[800px]:w-[100px]"}>
             <div className={"flex flex-col"}>
                 <div className={"flex flex-col items-center"}>
-                    <Image className={"mt-[50px] block max-[800px]:hidden"} src={logo} alt={"logo"} />
-                    <Image className={"mt-[50px] hidden max-[800px]:block"} src={logoSmall} alt={"logoSmall"} />
-                    <Image className={"mt-[20px]"} src={splitLine} alt={"splitLine"} />
+                    <div className={"mt-[50px] block max-[800px]:hidden"}>
+                        <Image  src={logo} alt={"logo"} />
+                    </div>
+                    <div className={"mt-[50px] hidden max-[800px]:block"}>
+                        <Image src={logoSmall} alt={"logoSmall"} />
+                    </div>
+                    <div className={"mt-[20px]"}>
+                        <Image src={splitLine} alt={"splitLine"} />
+                    </div>
                 </div>
                 <div className={"flex flex-col mt-[20px]"}>
                     {

@@ -13,8 +13,10 @@ const InfoWidget: NextPage<IInfoWidget> = ({title,rate,value,icon,link}) => {
                 </p>
             </div>
             <a href={link}>
-                <div className={'bg-[#5600c3] rounded-[10px] p-[10px]'}>
-                    <Image height={20} width={20} src={icon} alt={"InfoWidgetIcon"} />
+                <div className={'bg-[#5600c3] rounded-[10px] p-[10px] text-center'}>
+                    <div className={"w-[20px] h-[20px] text-center"}>
+                        <Image height={20} width={20} src={icon} alt={"InfoWidgetIcon"} />
+                    </div>
                 </div>
             </a>
         </div>

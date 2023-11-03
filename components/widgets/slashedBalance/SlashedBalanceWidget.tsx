@@ -7,14 +7,28 @@ import {
     Tooltip,
     Legend,
 } from 'chart.js';
+import React, { useState, useEffect } from 'react';
 import { Bar } from 'react-chartjs-2';
 import {ISlashedItem} from "./components/SlashedItem/types";
+import {ApiAdminPanel} from "../../../api/bittensor";
 import users from "../../../assets/icons/dashboard/users.svg";
 import clicks from "../../../assets/icons/dashboard/clicks.svg";
 import sales from "../../../assets/icons/dashboard/sales.svg";
 import items from "../../../assets/icons/dashboard/items.svg";
 import SlashedItem from "./components/SlashedItem";
 
+async function fetchMinersAndBuildObject() {
+    const totalMiners = await ApiAdminPanel.getTotalMiners();
+
+    const obj = {
+        title: "Miners",
+        completed: 90,
+        value: totalMiners.toString(),
+        icon: clicks
+    };
+
+    return obj;
+}
 const SlashedBalanceWidget = () => {
     ChartJS.register(
         CategoryScale,
@@ -24,7 +38,15 @@ const SlashedBalanceWidget = () => {
         Tooltip,
         Legend
     );
+    const [totalMiners, setTotalMiners] = useState("0");
 
+    useEffect(() => {
+        const fetchData = async () => {
+            const miners = await fetchMinersAndBuildObject();
+            setTotalMiners(miners.value);
+        };
+        fetchData();
+    }, []);
     const options = {
         responsive: true,
         plugins: {
@@ -61,7 +83,7 @@ const SlashedBalanceWidget = () => {
         {
             title: "Miners",
             completed: 90,
-            value: "15",
+            value: totalMiners,
             icon: clicks
         },
         {

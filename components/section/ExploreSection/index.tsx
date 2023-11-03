@@ -1,5 +1,4 @@
 import React from "react";
-import classes from "./styles.module.css";
 import WhyChooseUsItem from "../WhyChooseUs/WhyChooseUsItem";
 import {NextPage} from "next";
 import {IWhyChooseUs} from "../WhyChooseUs/types";
@@ -77,11 +76,12 @@ const ExploreSection: NextPage = () => {
         }
     ];
     return (
-        <section className={`about-area ${classes.exploreEcoSectionSection}`}>
-            <div className="row choose-active">
-                <div className={classes.contentBlocks}>
+        <section className={`about-area pb-[40px] my-0 mx-[200px] max-[800px]:my-0 max-[1000px]:mx-[100px] 
+        max-[800px]:mx-[15px] max-[800px]:py-[120px] max-[800px]:px-0`}>
+            <div className="flex flex-row">
+                <div className={"flex flex-wrap justify-between"}>
                     {slider_items.map((item, index) => (
-                        <div key={index} className={`${classes.contentItem} shadow-2xl rounded-[10px] bg-white`}>
+                        <div key={index} className={`w-[400px] mb-[30px] shadow-2xl rounded-[10px] bg-white`}>
                             <WhyChooseUsItem {...item} />
                         </div>
                     ))}

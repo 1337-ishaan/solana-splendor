@@ -5,18 +5,19 @@ import {NextPage} from "next";
 
 const WhoWeAre: NextPage = () => {
   return (
-    <section id="about" className="about-area pt-[200px]  flex flex-col items-center justify-center">
-      <div className="container">
+    <section id="about" className="pt-[200px] flex flex-col items-center justify-center">
+      <div className="px-[15px]">
         <div className="flex flex-col items-center max-[800px]:flex-col">
-          <div className="section-title mb-[30px] w-[40%] max-[800px]:w-full">
-            <p className={"text-black text-[45px] leading-[1.2] font-medium text-[#073B4C] max-[800px]:text-center"}>SPLENDOR - a better form of money </p>
+          <div className="mb-[30px] w-[40%] max-[800px]:w-full">
+            <p className={"text-black text-[70px] leading-[1.2] font-medium text-[#073B4C] max-[800px]:text-center"}>SPLENDOR</p>
+            <p className={"text-black text-[45px] leading-[1.2] font-medium text-[#073B4C] max-[800px]:text-center"}>a better form of money</p>
             <p className={"text-black text-[30px] leading-[1.2] font-normal text-[#073B4C] max-[800px]:text-center"}>and an evolved version of Bitcoin </p>
           </div>
-          <div className="about-img wow fadeInLeft mt-[150px]" data-wow-delay=".2s">
+          <div className="wow fadeInLeft mt-[150px]">
             <Image src={img01} alt="" />
           </div>
           <div className={"flex flex-row justify-center w-full mt-[50px] max-[800px]:flex-col max-[800px]:mt-0"}>
-            <div className={"flex flex-col w-[20%] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+            <div className={"flex flex-col min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
               <div className={"h-[70px] text-[22px] text-[#073B4C] max-[800px]:h-auto max-[800px]:text-center"}>
                 ANONYMOUS CONTRACT
               </div>
@@ -33,7 +34,7 @@ const WhoWeAre: NextPage = () => {
               </button>
             </div>
 
-            <div className={"flex flex-col w-[20%] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+            <div className={"flex flex-col min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
               <div className={"h-[70px] text-[22px] text-[#073B4C] max-[800px]:h-auto max-[800px]:text-center"}>
                 FULLY DECENTRALIZED
               </div>
@@ -47,7 +48,7 @@ const WhoWeAre: NextPage = () => {
               </button>
             </div>
 
-            <div className={"flex flex-col w-[20%] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+            <div className={"flex flex-col min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
               <div className={"h-[70px] text-[22px] text-[#073B4C] max-[800px]:h-auto max-[800px]:text-center"}>
                 EVM COMPATIBLE
               </div>
@@ -61,7 +62,7 @@ const WhoWeAre: NextPage = () => {
               </button>
             </div>
 
-            <div className={"flex flex-col w-[20%] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+            <div className={"flex flex-col min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
               <div className={"h-[70px] text-[22px] text-[#073B4C] max-[800px]:h-auto max-[800px]:text-center"}>
                 BETTER THAN BITCOIN
               </div>

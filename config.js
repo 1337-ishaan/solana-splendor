@@ -1,2 +1,1 @@
-export const BLOG_API_URL = "https://bankor-blog.azurewebsites.net"
-export const BLOG_IMG_URL = "https://bankor.com/blog"
+export const DASHBOARD_API_URL = "http://46.47.84.85:8000"

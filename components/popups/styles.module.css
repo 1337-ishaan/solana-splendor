@@ -20,7 +20,7 @@
     margin: auto;
     border-radius: 15px;
     border-color: black;
-    background: #fff;
+    background: #03142b;
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
 }
 
@@ -30,12 +30,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-bottom: 1px solid #727885;
+    border-bottom: 1px solid #1f2c42;
 }
 
 .popupModal .header p{
-    color: #727885;
-    font-weight: bold;
+    color: white;
 }
 
 .popupModal .header .closeBtn{
@@ -54,7 +53,6 @@
     overflow-y: scroll;
     height: 490px;
     white-space: pre-line;
-    color: #727885;
 }
 
 .popupModal .body .okBtn{
