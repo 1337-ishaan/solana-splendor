@@ -77,11 +77,11 @@ const ExploreSection: NextPage = () => {
     ];
     return (
         <section className={`about-area pb-[40px] my-0 mx-[200px] max-[800px]:my-0 max-[1000px]:mx-[100px] 
-        max-[800px]:mx-[15px] max-[800px]:py-[120px] max-[800px]:px-0`}>
+        max-[800px]:mx-[15px] max-[800px]:pb-[120px] max-[800px]:px-0`}>
             <div className="flex flex-row">
                 <div className={"flex flex-wrap justify-between"}>
                     {slider_items.map((item, index) => (
-                        <div key={index} className={`w-[400px] mb-[30px] shadow-2xl rounded-[10px] bg-white`}>
+                        <div key={index} className={`w-[400px] mb-[30px] shadow-2xl rounded-[10px] bg-white max-[800px]:w-full`}>
                             <WhyChooseUsItem {...item} />
                         </div>
                     ))}

@@ -1,7 +1,6 @@
 import React from "react";
-import img01 from "../../../assets/icons/home/images/whoWeAre/pillar_front.svg";
-import Image from "next/image";
 import {NextPage} from "next";
+import VideoPlayer from "../../media/VideoPlayer";
 
 const WhoWeAre: NextPage = () => {
   return (
@@ -10,11 +9,11 @@ const WhoWeAre: NextPage = () => {
         <div className="flex flex-col items-center max-[800px]:flex-col">
           <div className="mb-[30px] w-[40%] max-[800px]:w-full">
             <p className={"text-black text-[70px] leading-[1.2] font-medium text-[#073B4C] max-[800px]:text-center"}>SPLENDOR</p>
-            <p className={"text-black text-[45px] leading-[1.2] font-medium text-[#073B4C] max-[800px]:text-center"}>a better form of money</p>
-            <p className={"text-black text-[30px] leading-[1.2] font-normal text-[#073B4C] max-[800px]:text-center"}>and an evolved version of Bitcoin </p>
+            <p className={"text-black text-[45px] leading-[1.2] font-medium text-[#073B4C] max-[800px]:text-center"}>a better version of bitcoin</p>
           </div>
-          <div className="wow fadeInLeft mt-[150px]">
-            <Image src={img01} alt="" />
+          <div className="mt-[150px]">
+            <VideoPlayer
+                src={"api/getMedia/splendor_new_corrections_vid.mp4"} />
           </div>
           <div className={"flex flex-row justify-center w-full mt-[50px] max-[800px]:flex-col max-[800px]:mt-0"}>
             <div className={"flex flex-col min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>

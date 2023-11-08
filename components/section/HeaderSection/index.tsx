@@ -3,7 +3,7 @@ import {NextPage} from "next";
 
 const HeaderSection: NextPage = () => {
     return (
-        <section className="pt-[130px] pb-[130px]">
+        <section className="pt-[130px] pb-[130px] max-[800px]:pt-[250px] max-[800px]:pb-0">
             <div className={"border-b-[1px] border-b-white border-b-solid pb-[40px] my-0 mx-[200px] max-[800px]:mx-0"}>
                 <div className="flex-row flex items-center max-[800px]:justify-center">
                     <div>

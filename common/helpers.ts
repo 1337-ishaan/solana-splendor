@@ -14,4 +14,3 @@ export const handleClickScroll = (id: string) => {
 };
 
 export const isDev = process.env.NODE_ENV === "development"
-

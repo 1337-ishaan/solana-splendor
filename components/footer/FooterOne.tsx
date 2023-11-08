@@ -44,23 +44,23 @@ const FooterOne: NextPage = () => {
                   <div
                       className="mb-[30px]"
                   >
-                    <h4 className="text-white text-[25px]">USEFUL LINKS</h4>
-                    <div>
+                    <h4 className="text-white text-[18px]">About</h4>
+                    <div className={"mt-[10px]"}>
                       <ul>
-                        <li className="text-white leading-8">
-                          <Link href="/">support@splendor.network</Link>
+                        <li className="text-[#8890A4] leading-8">
+                          <Link href="/">Governance Portal</Link>
                         </li>
-                        <li className="text-white leading-8">
+                        <li className="text-[#8890A4] leading-8">
                           <Link href="/">How it Works</Link>
                         </li>
-                        <li className="text-white leading-8">
-                          <Link className="text-white leading-8" href="/">Create</Link>
+                        <li className="text-[#8890A4] leading-8">
+                          <Link className="text-[#8890A4] leading-8" href="/">Create</Link>
                         </li>
-                        <li className="text-white leading-8">
-                          <Link className="text-white leading-8" href="/">Explore</Link>
+                        <li className="text-[#8890A4] leading-8">
+                          <Link className="text-[#8890A4] leading-8" href="/">Explore</Link>
                         </li>
-                        <li className="text-white leading-8">
-                          <Link className="text-white leading-8" href="/">Terms and conditions</Link>
+                        <li className="text-[#8890A4] leading-8">
+                          <Link className="text-[#8890A4] leading-8" href="/">Terms and conditions</Link>
                         </li>
                       </ul>
                     </div>
@@ -70,22 +70,22 @@ const FooterOne: NextPage = () => {
                   <div
                       className="mb-[30px]"
                   >
-                    <h4 className="text-white leading-8 text-[25px]">Community</h4>
-                    <div>
+                    <h4 className="text-white leading-8 text-[18px]">Community</h4>
+                    <div className={"mt-[10px]"}>
                       <ul>
-                        <li className="text-white leading-8">
-                          <Link className="text-white leading-8" href="/">Help Center</Link>
+                        <li className="text-[#8890A4] leading-8">
+                          <Link className="text-[#8890A4] leading-8" href="/">Help Center</Link>
                         </li>
-                        <li className="text-white leading-8">
-                          <Link className="text-white leading-8" href="/">Partners</Link>
+                        <li className="text-[#8890A4] leading-8">
+                          <Link className="text-[#8890A4] leading-8" href="/">Partners</Link>
                         </li>
-                        <li className="text-white leading-8">
-                          <Link className="text-white leading-8" href="/">Suggestions</Link>
+                        <li className="text-[#8890A4] leading-8">
+                          <Link className="text-[#8890A4] leading-8" href="/">Suggestions</Link>
                         </li>
-                        <li className="text-white leading-8">
-                          <Link className="text-white leading-8" href="/">Blog</Link>
+                        <li className="text-[#8890A4] leading-8">
+                          <Link className="text-[#8890A4] leading-8" href="/">Blog</Link>
                         </li>
-                        <li className="text-white leading-8">
+                        <li className="text-[#8890A4] leading-8">
                           <Link href="/">Newsletters</Link>
                         </li>
                       </ul>
@@ -96,10 +96,10 @@ const FooterOne: NextPage = () => {
                   <div
                       className="mb-[30px] mr-[100px]"
                   >
-                    <h4 className="text-white leading-8 text-[25px]">SUBSCRIBE NEWSLETTER</h4>
-                    <div>
+                    <h4 className="text-white leading-8 text-[18px]">SUBSCRIBE NEWSLETTER</h4>
+                    <div className={"mt-[10px]"}>
                       <ul>
-                        <li className="text-white leading-8">
+                        <li className="text-[#8890A4] leading-8">
                           @SPLENDOR
                         </li>
                       </ul>

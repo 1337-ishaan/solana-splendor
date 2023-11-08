@@ -81,7 +81,7 @@ const TokenomicsWaveWidget = () => {
     return (
         <div className={`min-w-[450px] mt-[20px] py-[15px] px-[20px] justify-between flex-[6] flex-col 
             items-start mr-1 rounded-[20px] flex bg-opacity-90
-            border-[#FFFFFF33] border-[1px] mr-[10px] max-[800px]:min-w-full ${isMobile()?"h-[750px]":"h-[700px]"}`}>
+            border-[#FFFFFF33] border-[1px] mr-[10px] max-[800px]:min-w-full ${isMobile()?"h-[750px]":"h-full"}`}>
             <div className={"flex-col flex w-full"}>
                 <div className={"flex flex-row justify-between w-full items-start max-[1100px]:flex-col"}>
                     <div className={"flex flex-row"}>

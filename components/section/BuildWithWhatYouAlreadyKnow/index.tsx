@@ -20,11 +20,21 @@ const BuildWithWhatYouAlreadyKnow: NextPage = () => {
                             Develop decentralized applications using your expertise in Python, C#, Go, TypeScript, and Java. Our platform empowers you to tap into the potential of blockchain technology and create innovative solutions.
                         </p>
                         <div className={"flex-wrap flex justify-evenly items-center"}>
-                            <Image src={cSharp} alt={"cSharp"}/>
-                            <Image src={go} alt={"go"}/>
-                            <Image src={java} alt={"java"}/>
-                            <Image src={python} alt={"python"}/>
-                            <Image src={typescript} alt={"typescript"}/>
+                            <div className={"max-[800px]:w-[60px] max-[800px]:h-[60px]"}>
+                                <Image width={100} height={100} src={cSharp} alt={"cSharp"}/>
+                            </div>
+                            <div className={"max-[800px]:w-[60px] max-[800px]:h-[60px]"}>
+                                <Image width={100} height={100} src={go} alt={"go"}/>
+                            </div>
+                            <div className={"max-[800px]:w-[60px] max-[800px]:h-[60px]"}>
+                                <Image width={100} height={100} src={java} alt={"java"}/>
+                            </div>
+                            <div className={"max-[800px]:w-[60px] max-[800px]:h-[60px]"}>
+                                <Image width={100} height={100} src={python} alt={"python"}/>
+                            </div>
+                            <div className={"max-[800px]:w-[60px] max-[800px]:h-[60px]"}>
+                                <Image width={100} height={100} src={typescript} alt={"typescript"}/>
+                            </div>
                         </div>
                     </div>
                 </div>

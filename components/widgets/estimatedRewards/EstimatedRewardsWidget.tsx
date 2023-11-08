@@ -19,9 +19,10 @@ const EstimatedRewardsWidget = () => {
     };
 
     return (
-        <div className={`bg-[#09081c] bg-opacity-40 min-w-[450px] h-[300px] mt-[20px] py-[15px] px-[20px] justify-between 
-            flex-[4] flex-col items-start mr-1 rounded-[20px] flex  
-            border-[#FFFFFF33] border-[1px] mr-[10px] max-[800px]:min-w-full`}>
+        <div className={`bg-[#09081c] bg-opacity-40 min-w-[450px] h-full pt-[8px] px-[20px] justify-between 
+            flex-[4] flex-col items-start mr-1 rounded-[20px] flex mt-[10px]  
+            border-[#FFFFFF33] border-[1px] mr-[10px] max-[800px]:min-w-full 
+            max-[800px]:h-[300px] max-[800px]:mt-[20px] max-[800px]:py-[15px]`}>
             <div className={"relative w-full"}>
                 <div className={"flex flex-row justify-between"}>
                     <p className={"text-white text-[18px] text-white font-bold"}>Estimated rewards in 30 days</p>

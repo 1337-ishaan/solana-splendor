@@ -14,7 +14,7 @@ const StartMining: NextPage = () => {
               mining
           </h1>
           <div className={"mt-[50px] flex flex-row justify-center mx-[100px] max-[800px]:flex-col max-[800px]:mx-0"}>
-              <div className={"flex flex-col text-left"}>
+              <div className={"flex flex-col text-left mr-[10px]"}>
                   <p className={"text-[#073B4C] leading-10"}>Create your account</p>
                   <p className={"text-[#073B4C] leading-10"}>Download Splendor Core</p>
                   <p className={"text-[#073B4C] leading-10"}>Install</p>
@@ -24,7 +24,8 @@ const StartMining: NextPage = () => {
                       <li className={"list-[disc]"}>easy install</li>
                       <li className={"list-[disc]"}>no special equipment needed</li>
                   </ul>
-                  <button className={"mt-[50px] bg-black rounded-[10px] p-[15px] w-[200px] text-white cursor-pointer"}>
+                  <button className={"mt-[50px] bg-black rounded-[10px] p-[15px] w-[200px] text-white cursor-pointer " +
+                      "max-[800px]:mb-[10px]"}>
                       Download
                   </button>
               </div>

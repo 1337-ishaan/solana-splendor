@@ -4,9 +4,9 @@ import CircleChartWidget from "../../widgets/circleChart/CircleChartWidget";
 
 const Tokenomics = () => {
     return(
-        <div className={"flex flex-col w-full h-full p-10"}>
+        <div className={"flex flex-col w-full h-full px-[20px] pb-[20px]"}>
             <InfoWidgets />
-            <div className={"flex flex-row max-[1100px]:flex-wrap"}>
+            <div className={"h-full flex flex-row max-[1100px]:flex-wrap"}>
                 <TokenomicsWaveWidget />
                 <CircleChartWidget />
             </div>

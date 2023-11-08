@@ -17,8 +17,9 @@ const TotalStakedBalanceWidget = () => {
         }]
     };
     return (
-        <div className={`min-w-[250px] h-[300px] mt-[20px] py-[15px] px-[20px] justify-between flex-[2] flex-col items-start mr-1 rounded-[20px] flex 
-            border-[#FFFFFF33] border-[1px] mr-[10px] relative bg-[#09081c] bg-opacity-40 `}>
+        <div className={`min-w-[250px] h-full py-[8px] px-[20px] justify-between flex-[2] flex-col items-start mr-1 rounded-[20px] flex 
+            border-[#FFFFFF33] border-[1px] mr-[10px] relative bg-[#09081c] bg-opacity-40 mt-[10px] 
+            max-[800px]:h-[300px] max-[800px]:mt-[20px] max-[800px]:py-[15px]`}>
             <div>
                 <p className={"text-white text-[18px] text-white font-bold"}>Validating APR</p>
                 <p className={"text-[#a0aec0] text-[12px]"}>

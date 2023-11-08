@@ -70,7 +70,7 @@ const WhyChooseUs = () => {
           </h1>
         </div>
 
-        <div className={`flex flex-wrap items-center justify-center mt-[50px] mx-[8%]`}>
+        <div className={`flex flex-wrap items-center justify-center mt-[50px] mx-[8%] max-[800px]:items-baseline`}>
           {slider_items.map((item, index) => (
               <WhyChooseUsItemIcon key={index} {...item} />
           ))}

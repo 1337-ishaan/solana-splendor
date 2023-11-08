@@ -31,4 +31,3 @@ EXPOSE 3000
 
 # Comando para ejecutar el servidor de Next.js
 CMD ["npm", "start"]
-

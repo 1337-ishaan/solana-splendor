@@ -32,7 +32,7 @@ const CircleChartWidget = () => {
     };
 
     return (
-        <div className={`min-w-[250px] h-[700px] mt-[20px] py-[15px] px-[20px] justify-between flex-[2] flex-col items-start mr-1 rounded-[20px] flex 
+        <div className={`min-w-[250px] h-full mt-[20px] py-[15px] px-[20px] justify-between flex-[2] flex-col items-start mr-1 rounded-[20px] flex 
             border-[#FFFFFF33] border-[1px] mr-[10px] relative bg-[#09081c] bg-opacity-40 max-[1000px]:h-[500px]`}>
             <div className={"flex flex-col justify-center w-full items-center"}>
                 <div className={"max-[800px]:px-[30px] max-[800px]:mt-[10px] flex flex-row justify-between w-full"}>
