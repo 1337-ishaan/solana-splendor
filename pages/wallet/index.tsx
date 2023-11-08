@@ -2,7 +2,7 @@ import {NextPage} from "next";
 import LayoutOne from "../../components/layouts/LayoutOne";
 import React, {useEffect, useState} from "react";
 import {BottomWalletPopup} from "../../components/popups/BottomWalletPopup";
-import {WalletSteps} from "./enum";
+import {WalletSteps} from "../../modals/enum";
 import MainWalletScreen from "../../components/screens/mainWallet/MainWalletScreen";
 import CreateWalletScreen from "../../components/screens/createWallet/CreateWalletScreen";
 import ImportWalletScreen from "../../components/screens/importWallet/ImportWalletScreen";
