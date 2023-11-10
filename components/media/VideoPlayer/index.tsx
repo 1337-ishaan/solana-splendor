@@ -5,17 +5,16 @@ import StartMedia from "../../../assets/icons/common/startMedia.svg";
 import Image from "next/image";
 
 const VideoPlayer: NextPage<IVideoPlayer> = (props) => {
-    const [playing, setPlaying] = useState(false)
+    const [playing, setPlaying] = useState(true)
     const refPlayer = useRef<any>()
 
     const playerStopped = () => {
-        setPlaying(false);
+        //setPlaying(false);
     }
 
     const playerStarted = () => {
-        setPlaying(true);
+        //setPlaying(true);
     }
-
     const startPlayer = (event: any) => {
         /*if(event.detail===2){
             if (refPlayer?.current?.requestFullscreen) {
@@ -31,16 +30,17 @@ const VideoPlayer: NextPage<IVideoPlayer> = (props) => {
     }
 
     return(
-        <div className={"relative flex justify-center"}>
+        <div className={"relative flex justify-center rounded-[10px] border-[1px] border-[#0000003B] m-auto " +
+            " h-[80%] w-[80%] max-[800px]:w-full"}>
             <video {...props}
                    {...playing&&{...{controls:true}}}
-                ref={refPlayer}
-                onPlay={playerStarted}
-                onPause={playerStopped}
-                onEnded={playerStopped}
-                   className={"h-[80%] w-[80%] max-[800px]:w-full rounded-[10px] border-[1px] border-[#0000003B]"}
+                   ref={refPlayer}
+                   onPlay={playerStarted}
+                   onPause={playerStopped}
+                   onEnded={playerStopped}
+                   className={"h-full w-full"}
             />
-            {
+            {/*{
                 !playing&&
                 <div className={"absolute w-full h-full"} onClick={startPlayer}>
                     <div className={"absolute top-[50%] left-[50%] translate-x-[-50] translate-y-[-50] " +
@@ -48,7 +48,7 @@ const VideoPlayer: NextPage<IVideoPlayer> = (props) => {
                         <Image src={StartMedia} alt={"StartMedia"} width={60} height={60} />
                     </div>
                 </div>
-            }
+            }*/}
         </div>
     )
 }

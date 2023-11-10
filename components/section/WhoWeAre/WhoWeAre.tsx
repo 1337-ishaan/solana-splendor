@@ -1,78 +1,76 @@
 import React from "react";
 import {NextPage} from "next";
 import VideoPlayer from "../../media/VideoPlayer";
+import Image from "next/image";
+import anonymousSvg from "../../../assets/icons/home/anonymous.svg";
+import fastSvg from "../../../assets/icons/home/fast.svg";
+import scalableSvg from "../../../assets/icons/home/scalable.svg";
+import decentralizedSvg from "../../../assets/icons/home/decentralized.svg";
+import logo from "../../../assets/icons/home/logo.svg";
 
 const WhoWeAre: NextPage = () => {
   return (
-    <section id="about" className="pt-[200px] flex flex-col items-center justify-center">
-      <div className="px-[15px]">
-        <div className="flex flex-col items-center max-[800px]:flex-col">
-          <div className="mb-[30px] w-[40%] max-[800px]:w-full">
-            <p className={"text-black text-[70px] leading-[1.2] font-medium text-[#073B4C] max-[800px]:text-center"}>SPLENDOR</p>
-            <p className={"text-black text-[45px] leading-[1.2] font-medium text-[#073B4C] max-[800px]:text-center"}>a better version of bitcoin</p>
+    <section id="about" className="pt-[200px] flex flex-col items-center justify-center w-full">
+      <div className="px-[15px] w-full">
+        <div className="flex flex-col items-center max-[800px]:flex-col justify-center w-full">
+          <div className={"flex flex-row"}>
+            <Image src={logo} alt={'logo'} />
+            <p className={"ml-[10px] text-black text-[70px] leading-[1.2] font-medium text-[#073B4C]"}>SPLENDOR</p>
           </div>
-          <div className="mt-[150px]">
+          <p className={"text-black text-[45px] leading-[1.2] font-[200] text-[#073B4C]"}>The evolved version of Bitcoin</p>
+
+          <div className="mt-[150px] w-full">
             <VideoPlayer
-                src={"api/getMedia/splendor_new_corrections_vid.mp4"} />
+                src={"https://drive.google.com/uc?id=1SQLSeacpJP6TJrT_k3WJIy_uQfHeeUeY&export=download"} />
           </div>
-          <div className={"flex flex-row justify-center w-full mt-[50px] max-[800px]:flex-col max-[800px]:mt-0"}>
-            <div className={"flex flex-col min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
-              <div className={"h-[70px] text-[22px] text-[#073B4C] max-[800px]:h-auto max-[800px]:text-center"}>
-                ANONYMOUS CONTRACT
+          <div className={"flex flex-row justify-center w-full mt-[150px] max-[800px]:flex-col max-[800px]:mt-0"}>
+            <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+              <div className={"w-[70px] h-[70px] mb-[20px]"}>
+                <Image src={anonymousSvg} alt={"anonymousSvg"} height={70} width={70}/>
               </div>
-              <div className={"h-[160px] pt-[10px] text-[#073B4C] max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
+              <div className={"h-[50px] font-bold text-[22px] text-black max-[800px]:h-auto max-[800px]:text-center"}>
+                ANONYMOUS
+              </div>
+              <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
                 SPLENDOR is a smart contract
                 system that enables
                 Zero-Knowledge Privacy for any
                 on-chain dApp.
               </div>
-              <button
-                  className={"w-[250px] bg-black rounded-[10px] p-[10px] text-white"}
-              >
-                Discover Integrations
-              </button>
             </div>
 
-            <div className={"flex flex-col min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
-              <div className={"h-[70px] text-[22px] text-[#073B4C] max-[800px]:h-auto max-[800px]:text-center"}>
-                FULLY DECENTRALIZED
+            <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+              <div className={"w-[70px] h-[70px] mb-[20px]"}>
+                <Image src={fastSvg} alt={"fastSvg"} />
               </div>
-              <div className={"h-[160px] pt-[10px] text-[#073B4C] max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
+              <div className={"h-[50px] font-bold text-[22px] text-black max-[800px]:h-auto max-[800px]:text-center"}>
+                FAST
+              </div>
+              <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
+                EVM compatibility facilitates interoperability between different blockchain networks. This means assets and data can be transferred and shared seamlessly between blockchains              </div>
+            </div>
+
+            <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+              <div className={"w-[70px] h-[70px] mb-[20px]"}>
+                <Image src={scalableSvg} alt={"scalableSvg"} />
+              </div>
+              <div className={"h-[50px] font-bold text-[22px] text-black max-[800px]:h-auto max-[800px]:text-center"}>
+                SCALABLE
+              </div>
+              <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
+                Splendor Network’s peer-reviewed consensus protocol achieved up to 1,000 tx/s in a decentralized test setting with a potential to reach nearly 1,666 tx/s, processing 5,000 transactions per block.              </div>
+            </div>
+
+            <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+              <div className={"w-[70px] h-[70px] mb-[20px]"}>
+                <Image src={decentralizedSvg} alt={"decentralizedSvg"} />
+              </div>
+              <div className={"h-[50px] font-bold text-[22px] text-black max-[800px]:h-auto max-[800px]:text-center"}>
+                DECENTRALIZED
+              </div>
+              <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
                 SPLENDOR is a system of smart contracts supported by fully-decentralized SPLENDOR DAO governance.
               </div>
-              <button
-                  className={"w-[250px] bg-black rounded-[10px] p-[10px] text-white"}
-              >
-                Discover Integrations
-              </button>
-            </div>
-
-            <div className={"flex flex-col min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
-              <div className={"h-[70px] text-[22px] text-[#073B4C] max-[800px]:h-auto max-[800px]:text-center"}>
-                EVM COMPATIBLE
-              </div>
-              <div className={"h-[160px] pt-[10px] text-[#073B4C] max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-                EVM compatibility facilitates interoperability between different blockchain networks. This means assets and data can be transferred and shared seamlessly between blockchains
-              </div>
-              <button
-                  className={"w-[250px] bg-black rounded-[10px] p-[10px] text-white"}
-              >
-                Discover Integrations
-              </button>
-            </div>
-
-            <div className={"flex flex-col min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
-              <div className={"h-[70px] text-[22px] text-[#073B4C] max-[800px]:h-auto max-[800px]:text-center"}>
-                BETTER THAN BITCOIN
-              </div>
-              <div className={"h-[160px] pt-[10px] text-[#073B4C] max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-                SPLENDOR is an on-chain web3 application created by contributors to the SPLENDOR Project, project for peer-to-peer privacy in DeFi.
-              </div>
-              <button
-                  className={"w-[250px] bg-black rounded-[10px] p-[10px] text-white"}
-              >
-                Discover Integrations
-              </button>
             </div>
           </div>
         </div>

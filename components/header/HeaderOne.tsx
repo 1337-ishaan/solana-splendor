@@ -2,10 +2,10 @@ import React, {useEffect, useMemo, useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Dropdown from "./components/Dropdown";
-import logoImage from "../../assets/icons/home/logo/logo.svg";
 import {useRouter} from "next/router";
 import Hamburger from 'hamburger-react'
 import DropdownMobile from "./components/DropdownMobile";
+import logo from "../../assets/icons/home/logo.svg";
 
 export interface MenuItem {
   title: string;
@@ -16,35 +16,33 @@ export interface MenuItem {
 
 const menuItems: MenuItem[] = [
   {
-    title: "HOME",
-    route: "/",
-  },
-  {
-    title: "DISCOVER SPLENDOR",
-    children: [
-      {
-        title: "DOCUMENTATIONS",
-        route: "https://splendor-network.gitbook.io/",
-      },
-      {
-        title: "OUR TOKEN",
-        route: "https://splendor-network.gitbook.io/splendor-protocol/splendor-basics/main-concepts/tokens",
-      },
-      {
-        title: "EXPLORE OUR ECOSYSTEM",
-        route: "/explore-ecosystem",
-      },
-    ],
+    title: "DOCUMENTATIONS",
+    route: "https://splendor-network.gitbook.io/",
   },
   {
     title: "ECOSYSTEM",
-    route: "#ecosystem",
-    hash: "#ecosystem"
+    route: "/explore-ecosystem",
   },
-  /*{
-    title: "WALLET",
-    route: "/wallet",
-  }*/
+  {
+    title: "TOKENS",
+    route: "https://splendor-network.gitbook.io/splendor-protocol/splendor-basics/main-concepts/tokens",
+  },
+  {
+    title: "COMMUNITY",
+    route: "/#",
+  },
+  {
+    title: "PROJECT UPDATES",
+    route: "/#",
+  },
+  {
+    title: "WHITEPAPER",
+    route: "/#",
+  },
+  {
+    title: "RUN A NODE",
+    route: "/#",
+  }
 ];
 
 export default function HeaderOne() {
@@ -76,16 +74,16 @@ export default function HeaderOne() {
 
   return (
       <header className={`flex gap-10 z-[99999] items-center drop-shadow-2xl bg-white py-[30px] px-2 w-full 
-      max-[800px]:fixed ${fixedMenu?'min-[800px]:fixed':''} max-[800px]:justify-evenly`}>
-        <div className={"ml-[50px]"}>
+      max-[800px]:fixed ${fixedMenu?'min-[800px]:fixed':''} max-[800px]:justify-end`}>
+        <div className={"ml-[50px] max-[800px]:hidden"}>
           <a>
-            <Image src={logoImage} width={200} height={20} alt="logo" />
+            <Image src={logo} width={200} height={20} alt="logo" />
           </a>
         </div>
         <div className={"hidden max-[800px]:block"}>
           <Hamburger toggled={isOpen} toggle={setIsOpen} />
           {isOpen&&
-              <div onClick={closeMobileMenu} className={`h-[900px] fixed z-[99999] top-0 left-0 w-full`}>
+              <div onClick={closeMobileMenu} className={`h-[11000px] fixed z-[99999] top-0 left-0 w-full`}>
                 <div onClick={(event)=>{event.stopPropagation();}}
                      className={"relative h-full drop-shadow-2xl bg-white w-[75%] pt-[100px] px-[20px]"}>
                   {menuItems.map((item, key) => {
@@ -120,7 +118,7 @@ export default function HeaderOne() {
         <div className={"absolute right-[100px] max-[800px]:hidden"}>
           <Link href={"/dashboard"}>
             <button
-                className={"w-[150px] bg-black rounded-[10px] p-[10px] text-white"}
+                className={"w-[150px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px]"}
             >
               Dashboard
             </button>
