@@ -41,10 +41,11 @@ const WhoWeAre: NextPage = () => {
                 <Image src={fastSvg} alt={"fastSvg"} />
               </div>
               <div className={"h-[50px] font-bold text-[22px] text-black max-[800px]:h-auto max-[800px]:text-center"}>
-              Speed is a main quality of Splendor, allowing for faster transactions than the average L1 blockchain compatible with EVM.
+                Fast
               </div>
               <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-                </div>
+                Speed is a main quality of Splendor, allowing for faster transactions than the average L1 blockchain compatible with EVM.
+              </div>
             </div>
 
             <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
