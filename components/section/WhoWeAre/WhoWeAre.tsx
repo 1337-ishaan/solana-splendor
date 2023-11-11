@@ -67,6 +67,7 @@ const WhoWeAre: NextPage = () => {
               </div>
               <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
                 Splendor is easy and prone to decentralizing itself as users run a node to earn SDR, this means that to provide greater security, splendor incentivizes users to support the network
+              </div>
             </div>
           </div>
         </div>
