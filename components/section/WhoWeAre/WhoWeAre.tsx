@@ -32,10 +32,7 @@ const WhoWeAre: NextPage = () => {
                 ANONYMOUS
               </div>
               <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-                SPLENDOR is a smart contract
-                system that enables
-                Zero-Knowledge Privacy for any
-                on-chain dApp.
+                Splendor is a blockchain with anonymous and privacy system protected with Zero-Knowlege Proof, in transactions and in smart contracts
               </div>
             </div>
 
@@ -44,10 +41,10 @@ const WhoWeAre: NextPage = () => {
                 <Image src={fastSvg} alt={"fastSvg"} />
               </div>
               <div className={"h-[50px] font-bold text-[22px] text-black max-[800px]:h-auto max-[800px]:text-center"}>
-                FAST
+              Speed is a main quality of Splendor, allowing for faster transactions than the average L1 blockchain compatible with EVM.
               </div>
               <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-                EVM compatibility facilitates interoperability between different blockchain networks. This means assets and data can be transferred and shared seamlessly between blockchains              </div>
+                </div>
             </div>
 
             <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
@@ -58,7 +55,7 @@ const WhoWeAre: NextPage = () => {
                 SCALABLE
               </div>
               <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-                Splendor Network’s peer-reviewed consensus protocol achieved up to 1,000 tx/s in a decentralized test setting with a potential to reach nearly 1,666 tx/s, processing 5,000 transactions per block.              </div>
+                Splendor Network’s nodes are made to approve batches of transactions in miliseconds, quality to get many transaccions with low gas fees.</div>
             </div>
 
             <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
@@ -69,8 +66,7 @@ const WhoWeAre: NextPage = () => {
                 DECENTRALIZED
               </div>
               <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-                SPLENDOR is a system of smart contracts supported by fully-decentralized SPLENDOR DAO governance.
-              </div>
+                Splendor is easy and prone to decentralizing itself as users run a node to earn SDR, this means that to provide greater security, splendor incentivizes users to support the network
             </div>
           </div>
         </div>
