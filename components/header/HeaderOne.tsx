@@ -39,6 +39,10 @@ const menuItems: MenuItem[] = [
     title: "WHITEPAPER",
     route: "/#",
   },
+  {
+    title: "RUN A NODE",
+    route: "/#",
+  }
 ];
 
 export default function HeaderOne() {
