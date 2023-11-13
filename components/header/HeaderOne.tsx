@@ -17,7 +17,7 @@ export interface MenuItem {
 const menuItems: MenuItem[] = [
   {
     title: "DOCUMENTATIONS",
-    route: "https://splendor-network.gitbook.io/",
+    route: "/#",
   },
   {
     title: "ECOSYSTEM",
@@ -25,7 +25,7 @@ const menuItems: MenuItem[] = [
   },
   {
     title: "TOKENS",
-    route: "https://splendor-network.gitbook.io/splendor-protocol/splendor-basics/main-concepts/tokens",
+    route: "/#",
   },
   {
     title: "COMMUNITY",
@@ -39,6 +39,10 @@ const menuItems: MenuItem[] = [
     title: "WHITEPAPER",
     route: "/#",
   },
+  {
+    title: "RUN A NODE",
+    route: "/#",
+  }
 ];
 
 export default function HeaderOne() {

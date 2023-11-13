@@ -33,7 +33,7 @@ const FooterOne: NextPage = () => {
                   </div>
                   <div className="my-[20px] text-[#727885]">
                     <p>
-                      Notice: This is an independent info site about SPLENDOR smart contracts, run by enthusiasts and evangelists.
+                      Notice: This is an independent info site about SPLENDOR smart contracts, run by enthusiasts and evangelists. Nobody is in charge of RAILGUN itself.
                     </p>
                   </div>
                 </div>

@@ -31,7 +31,7 @@ const VideoPlayer: NextPage<IVideoPlayer> = (props) => {
 
     return(
         <div className={"relative flex justify-center rounded-[10px] border-[1px] border-[#0000003B] m-auto " +
-            " h-[80%] w-[50%] max-[800px]:w-full"}>
+            " h-[80%] w-[80%] max-[800px]:w-full"}>
             <video {...props}
                    {...playing&&{...{controls:true}}}
                    ref={refPlayer}
