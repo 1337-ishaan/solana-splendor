@@ -1,6 +1,6 @@
 import React from "react";
 import FooterOne from "../../footer/FooterOne";
-import HeaderOne from "../../header/HeaderOne";
+import HeaderOne from "../../header/HeaderOne/HeaderOne";
 import {NextPage} from "next";
 import {ILayoutOne} from "./types";
 import Head from "next/head";

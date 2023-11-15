@@ -57,8 +57,33 @@ const SplendorTokens: NextPage = () => {
                   </div>
               </div>
 
+
+              <div className={"flex flex-wrap"}>
+                  <div className={"flex flex-1 flex-col justify-center min-w-[300px] mr-[20px] text-black " +
+                      "max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px] items-center"}>
+                      <div className={"w-[70px] h-[70px] mb-[20px]"}>
+                          <Image src={splendorTokenSvg} alt={"splendorTokenSvg"} height={70} width={70}/>
+                      </div>
+                      <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
+                          Minting Process: To create new SDR coins, someone needs to lock up a certain amount of SPL as collateral. This means they temporarily set aside a portion of their SPL holdings to generate SDR. The system calculates the right amount of SPL to lock up as well as the right amount of SDR to receive.
+                      </div>
+                  </div>
+
+                  <div className={"flex flex-1 flex-col justify-center min-w-[300px] mr-[20px] text-black " +
+                      "max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px] items-center"}>
+                      <div className={"w-[70px] h-[70px] mb-[20px]"}>
+                          <Image src={stablecoinSvg} alt={"stablecoinSvg"} />
+                      </div>
+                      <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
+                          Use of SDR Value: SDR is intended to be used for various transactions, similar to how you might use regular money or other cryptocurrencies. But, because it's pegged to the international monetary fund’s basket of 5 currencies, it offers a more stable value, which can be beneficial for international trade and finance.
+                      </div>
+                  </div>
+              </div>
+
               <div className={"h-[160px] mt-[50px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-                  Minting Process: To create new SDR coins, someone needs to lock up a certain amount of SPL as collateral. This means they temporarily set aside a portion of their SPL holdings to generate SDR. The system calculates the right amount of SPL to lock up as well as the right amount of SDR to receive.               </div>
+                  In addition all miners are rewarded in SDR based on the computational resources provided to the network at the same time SPL is being locked in the reserve pool every 10 minutes and can only be unlocked by participants that have SDR. Once a person sends SDR to the reserve pool he immediately receives SPL and the SDR that was send is automatically burned. This is achieved by the smart contact functionality of Splendor blockchain and grantees that there is always a limited supply of SPL in the market creating a scarcity for SPL. The max SPL supply is  its 21 million coins and block reward every 10 minutes  of 3.125. SPL coins are boing locked in the reserve pool waiting for miners to unlock them. The last Splendor block reward will end in the year 2123 making SPL the most sought after and valuable asset on the globe and SDR the day to day decentralized stable coin replacing the fiat in circulation. In addition, SDR can be staked without the need to move SDR to any wallet for period of 1, 3, 6, 9 and 12 months and annual rewards paid by the blockchain of 8%.   SDR owners do not have to move the coins and can have access to tvhem any time. At the end of the period the smart contact checks if the tokens were moved, or not and if not the reward is minted to the same wallet.
+              </div>
+
 
           </div>
 

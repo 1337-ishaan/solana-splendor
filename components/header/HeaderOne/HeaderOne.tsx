@@ -5,7 +5,10 @@ import Dropdown from "./components/Dropdown";
 import {useRouter} from "next/router";
 import Hamburger from 'hamburger-react'
 import DropdownMobile from "./components/DropdownMobile";
-import logo from "../../assets/icons/home/logo.svg";
+import logo from "../../../assets/icons/common/logo.svg";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
+import {useAccount} from "wagmi";
+import {useIsMounted} from "../../../hooks/useIsMounted/useIsMounted";
 
 export interface MenuItem {
   title: string;
@@ -17,7 +20,7 @@ export interface MenuItem {
 const menuItems: MenuItem[] = [
   {
     title: "DOCUMENTATIONS",
-    route: "/#",
+    route: "/wiki",
   },
   {
     title: "ECOSYSTEM",
@@ -25,7 +28,7 @@ const menuItems: MenuItem[] = [
   },
   {
     title: "TOKENS",
-    route: "/#",
+    route: "https://splendor-network.gitbook.io/splendor-protocol/splendor-basics/main-concepts/tokens",
   },
   {
     title: "COMMUNITY",
@@ -39,6 +42,10 @@ const menuItems: MenuItem[] = [
     title: "WHITEPAPER",
     route: "/#",
   },
+  {
+    title: "RUN A NODE",
+    route: "/#",
+  }
 ];
 
 export default function HeaderOne() {
@@ -46,6 +53,8 @@ export default function HeaderOne() {
   const { asPath } = useRouter();
   const hash = useMemo(()=>asPath.split('#')[1],[asPath]);
   const [isOpen, setIsOpen] = useState(false);
+  const { isConnected } = useAccount();
+  const isMounted = useIsMounted()
 
   const stickNavbar = () => {
     if (window !== undefined) {
@@ -56,6 +65,12 @@ export default function HeaderOne() {
           : setFixedMenu(true);
     }
   };
+
+  /*useEffect(()=>{
+    if(isConnected){
+      //toast('Connected!', { hideProgressBar: true, autoClose: 2000, type: 'success' ,position:'top-center' })
+    }
+  }, [isConnected])*/
 
   const isActiveLink = (id:string) => {
     return id === asPath || id === `#${hash}` ? "active" : "";
@@ -72,9 +87,7 @@ export default function HeaderOne() {
       <header className={`flex gap-10 z-[99999] items-center drop-shadow-2xl bg-white py-[30px] px-2 w-full 
       max-[800px]:fixed ${fixedMenu?'min-[800px]:fixed':''} max-[800px]:justify-end`}>
         <div className={"ml-[50px] max-[800px]:hidden"}>
-          <a>
-            <Image src={logo} width={200} height={20} alt="logo" />
-          </a>
+          <Image src={logo} width={20} height={20} alt="logo" />
         </div>
         <div className={"hidden max-[800px]:block"}>
           <Hamburger toggled={isOpen} toggle={setIsOpen} />
@@ -111,14 +124,20 @@ export default function HeaderOne() {
             );
           })}
         </div>
-        <div className={"absolute right-[100px] max-[800px]:hidden"}>
-          <Link href={"/dashboard"}>
-            <button
-                className={"w-[150px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px]"}
-            >
-              Dashboard
-            </button>
-          </Link>
+        <div className={"absolute right-[100px] max-[800px]:hidden flex flex-row items-center justify-center"}>
+          {isMounted&&<div className={"mx-[10px]"}>
+            <ConnectButton/>
+          </div>}
+          {
+            isConnected&&
+              <Link href={"/dashboard"}>
+                <button
+                    className={"w-[150px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px]"}
+                >
+                  Dashboard
+                </button>
+              </Link>
+          }
         </div>
       </header>
   );

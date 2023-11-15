@@ -5,7 +5,7 @@ import Image from "next/image";
 import React, {useMemo} from "react";
 import homeIcon from "../../../assets/icons/dashboard/home.svg";
 import tokenomicsIcon from "../../../assets/icons/tokenomics/tokenomics.svg";
-import MenuButton from "../../buttons/menu/MenuButton";
+import MenuButton from "../../buttons/menu/MenuButton/MenuButton";
 import {IMenuItem} from "./types";
 import backgroundBottomMenuWidget from "../../../assets/icons/dashboard/backgroundBottomMenuWidget.svg";
 import {useRouter} from "next/router";

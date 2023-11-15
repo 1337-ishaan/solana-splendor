@@ -13,11 +13,13 @@ const WhoWeAre: NextPage = () => {
     <section id="about" className="pt-[200px] flex flex-col items-center justify-center w-full">
       <div className="px-[15px] w-full">
         <div className="flex flex-col items-center max-[800px]:flex-col justify-center w-full">
-          <div className={"flex flex-row"}>
+          <div className={"flex flex-row max-[800px]:items-center"}>
             <Image src={logo} alt={'logo'} />
-            <p className={"ml-[10px] text-black text-[70px] leading-[1.2] font-medium text-[#073B4C]"}>SPLENDOR</p>
+            <p className={"ml-[10px] text-black text-[70px] leading-[1.2] font-medium text-[#073B4C] " +
+                "max-[800px]:text-[50px] max-[800px]:text-center"}>SPLENDOR</p>
           </div>
-          <p className={"text-black text-[45px] leading-[1.2] font-[200] text-[#073B4C]"}>The evolved version of Bitcoin</p>
+          <p className={"text-black text-[45px] leading-[1.2] font-[200] text-[#073B4C] " +
+              "max-[800px]:text-[30px] max-[800px]:text-center max-[800px]:mt-[15px]"}>The evolved version of Bitcoin</p>
 
           <div className="mt-[150px] w-full">
             <VideoPlayer
