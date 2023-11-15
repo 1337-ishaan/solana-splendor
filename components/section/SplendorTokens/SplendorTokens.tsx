@@ -43,7 +43,7 @@ const SplendorTokens: NextPage = () => {
                           <Image src={splendorTokenSvg} alt={"splendorTokenSvg"} height={70} width={70}/>
                       </div>
                       <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-                          Backed by Splendor: To ensure its stability SDR is backed by SPL. This means that for every SDR in circulation, there is an equivalent amount of SPL held in a decentralized pool reserve. So, if there are 100 SDR coins in circulation, there would be enough SPL in the reserve pool to back them.                      </div>
+                          Backed by Splendor: To ensure its stability SDR it is backed by SPL. This means that for every SDR in circulation, there is an equivalent amount of SPL held in a decentralized pool reserve. So, if there are 100 SDR coins in circulation, there would be enough SPL reserve pool to back them.                      </div>
                   </div>
 
                   <div className={"flex flex-1 flex-col justify-center min-w-[300px] mr-[20px] text-black " +
