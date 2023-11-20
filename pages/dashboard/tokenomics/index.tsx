@@ -1,8 +1,8 @@
-import Menu from "../../components/menu/dashboard/DashboardMenu";
+import Menu from "../../../components/menu/dashboard/DashboardMenu";
 import classes from "./styles.module.css"
-import Tokenomics from "../../components/tabs/tokenomics/TokenomicsTab";
+import Tokenomics from "../../../components/tabs/tokenomics/TokenomicsTab";
 import {NextPage} from "next";
-import LayoutOne from "../../components/layouts/LayoutOne";
+import LayoutOne from "../../../components/layouts/LayoutOne";
 
 const Dashboard: NextPage = () => {
     return(

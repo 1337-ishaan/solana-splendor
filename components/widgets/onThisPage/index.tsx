@@ -2,22 +2,9 @@ import {NextPage} from "next";
 import Image from "next/image";
 import logoMob from "../../../assets/icons/wiki/logoMob.svg";
 import OnThisPageButton from "../../buttons/onThisPageButton";
+import {IOnThisPage} from "./types";
 
-const OnThisPage:NextPage = () => {
-    const elements = [
-        {
-            text: "What is Splendor?",
-            hash: "#whatIsSplendor"
-        },
-        {
-            text: "Benefits and use cases of Splendor",
-            hash: "#benefitsAndUseCases"
-        },
-        {
-            text: "Developer Guide",
-            hash: "#developerGuide"
-        }
-    ]
+const OnThisPage:NextPage<IOnThisPage> = ({menuElements}) => {
     return (
         <div className={"bg-black h-[200px] w-full relative max-[800px]:h-[150px]"}>
             <div className={"absolute right-[50%] left-[50%] w-[100px] h-full " +
@@ -34,8 +21,8 @@ const OnThisPage:NextPage = () => {
                 <p className={"text-[#8899A8]"}>On this page</p>
                 <div className={"flex flex-col"}>
                     {
-                        elements.map(element=>
-                            <OnThisPageButton {...element} />
+                        menuElements.map((element,key)=>
+                            <OnThisPageButton {...element} key={key} />
                         )
                     }
                 </div>

@@ -3,11 +3,12 @@ import {IOnThisPageButton} from "./types";
 import Link from "next/link";
 import {useRouter} from "next/router";
 import {useMemo} from "react";
+import {useIsMounted} from "../../../hooks/useIsMounted/useIsMounted";
 
 const OnThisPageButton:NextPage<IOnThisPageButton> = ({hash, text}) => {
     const { asPath } = useRouter();
-    console.log("asPath", asPath)
-    const isActive = useMemo(()=>`#${asPath.split('#')[1]}` === hash,[asPath, hash]);
+    const isMounted = useIsMounted();
+    const isActive = useMemo(()=>isMounted&&`#${asPath.split('#')[1]}` === hash,[asPath, hash,isMounted]);
     return(
         <Link href={hash}>
             <div className={"flex flex-row relative"}>

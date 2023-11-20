@@ -1,22 +1,32 @@
-import React from "react";
+import React, {useMemo} from "react";
 import {IMenuWikiItem} from "./types";
 import WikiMenuButton from "../../buttons/menu/WikiMenuButton/MenuButton";
+import {useRouter} from "next/router";
+import {useIsMounted} from "../../../hooks/useIsMounted/useIsMounted";
 
 const WikiMenu = () => {
-    const menuItems:IMenuWikiItem[] = [
-        {
-            id: 1,
-            name: "Overview",
-            selected: false,
-            link: "/overview",
-        },
-        {
-            id: 2,
-            name: "Wallets and Keys",
-            selected: false,
-            link: "/wallets_and_key",
-        }
-    ]
+    const { asPath } = useRouter();
+    const isMounted = useIsMounted();
+    const menuItems:IMenuWikiItem[] = useMemo(()=>{
+        if(!isMounted)
+            return [];
+
+        const patchBeforeSeparator = asPath.split('#')[0];
+        const defaultMenuArr = [
+            {
+                id: 1,
+                name: "Overview",
+                link: "/wiki",
+            },
+            {
+                id: 2,
+                name: "Wallets and Keys",
+                link: "/wiki/wallets_and_key",
+            }
+        ]
+
+        return defaultMenuArr.map(menu=>({selected:patchBeforeSeparator===menu.link,...menu}))
+    }, [asPath,  isMounted])
 
     return(
         <div className={"flex flex-col justify-between bg-white mt-[70px] " +

@@ -56,7 +56,9 @@ const DualToken: NextPage = () => {
                     {
                         secondRow.map(
                             (props, key)=>
-                                <DualItem key={key} {...props}/>
+                                <div className={"max-[800px]:flex-1"}  key={key}>
+                                    <DualItem {...props}/>
+                                </div>
                         )
                     }
                 </div>

@@ -13,7 +13,22 @@ const HomeWiki: NextPage = () => {
                 <WikiMenu />
                 <div className={"min-[801px]:w-full ml-[280px] max-[1100px]:ml-[200px] h-full " +
                     "mt-[70px] max-[800px]:ml-0"}>
-                    <OnThisPage />
+                    <OnThisPage
+                        menuElements={[
+                            {
+                                text: "What is Splendor?",
+                                hash: "#whatIsSplendor"
+                            },
+                            {
+                                text: "Benefits and use cases of Splendor",
+                                hash: "#benefitsAndUseCases"
+                            },
+                            {
+                                text: "Developer Guide",
+                                hash: "#developerGuide"
+                            }
+                        ]}
+                    />
                     <div className={"w-[750px] py-[50px] mx-auto max-[800px]:w-full max-[800px]:px-[10px]"}>
                         <p className={"text-[40px] text-[#3B454E] font-bold"}>Overview</p>
                         <div id={"whatIsSplendor"} className={"pt-[65px]"}>

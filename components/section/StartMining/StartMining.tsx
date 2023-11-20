@@ -13,19 +13,22 @@ const StartMining: NextPage = () => {
               <span className={"font-bold"}>Start </span>
               mining
           </h1>
-          <div className={"mt-[50px] flex flex-row justify-center mx-[100px] max-[800px]:flex-col max-[800px]:mx-0"}>
-              <div className={"flex flex-col text-left mr-[10px]"}>
-                  <p className={"text-[#073B4C] leading-10"}>Create your account</p>
-                  <p className={"text-[#073B4C] leading-10"}>Download Splendor Core</p>
-                  <p className={"text-[#073B4C] leading-10"}>Install</p>
-                  <p className={"text-[#073B4C] leading-10"}>Run a node</p>
-                  <p className={"text-[#073B4C] leading-10"}>Start mining</p>
-                  <ul className={"text-[#75858A] ml-[50px]"}>
-                      <li className={"list-[disc]"}>easy install</li>
-                      <li className={"list-[disc]"}>no special equipment needed</li>
-                  </ul>
+          <div className={"mt-[50px] flex flex-row justify-center mx-[100px] max-[800px]:flex-col " +
+              "max-[800px]:mx-0"}>
+              <div className={"max-[800px]:items-center"}>
+                  <div className={"flex flex-col text-left mr-[10px]"}>
+                      <p className={"text-[#073B4C] leading-10"}>Create your account</p>
+                      <p className={"text-[#073B4C] leading-10"}>Download Splendor Core</p>
+                      <p className={"text-[#073B4C] leading-10"}>Install</p>
+                      <p className={"text-[#073B4C] leading-10"}>Run a node</p>
+                      <p className={"text-[#073B4C] leading-10"}>Start mining</p>
+                      <ul className={"text-[#75858A] ml-[50px]"}>
+                          <li className={"list-[disc]"}>easy install</li>
+                          <li className={"list-[disc]"}>no special equipment needed</li>
+                      </ul>
+                  </div>
                   <button className={"mt-[50px] bg-black rounded-[10px] p-[15px] w-[200px] text-white cursor-pointer " +
-                      "max-[800px]:mb-[10px]"}>
+                      "max-[800px]:mb-[10px] max-[800px]:mt-[20px]"}>
                       Download
                   </button>
               </div>

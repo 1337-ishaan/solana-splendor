@@ -15,7 +15,7 @@ const FooterOne: NextPage = () => {
                 <div
                     className="mb-[30px]"
                 >
-                  <div className={"flex justify-between"}>
+                  <div className={"flex justify-between max-[800px]:justify-center"}>
                     <Link href="/" className="f-logo">
                       <a>
                         <Image src={logoImage} alt="BigTech Logo" />
@@ -31,9 +31,9 @@ const FooterOne: NextPage = () => {
                       </a>
                     </div>*/}
                   </div>
-                  <div className="my-[20px] text-[#727885]">
+                  <div className="my-[20px] text-[#727885] max-[800px]:text-center">
                     <p>
-                      Notice: This is an independent info site about SPLENDOR smart contracts, run by enthusiasts and evangelists
+                      Notice: This is an independent info site about SPLENDOR smart contracts, run by enthusiasts and evangelists. Nobody is in charge of RAILGUN itself.
                     </p>
                   </div>
                 </div>

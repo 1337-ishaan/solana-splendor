@@ -80,8 +80,12 @@ const SplendorTokens: NextPage = () => {
                   </div>
               </div>
 
-              <div className={"h-[160px] mt-[50px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
+              <div className={"mt-[50px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
                   In addition all miners are rewarded in SDR based on the computational resources provided to the network at the same time SPL is being locked in the reserve pool every 10 minutes and can only be unlocked by participants that have SDR. Once a person sends SDR to the reserve pool he immediately receives SPL and the SDR that was send is automatically burned. This is achieved by the smart contact functionality of Splendor blockchain and grantees that there is always a limited supply of SPL in the market creating a scarcity for SPL. The max SPL supply is  its 21 million coins and block reward every 10 minutes  of 3.125. SPL coins are boing locked in the reserve pool waiting for miners to unlock them. The last Splendor block reward will end in the year 2123 making SPL the most sought after and valuable asset on the globe and SDR the day to day decentralized stable coin replacing the fiat in circulation. In addition, SDR can be staked without the need to move SDR to any wallet for period of 1, 3, 6, 9 and 12 months and annual rewards paid by the blockchain of 8%.   SDR owners do not have to move the coins and can have access to tvhem any time. At the end of the period the smart contact checks if the tokens were moved, or not and if not the reward is minted to the same wallet.
+              </div>
+
+              <div className={"mt-[50px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
+                  In simple terms, this decentralized stablecoin (SDR) provides a way to use the stability of the international monetary fund’s basket of 5 currencies with the world of cryptocurrency, and it uses SPL as collateral to ensure its value remains stable. This can be useful for businesses and individuals who want to engage in global trade or finance without the price volatility often associated with cryptocurrencies like Bitcoin.
               </div>
 
 

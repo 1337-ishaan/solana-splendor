@@ -4,6 +4,7 @@ import splitLine from "../../../assets/icons/dashboard/splitLine.svg";
 import Image from "next/image";
 import React, {useMemo} from "react";
 import homeIcon from "../../../assets/icons/dashboard/home.svg";
+import downloadIcon from "../../../assets/icons/dashboard/download.svg";
 import tokenomicsIcon from "../../../assets/icons/tokenomics/tokenomics.svg";
 import MenuButton from "../../buttons/menu/MenuButton/MenuButton";
 import {IMenuItem} from "./types";
@@ -25,7 +26,14 @@ const Menu = () => {
             name: "Tokenomics",
             icon: tokenomicsIcon,
             selected: false,
-            link: "/tokenomics",
+            link: "/dashboard/tokenomics",
+        },
+        {
+            id: 3,
+            name: "Download",
+            icon: downloadIcon,
+            selected: false,
+            link: "/dashboard/download",
         }
     ]
     const additionsButtons:IMenuItem[] = []
@@ -51,7 +59,7 @@ const Menu = () => {
                 </div>
                 <div className={"flex flex-col mt-[20px]"}>
                     {
-                        menuItems.slice(0, 2).map(item => <MenuButton {...item} key={item.id} />)
+                        menuItems.map(item => <MenuButton {...item} key={item.id} />)
                     }
                 </div>
 

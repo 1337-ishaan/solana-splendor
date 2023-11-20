@@ -28,7 +28,7 @@ const menuItems: MenuItem[] = [
   },
   {
     title: "TOKENS",
-    route: "/wiki",
+    route: "https://splendor-network.gitbook.io/splendor-protocol/splendor-basics/main-concepts/tokens",
   },
   {
     title: "COMMUNITY",
@@ -42,6 +42,10 @@ const menuItems: MenuItem[] = [
     title: "WHITEPAPER",
     route: "/#",
   },
+  {
+    title: "RUN A NODE",
+    route: "/#",
+  }
 ];
 
 export default function HeaderOne() {
@@ -50,7 +54,7 @@ export default function HeaderOne() {
   const hash = useMemo(()=>asPath.split('#')[1],[asPath]);
   const [isOpen, setIsOpen] = useState(false);
   const { isConnected } = useAccount();
-  const isMounted = useIsMounted()
+  const isMounted = useIsMounted();
 
   const stickNavbar = () => {
     if (window !== undefined) {
@@ -120,7 +124,7 @@ export default function HeaderOne() {
             );
           })}
         </div>
-        <div className={"absolute right-[100px] max-[800px]:hidden flex flex-row items-center justify-center"}>
+        <div className={"absolute right-[100px] max-[800px]:left-0 max-[800px]:right-auto flex flex-row items-center justify-center"}>
           {isMounted&&<div className={"mx-[10px]"}>
             <ConnectButton/>
           </div>}
@@ -128,7 +132,7 @@ export default function HeaderOne() {
             isConnected&&
               <Link href={"/dashboard"}>
                 <button
-                    className={"w-[150px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px]"}
+                    className={"w-[150px] max-[800px]:w-[100px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px]"}
                 >
                   Dashboard
                 </button>
