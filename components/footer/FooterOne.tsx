@@ -33,7 +33,7 @@ const FooterOne: NextPage = () => {
                   </div>
                   <div className="my-[20px] text-[#727885] max-[800px]:text-center">
                     <p>
-                      Notice: This is an independent info site about SPLENDOR smart contracts, run by enthusiasts and evangelists
+                    This website is dedicated to providing informative content about Splendor Blockchain. Nobody is in control of Splendor Blockchain.
                     </p>
                   </div>
                 </div>
