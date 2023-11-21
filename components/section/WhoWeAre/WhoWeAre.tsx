@@ -34,10 +34,7 @@ const WhoWeAre: NextPage = () => {
                 ANONYMOUS
               </div>
               <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-                SPLENDOR is a smart contract
-                system that enables
-                Zero-Knowledge Privacy for any
-                on-chain dApp.
+              Splendor incorporates default built-in zero-knowledge proofs, enhancing the privacy and security of transactions on its blockchain. This feature ensures that sensitive information remains confidential while still allowing for the validation and verification of transactions, aligning with the principles of privacy-centric blockchain design.
               </div>
             </div>
 
