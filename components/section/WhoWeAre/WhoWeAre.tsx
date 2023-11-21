@@ -46,7 +46,7 @@ const WhoWeAre: NextPage = () => {
                 FAST
               </div>
               <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-                EVM compatibility facilitates interoperability between different blockchain networks. This means assets and data can be transferred and shared seamlessly between blockchains              </div>
+              Splendor is  built on the Substrate framework and boasts exceptional speed in its blockchain transactions, with a block confirmed every second. This rapid confirmation rate positions Splendor as an efficient and swift blockchain solution, offering users a seamless and responsive experience for their transactions.              </div>
             </div>
 
             <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
