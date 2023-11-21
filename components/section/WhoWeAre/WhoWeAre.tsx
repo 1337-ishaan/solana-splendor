@@ -57,7 +57,7 @@ const WhoWeAre: NextPage = () => {
                 SCALABLE
               </div>
               <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-                Splendor Network’s peer-reviewed consensus protocol achieved up to 1,000 tx/s in a decentralized test setting with a potential to reach nearly 1,666 tx/s, processing 5,000 transactions per block.              </div>
+              Splendor achieves scalability through Substrate's modular design, enabling efficient state management, parallel processing, and support for various consensus mechanisms. This adaptable architecture, combined with features like cross-chain interoperability and decentralized governance, positions Splendor as a fast and scalable blockchain solution, capable of accommodating diverse use cases and growing demands.</div>
             </div>
 
             <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
