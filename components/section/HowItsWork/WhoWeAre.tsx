@@ -30,12 +30,15 @@ const HowItsWork: NextPage = () => {
                     </div>
                 </div>
                 <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[80%] h-[60px]"}>
-                    Get one of the following wallets
+                Choose a Splendor-Compatible Wallet:
                 </div>
                 <div className={"flex flex-row items-end"}>
                     <div className={"w-[90%] h-[1px] bg-[#073B4C] mb-[8px]"}></div>
                     <p className={"text-black ml-[10px] text-[20px] text-[#073B4C]"}>01</p>
                 </div>
+                <div className={"flex flex-col w-[90%] mt-[10px] text-left text-[#073B4C]"}>
+                Select a wallet that is compatible with Splendor. Splendor, being built on Substrate, supports wallets that are compatible with Substrate-based blockchains. Examples include Polkadot.js Wallet, or you can choose a wallet that supports Polkadot/Substrate.
+                  </div>
                 <div className={"flex flex-col w-[90%] mt-[10px]"}>
                     <Link href={"https://trustwallet.com/es/"}>
                         <div className={"flex flex-row justify-between"}>
@@ -55,6 +58,18 @@ const HowItsWork: NextPage = () => {
                             <Image width={20} height={20} src={walletconnect} alt={"Item"}/>
                         </div>
                     </Link>
+                    <Link href={"https://walletconnect.com/"}>
+                        <div className={"flex flex-row justify-between"}>
+                            <p className={"text-[#073B4C]"}>Coinbase</p>
+                            <Image width={20} height={20} src={walletconnect} alt={"Item"}/>
+                        </div>
+                    </Link>
+                    <Link href={"https://walletconnect.com/"}>
+                        <div className={"flex flex-row justify-between"}>
+                            <p className={"text-[#073B4C]"}>Rainbow</p>
+                            <Image width={20} height={20} src={walletconnect} alt={"Item"}/>
+                        </div>
+                    </Link>
                 </div>
             </div>
 
@@ -66,14 +81,14 @@ const HowItsWork: NextPage = () => {
                       </div>
                   </div>
                   <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[80%] h-[60px]"}>
-                      CONNECT
+                  Install and Set Up the Wallet:
                   </div>
                   <div className={"flex flex-row items-end"}>
                       <div className={"w-[90%] h-[1px] bg-[#073B4C] mb-[8px]"}></div>
                       <p className={"text-[#073B4C] ml-[10px] text-[20px]"}>02</p>
                   </div>
                   <div className={"flex flex-col w-[90%] mt-[10px] text-left text-[#073B4C]"}>
-                      Connect and manage your funds on the Splendor Network with our user-friendly wallet
+                  Install the chosen wallet on your preferred device (desktop, mobile, or browser extension). Follow the wallet's setup instructions to create an account and secure your wallet with a strong password or recovery phrase.
                   </div>
               </div>
 
@@ -85,16 +100,14 @@ const HowItsWork: NextPage = () => {
                       </div>
                   </div>
                   <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[80%] h-[60px]"}>
-                      TRANSACT
+                    Acquire SPL Tokens:
                   </div>
                   <div className={"flex flex-row items-end"}>
                       <div className={"w-[90%] h-[1px] bg-[#073B4C] mb-[8px]"}></div>
                       <p className={"text-black ml-[10px] text-[20px] text-[#073B4C]"}>03</p>
                   </div>
                   <div className={"flex flex-col w-[90%] mt-[10px] text-left text-[#073B4C]"}>
-                      Once shielded, tokens,
-                      balances, and transactions
-                      are encrypted.
+                  Obtain SPL tokens to use within the Splendor network. You can acquire SPL tokens through various means, such as purchasing them on supported exchanges, receiving them in transactions, or participating in token distributions or mining activities if applicable.
                   </div>
               </div>
 
@@ -106,15 +119,14 @@ const HowItsWork: NextPage = () => {
                       </div>
                   </div>
                   <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[80%] h-[60px]"}>
-                      USE
+                  Interact with the Splendor Network:
                   </div>
                   <div className={"flex flex-row items-end"}>
                       <div className={"w-[90%] h-[1px] bg-[#073B4C] mb-[8px]"}></div>
                       <p className={"text-[#073B4C] ml-[10px] text-[20px]"}>04</p>
                   </div>
                   <div className={"flex flex-col w-[90%] mt-[10px] text-left text-[#073B4C]"}>
-                      Transfer assets  and use DeFi
-                      anonymously.
+                  Once your wallet is set up and funded with SPL tokens, you can start interacting with the Splendor network. Send and receive SPL tokens, explore decentralized applications (dApps) built on Splendor, and participate in any governance or staking activities that may be available.
                   </div>
               </div>
           </div>
