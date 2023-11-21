@@ -68,7 +68,7 @@ const WhoWeAre: NextPage = () => {
                 DECENTRALIZED
               </div>
               <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-                SPLENDOR is a system of smart contracts supported by fully-decentralized SPLENDOR DAO governance.
+              Splendor's decentralization is upheld through its implementation of proof-of-work (PoW) consensus, facilitated by the Substrate framework. By employing PoW, Splendor ensures a distributed and trustless network where participants, or miners, compete to validate transactions and add blocks to the blockchain without central authority. This decentralized approach enhances security, censorship resistance, and network resilience, aligning with the foundational principles of blockchain technology.
               </div>
             </div>
           </div>
