@@ -26,7 +26,7 @@ const DualToken: NextPage = () => {
     const secondRow = [
         {
             img: lastBlockToBeMinedSvg,
-            text: "Last Block to be Mined in 2123"
+            text: "Last Block to be Mined in the year 2123"
         },
         {
             img: noHalvingSvg,
