@@ -39,7 +39,7 @@ const HowItsWork: NextPage = () => {
                     <p className={"text-black ml-[10px] text-[20px] text-[#073B4C]"}>01</p>
                 </div>
                 <div className={"flex flex-col w-[90%] mt-[10px] text-left text-[#073B4C]"}>
-                Select a wallet that is compatible with Splendor. Splendor, being built on Substrate, supports wallets that are compatible with Substrate-based blockchains. Examples include Polkadot.js Wallet, or you can choose a wallet that supports Polkadot/Substrate.
+                
                   </div>
                 <div className={"flex flex-col w-[90%] mt-[10px]"}>
                     <Link href={"https://trustwallet.com/es/"}>
