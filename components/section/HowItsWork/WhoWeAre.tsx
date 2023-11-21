@@ -9,6 +9,8 @@ import Link from 'next/link';
 import trustWallet from "../../../assets/icons/home/images/getOneOfTheFollowingWallets/trust_wallet.svg";
 import metamask from "../../../assets/icons/home/images/getOneOfTheFollowingWallets/metamask.svg";
 import walletconnect from "../../../assets/icons/home/images/getOneOfTheFollowingWallets/walletconnect.svg";
+import coinbase from "../../../assets/icons/home/icon/coinbase.png";
+import rainbow from "../../../assets/icons/home/icon/rainbow.png";
 
 const HowItsWork: NextPage = () => {
   return (
@@ -61,13 +63,13 @@ const HowItsWork: NextPage = () => {
                     <Link href={"https://walletconnect.com/"}>
                         <div className={"flex flex-row justify-between"}>
                             <p className={"text-[#073B4C]"}>Coinbase</p>
-                            <Image width={20} height={20} src={walletconnect} alt={"Item"}/>
+                            <Image width={20} height={20} src={coinbase} alt={"Item"}/>
                         </div>
                     </Link>
                     <Link href={"https://walletconnect.com/"}>
                         <div className={"flex flex-row justify-between"}>
                             <p className={"text-[#073B4C]"}>Rainbow</p>
-                            <Image width={20} height={20} src={walletconnect} alt={"Item"}/>
+                            <Image width={20} height={20} src={rainbow} alt={"Item"}/>
                         </div>
                     </Link>
                 </div>
