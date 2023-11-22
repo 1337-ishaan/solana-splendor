@@ -24,28 +24,33 @@ const WikiMenu: NextPage<IWikiMenu> = ({showMobileMenu}) => {
                     },
                     {
                         id: 2,
-                        name: "Splendor Privacy System",
-                        link: "/wiki/splendorPrivacySystem",
+                        name: "Unveiling SDR",
+                        link: "/wiki/unveiling",
                     },
                     {
                         id: 3,
-                        name: "Wallets and Keys",
-                        link: "/wiki/walletsAndKeys",
-                    },
-                ]
-            },
-            {
-                label: "RAIL Token & Governance",
-                elements: [
-                    {
-                        id: 1,
-                        name: "SPL Token Overview",
-                        link: "/wiki/splTokenOverview",
+                        name: "Elevating Crypto Transactions",
+                        link: "/wiki/transactions",
                     },
                     {
-                        id: 2,
-                        name: "Active Governor Rewards",
-                        link: "/wiki/activeGovernorRewards",
+                        id: 4,
+                        name: "Enhancing Security in the Splendor Blockchain Ecosystem",
+                        link: "/wiki/security"
+                    },
+                    {
+                        id: 5,
+                        name: "The Significance of Repelent for Splendor Blockchain",
+                        link: "/wiki/significance"
+                    },
+                    {
+                        id: 5,
+                        name: "SDR Interest Payment Mechanism",
+                        link: "/wiki/sdr"
+                    },
+                    {
+                        id: 6,
+                        name: "QA",
+                        link: "/wiki/qa"
                     }
                 ]
             },
