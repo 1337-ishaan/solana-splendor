@@ -4,7 +4,7 @@ import {ILayoutWiki} from "./types";
 import Head from "next/head";
 import HeaderWiki from "../../header/HeaderWiki/HeaderOne";
 
-const LayoutWiki: NextPage<ILayoutWiki> = ({children, title, description,hideHeader}) => {
+const LayoutWiki: NextPage<ILayoutWiki> = ({children, title, description,hideHeader,openMobileMenu,closeMobileMenu}) => {
   return (
     <>
         <Head>
@@ -12,7 +12,7 @@ const LayoutWiki: NextPage<ILayoutWiki> = ({children, title, description,hideHea
             <meta name="description" content={description} />
         </Head>
         <div className={"h-full"}>
-            {!hideHeader&&<HeaderWiki/>}
+            {!hideHeader&&<HeaderWiki openMobileMenu={openMobileMenu} closeMobileMenu={closeMobileMenu}/>}
 
             {children}
         </div>

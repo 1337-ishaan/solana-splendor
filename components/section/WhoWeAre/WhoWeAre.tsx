@@ -33,8 +33,8 @@ const WhoWeAre: NextPage = () => {
               <div className={"h-[50px] font-bold text-[22px] text-black max-[800px]:h-auto max-[800px]:text-center"}>
                 ANONYMOUS
               </div>
-              <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-              Splendor incorporates default built-in zero-knowledge proofs, enhancing the privacy and security of transactions on its blockchain. This feature ensures that sensitive information remains confidential while still allowing for the validation and verification of transactions, aligning with the principles of privacy-centric blockchain design.
+              <div className={"pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
+                Splendor is built on the Substrate framework and boasts exceptional speed in its blockchain transactions, with a block confirmed every second. This rapid confirmation rate positions Splendor as an efficient and swift blockchain solution, offering users a seamless and responsive experience for their transactions.
               </div>
             </div>
 
@@ -45,8 +45,9 @@ const WhoWeAre: NextPage = () => {
               <div className={"h-[50px] font-bold text-[22px] text-black max-[800px]:h-auto max-[800px]:text-center"}>
                 FAST
               </div>
-              <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-              Splendor is  built on the Substrate framework and boasts exceptional speed in its blockchain transactions, with a block confirmed every second. This rapid confirmation rate positions Splendor as an efficient and swift blockchain solution, offering users a seamless and responsive experience for their transactions.              </div>
+              <div className={"pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
+                Splendor is built on the Substrate framework and boasts exceptional speed in its blockchain transactions, with a block confirmed every second. This rapid confirmation rate positions Splendor as an efficient and swift blockchain solution, offering users a seamless and responsive experience for their transactions.
+              </div>
             </div>
 
             <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
@@ -56,8 +57,9 @@ const WhoWeAre: NextPage = () => {
               <div className={"h-[50px] font-bold text-[22px] text-black max-[800px]:h-auto max-[800px]:text-center"}>
                 SCALABLE
               </div>
-              <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-              Splendor achieves scalability through Substrate's modular design, enabling efficient state management, parallel processing, and support for various consensus mechanisms. This adaptable architecture, combined with features like cross-chain interoperability and decentralized governance, positions Splendor as a fast and scalable blockchain solution, capable of accommodating diverse use cases and growing demands.</div>
+              <div className={"pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
+                Splendor achieves scalability through Substrate's modular design, enabling efficient state management, parallel processing, and support for various consensus mechanisms. This adaptable architecture, combined with features like cross-chain interoperability and decentralized governance, positions Splendor as a fast and scalable blockchain solution, capable of accommodating diverse use cases and growing demands.
+              </div>
             </div>
 
             <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
@@ -67,8 +69,8 @@ const WhoWeAre: NextPage = () => {
               <div className={"h-[50px] font-bold text-[22px] text-black max-[800px]:h-auto max-[800px]:text-center"}>
                 DECENTRALIZED
               </div>
-              <div className={"h-[160px] pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-              Splendor's decentralization is upheld through its implementation of proof-of-work (PoW) consensus, facilitated by the Substrate framework. By employing PoW, Splendor ensures a distributed and trustless network where participants, or miners, compete to validate transactions and add blocks to the blockchain without central authority. This decentralized approach enhances security, censorship resistance, and network resilience, aligning with the foundational principles of blockchain technology.
+              <div className={"pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
+                Splendor's decentralization is upheld through its implementation of proof-of-work (PoW) consensus, facilitated by the Substrate framework. By employing PoW, Splendor ensures a distributed and trustless network where participants, or miners, compete to validate transactions and add blocks to the blockchain without central authority. This decentralized approach enhances security, censorship resistance, and network resilience, aligning with the foundational principles of blockchain technology.
               </div>
             </div>
           </div>

@@ -2,17 +2,24 @@ import {NextPage} from "next";
 import LayoutWiki from "../../components/layouts/LayoutWiki";
 import WikiMenu from "../../components/menu/wiki/WikiMenu";
 import OnThisPage from "../../components/widgets/onThisPage";
+import {useState} from "react";
 
 const HomeWiki: NextPage = () => {
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
+    const openMobileMenu = ()=>setShowMobileMenu(true);
+    const closeMobileMenu = ()=>setShowMobileMenu(false);
+
     return (
         <LayoutWiki
             title={"Splendor Wiki"}
             description={"Splendor Wiki"}
+            openMobileMenu={openMobileMenu}
+            closeMobileMenu={closeMobileMenu}
         >
             <div className={"h-full flex flex-row"}>
-                <WikiMenu />
-                <div className={"min-[801px]:w-full ml-[280px] max-[1100px]:ml-[200px] h-full " +
-                    "mt-[70px] max-[800px]:ml-0"}>
+                <WikiMenu showMobileMenu={showMobileMenu} />
+                <div className={"min-[801px]:w-full ml-[330px] h-full " +
+                    "mt-[70px] max-[1200px]:ml-[20%] max-[800px]:ml-0"}>
                     <OnThisPage
                         menuElements={[
                             {
@@ -29,7 +36,7 @@ const HomeWiki: NextPage = () => {
                             }
                         ]}
                     />
-                    <div className={"w-[750px] py-[50px] mx-auto max-[800px]:w-full max-[800px]:px-[10px]"}>
+                    <div className={"w-[70%] py-[50px] mx-auto max-[800px]:w-full max-[800px]:px-[10px]"}>
                         <p className={"text-[40px] text-[#3B454E] font-bold"}>Overview</p>
                         <div id={"whatIsSplendor"} className={"pt-[65px]"}>
                             <p className={"text-[24px] text-[#3B454E] font-bold"}>What is Splendor?</p>
