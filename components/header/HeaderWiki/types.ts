@@ -1,4 +1,4 @@
-export interface IHeaderWiki{s
+export interface IHeaderWiki{
     openMobileMenu(): void;
     closeMobileMenu(): void;
 }
