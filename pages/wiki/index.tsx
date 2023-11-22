@@ -14,8 +14,7 @@ const HomeWiki: NextPage = () => {
             title={"Splendor Wiki"}
             description={"Splendor Wiki"}
             openMobileMenu={openMobileMenu}
-            closeMobileMenu={closeMobileMenu}
-        >
+            closeMobileMenu={closeMobileMenu} s={undefined}>
             <div className={"h-full flex flex-row"}>
                 <WikiMenu showMobileMenu={showMobileMenu} />
                 <div className={"min-[801px]:w-full ml-[330px] h-full " +
