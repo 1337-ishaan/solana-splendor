@@ -75,10 +75,10 @@ const CircleChartWidget = () => {
             </div>
 
             <div className={"max-[800px]:flex max-[800px]:flex-col max-[800px]:my-[10px] max-[1000px]:items-center max-[1000px]:w-full"}>
-                <p className={"text-[#B14FFF] pb-[3px] max-[1000px]:text-center"}>•Circulating Delegated/Staked (0.00% of 5.39m)</p>
-                <p className={"text-[#F19E38] pb-[3px] max-[1000px]:text-center"}>•Circulating Free (100% of 5.39m.)</p>
-                <p className={"text-[#909090] pb-[3px] max-[1000px]:text-center"}>•Unissued (74.33% of 21m)</p>
-                <p className={"text-[#B14FFF] pb-[3px] max-[1000px]:text-center"}>•Total Delegates: {totalDelegates}</p>
+                <p className={"text-[#B14FFF] pb-[10px] max-[1000px]:text-center text-[12px]"}>•Circulating Delegated/Staked (0.00% of 5.39m)</p>
+                <p className={"text-[#F19E38] pb-[10px] max-[1000px]:text-center text-[12px]"}>•Circulating Free (100% of 5.39m.)</p>
+                <p className={"text-[#909090] pb-[10px] max-[1000px]:text-center text-[12px]"}>•Unissued (74.33% of 21m)</p>
+                <p className={"text-[#B14FFF] pb-[10px] max-[1000px]:text-center text-[12px]"}>•Total Delegates: {totalDelegates}</p>
                {/*  <p className={"text-[#B14FFF] pb-[3px] max-[1000px]:text-center"}>•Total Subnets: {totalSubnets}</p> Línea para mostrar el total de subnets */}
             </div>
         </div>

@@ -138,7 +138,7 @@ export default function HeaderOne() {
               <ConnectButton/>
             </div>}
             {
-                isConnected&&
+                isMounted&&isConnected&&
                 <button
                     onClick={openRegisterModal}
                     className={"w-[150px] max-[800px]:w-[100px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px]"}

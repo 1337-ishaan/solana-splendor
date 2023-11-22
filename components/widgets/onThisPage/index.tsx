@@ -17,16 +17,16 @@ const OnThisPage:NextPage<IOnThisPage> = ({menuElements}) => {
                 </p>
             </div>
 
-            <div className={"absolute right-0 pl-[10px] pt-[20px] pr-[20px]"}>
+            {menuElements.length&&<div className={"absolute right-0 pl-[10px] pt-[20px] pr-[20px]"}>
                 <p className={"text-[#8899A8]"}>On this page</p>
                 <div className={"flex flex-col"}>
                     {
-                        menuElements.map((element,key)=>
-                            <OnThisPageButton {...element} key={key} />
+                        menuElements.map((element, key) =>
+                            <OnThisPageButton {...element} key={key}/>
                         )
                     }
                 </div>
-            </div>
+            </div>}
         </div>
     )
 }

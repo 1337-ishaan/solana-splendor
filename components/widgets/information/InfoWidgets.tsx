@@ -2,8 +2,10 @@ import {TWidgetInfo} from "./types";
 import {ApiAdminPanel} from "../../../api/bittensor";
 import wallet from "../../../assets/icons/dashboard/wallet.svg";
 import planet from "../../../assets/icons/dashboard/planet.svg";
-import document from "../../../assets/icons/dashboard/document.svg";
+import storage from "../../../assets/icons/dashboard/storage.svg";
 import sales from "../../../assets/icons/dashboard/sales.svg";
+import btc from "../../../assets/icons/dashboard/btc.png";
+import dolar from "../../../assets/icons/dashboard/dolar.png";
 import InfoWidget from "../info/InfoWidget";
 import {useEffect, useState} from "react";
 
@@ -44,7 +46,7 @@ const InfoWidgets = () => {
             title: "Earnings in 24 Hours",
             value: "$204",
             rate: 5,
-            icon: planet,
+            icon: dolar,
             link: '/',
         },
         {
@@ -52,7 +54,7 @@ const InfoWidgets = () => {
             title: "Bitcoin Price in 24 Hours",
             value: `$${btcPrice}`,
             rate: -14,
-            icon: document,
+            icon: btc,
             link: '/',
         },
         {
@@ -60,7 +62,7 @@ const InfoWidgets = () => {
             title: "Storage used from the users",
             value: "2.3T",
             rate: 18,
-            icon: sales,
+            icon: storage,
             link: '/',
         }
     ]

@@ -25,19 +25,7 @@ const WikiMenu: NextPage<IWikiMenu> = ({showMobileMenu}) => {
                     {
                         id: 2,
                         name: "Splendor Privacy System",
-                        link: "",
-                        elements: [
-                            {
-                                id: 1,
-                                name: "SubElement1",
-                                link: "/wiki",
-                            },
-                            {
-                                id: 2,
-                                name: "SubElement2",
-                                link: "/wiki/subElement2",
-                            },
-                        ]
+                        link: "/wiki/splendorPrivacySystem",
                     },
                     {
                         id: 3,
