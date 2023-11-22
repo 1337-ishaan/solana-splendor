@@ -19,7 +19,7 @@ const DualToken: NextPage = () => {
         },
         {
             img: blockRewardSplSvg,
-            text: "3.125 rewards every 10 minutes"
+            text: "3.125 SPL every 10 minutes"
         }
     ]
 
