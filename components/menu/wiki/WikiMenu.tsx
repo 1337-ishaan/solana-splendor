@@ -19,17 +19,17 @@ const WikiMenu: NextPage<IWikiMenu> = ({showMobileMenu}) => {
                 elements: [
                     {
                         id: 1,
-                        name: "Overview",
+                        name: "Q&A",
                         link: "/wiki",
                     },
                     {
                         id: 2,
-                        name: "Unveiling SDR",
+                        name: "What is SDR?",
                         link: "/wiki/unveiling",
                     },
                     {
                         id: 3,
-                        name: "Enhancing Security in the Splendor Blockchain Ecosystem",
+                        name: "Security",
                         link: "/wiki/security",
                     },
                     {
