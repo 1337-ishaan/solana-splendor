@@ -38,7 +38,7 @@ const menuItems: MenuItem[] = [
     download: true,
   },
   {
-    title: "FUTURE PROJECTS",
+    title: "PROJECTS UPDATE",
     route: "",
   },
 ];
