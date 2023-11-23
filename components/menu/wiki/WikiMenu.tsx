@@ -29,13 +29,13 @@ const WikiMenu: NextPage<IWikiMenu> = ({showMobileMenu}) => {
                     },
                     {
                         id: 3,
-                        name: "Elevating Crypto Transactions",
+                        name: "Enhancing Security in the Splendor Blockchain Ecosystem",
                         link: "/wiki/transactions",
                     },
                     {
                         id: 4,
-                        name: "Enhancing Security in the Splendor Blockchain Ecosystem",
-                        link: "/wiki/security"
+                        name: "Elevating Crypto Transactions",
+                        link: "/wiki/security",
                     },
                     {
                         id: 5,
