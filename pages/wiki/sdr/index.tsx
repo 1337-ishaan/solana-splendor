@@ -37,86 +37,77 @@ const Unveiling: NextPage = () => {
                     />
                     <div className={"w-[70%] py-[50px] mx-auto max-[800px]:w-full max-[800px]:px-[10px]"}>
                         <div id={"whatIsSplendor"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Unveiling SDR: A Decentralized Stable Token Revolution Abstract</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>SDR Interest Payment Mechanism: A Seamless Interaction for Daily Gains</p>
                             <p className={"mt-[20px] text-[#3B454E] "}>
-                            Welcome to the forefront of decentralized finance, where we introduce SDR—a groundbreaking decentralized stable token that combines cryptographic innovation with financial stability. In this comprehensive whitepaper, we delve into the conceptual foundations, technical intricacies, and transformative potential that SDR brings to the decentralized financial landscape.
+                            Step into the dynamic realm of SDR, where financial innovation meets user-centric simplicity. In this document, we explore the distinctive feature of SDR's interest payment mechanism. Users can effortlessly engage with the interest-paying smart contract, registering their commitment with an initial amount and timeframe. The result? An attractive 8% annual interest rate paid daily, directly into their wallet, provided there is no movement of SDR tokens before the committed period concludes.
                             </p>
                         </div>
 
                         <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Introduction</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>User Interaction with Smart Contract</p>
 
                             <p className={"mt-[20px] text-[#3B454E]"}>
-                            The Rise of SDR in Decentralized Finance
-                            In the dynamic world of decentralized finance, SDR emerges as a beacon of change. It goes beyond being just another token, incorporating meticulous design principles and cryptographic brilliance to redefine stability in the decentralized space.
-                            </p>
+                            Rather than locking SDR tokens, users interact seamlessly with the interest-paying smart contract. They register their commitment by specifying the initial amount of SDR and the desired commitment timeframe. This process is straightforward, requiring only a few interactions with the smart contract.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Understanding the SDR Concept</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Daily Interest Rate Calculation</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>
-                            Drawing Inspiration from IMF's Special Drawing Rights
-                            SDR, or Special Drawing Rights, is at the heart of SDR's design. This decentralized stable token is intricately backed by Splendor (SPL) and draws inspiration from the International Monetary Fund's (IMF) concept of freely usable currencies.
-                            </p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>The interest-paying smart contract calculates and accrues the daily interest rate, which stands at an impressive 8% annually. This dynamic daily calculation ensures users witness incremental growth in their SDR holdings.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Liberating Stability from Singular Fiat Dependencies</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>No Movement, Daily Gain</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>
-                            Unlike stable tokens tied to a single fiat currency, SDR embraces decentralization and mirrors the IMF's SDR pricing model. This liberation from dependency on any single national currency sets SDR apart, positioning it as a stable alternative.
-                            </p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>The magic happens daily. Before the interest rate payment, the smart contract checks if there has been any movement of the user's SDR tokens. If there is no movement detected, the calculated daily interest is promptly paid directly into the user's wallet.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Ethos of Decentralization and Anonymity</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Initial Amount Consideration</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>
-                            SDR's departure from centralized reserves is a testament to its ethos. Fully backed by SPL held in a permissionless reserve pool, SDR ensures cheaper transactions, faster settlements, and complete anonymity within a truly decentralized financial ecosystem.
-                            </p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>It's important to note that the 8% interest rate is applied exclusively to the initial amount communicated to the smart contract during the registration process. This initial amount serves as the basis for daily interest rate calculations.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Stewards of SDR: The Miners</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Commitment Rewarded, Movement Penalized</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>Within the Splendor Blockchain, miners play a crucial role as stewards of SDR, earning rewards based on their computational contributions. Those seeking to acquire SDR without mining can participate by locking up SPL as collateral through a smart contract mechanism.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>Commitment is rewarded. If a user moves any SDR tokens before the committed period concludes, no interest rate payment is made. This mechanism encourages users to honor their commitment, ensuring that only those who stay committed receive the full benefits.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Ensuring Global Stability through Diversity</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Effortless Participation</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>Pegged to the IMF's SDR and backed by SPL, SDR offers users a diversified portfolio representing a basket of major international currencies. This shields users from the volatility of single currencies, providing a stable alternative in the ever-changing financial landscape.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>Engaging with the interest payment mechanism is effortless. Users can register their commitment with a few simple interactions with the smart contract, making it accessible to a wide range of participants.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Mitigating Economic Uncertainties</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Daily, Predictable Gains</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>SDR serves as a robust shield against economic uncertainties, offering businesses and individuals engaged in international transactions a reliable hedge against currency risks. This stability enhances confidence and facilitates smoother financial operations.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>The daily interest rate payment provides users with a predictable and consistent source of gains. This passive income stream adds up over time, contributing to a steady increase in the value of their SDR holdings.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Leveraging the Splendor Blockchain</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Encouraging Long-Term Engagement</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>SDR harnesses the capabilities of the Splendor blockchain to ensure transparency and decentralization. The reserve pool smart contract, with autonomous adjustments, creates a trustless and secure financial system that underpins the SDR ecosystem.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>The commitment-centric mechanism encourages users to stay engaged for the committed period, fostering a culture of long-term participation within the SDR ecosystem.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Streamlining Cross-Border Transactions</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>How to Participate</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>SDR transcends geographical borders, enabling seamless cross-border transactions without the need for currency conversions. This feature positions SDR as a catalyst for international trade and financial efficiency.</p>
-                        </div>
+                            <p className={"mt-[20px] text-[#3B454E]"}>Participating in the SDR interest payment mechanism is user-friendly:
 
-                        <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Beyond a Financial Instrument</p>
+Interact with Smart Contract: Register your commitment by interacting with the interest-paying smart contract. Specify the initial amount of SDR and the desired commitment timeframe.
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>Unraveling the layers of SDR reveals more than a financial instrument—it represents a paradigm shift. SDR's vision of financial freedom positions it as a true alternative to Central Bank Digital Currencies, empowering individuals and embodying decentralized principles.</p>
+Daily Interest Payment: Witness daily growth as the smart contract calculates the 8% annual interest rate and pays it directly into your wallet. No movement of SDR tokens ensures uninterrupted daily gains.
+
+Commit to Receive Full Benefits: To maximize your earnings, refrain from moving any SDR tokens before the committed period concludes. Full benefits are exclusively reserved for those who honor their commitment.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
                             <p className={"text-[24px] text-[#3B454E] font-bold"}>Conclusion</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>In conclusion, SDR stands as a testament to stability, reliability, and inclusivity. As the financial landscape evolves, SDR's decentralized future offers a compelling vision. Embracing the decentralization revolution, SDR emerges as a guiding force, illuminating the path towards a more inclusive and equitable financial ecosystem.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>The SDR interest payment mechanism redefines user engagement, making it simple, seamless, and rewarding. By leveraging the power of daily gains and commitment-driven rewards, SDR ensures that participants experience the full potential of an 8% annual interest rate in a user-centric and efficient manner. Embrace the daily gains with SDR, where financial innovation meets ease of use.</p>
                         </div>
                     </div>
                 </div>
