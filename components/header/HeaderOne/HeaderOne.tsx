@@ -33,22 +33,10 @@ const menuItems: MenuItem[] = [
     route: "https://splendor-network.gitbook.io/splendor-protocol/splendor-basics/main-concepts/tokens",
   },
   {
-    title: "COMMUNITY",
-    route: "/#",
-  },
-  {
-    title: "PROJECT UPDATES",
-    route: "/#",
-  },
-  {
     title: "WHITEPAPER",
-    route: "https://drive.google.com/file/d/1pmYwaPI1R1SipDi51KMwNtryRbBnfuQT/view?usp=drive_link",
+    route: "https://drive.google.com/file/d/1TqmvDRKdseMKVBTKR5XrxTJyYPPUK2y7/view?usp=sharing",
     download: true,
   },
-  {
-    title: "RUN A NODE",
-    route: "/#",
-  }
 ];
 
 export default function HeaderOne() {
