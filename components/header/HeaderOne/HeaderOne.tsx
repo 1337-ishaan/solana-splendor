@@ -30,12 +30,16 @@ const menuItems: MenuItem[] = [
   },
   {
     title: "TOKENS",
-    route: "https://splendor-network.gitbook.io/splendor-protocol/splendor-basics/main-concepts/tokens",
+    route: "",
   },
   {
     title: "WHITEPAPER",
     route: "https://drive.google.com/file/d/1TqmvDRKdseMKVBTKR5XrxTJyYPPUK2y7/view?usp=sharing",
     download: true,
+  },
+  {
+    title: "Future projects",
+    route: "",
   },
 ];
 
