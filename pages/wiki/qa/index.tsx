@@ -135,7 +135,7 @@ const Unveiling: NextPage = () => {
                         <div id={"developerGuide"} className={"pt-[65px]"}>
                             <p className={"text-[24px] text-[#3B454E] font-bold"}>Is SPL divisible, and if so, to what extent?</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>Yes, SPL is divisible, with each unit being as small as one Satoshi, allowing for flexibility in transactions and usability.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>Yes, SPL is divisible, with each unit being as small as one Toshi, allowing for flexibility in transactions and usability.</p>
                         </div>
 
                         <div id={"whatIsSplendor"} className={"pt-[65px]"}>
