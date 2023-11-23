@@ -37,86 +37,161 @@ const Unveiling: NextPage = () => {
                     />
                     <div className={"w-[70%] py-[50px] mx-auto max-[800px]:w-full max-[800px]:px-[10px]"}>
                         <div id={"whatIsSplendor"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Unveiling SDR: A Decentralized Stable Token Revolution Abstract</p>
-                            <p className={"mt-[20px] text-[#3B454E] "}>
-                            Welcome to the forefront of decentralized finance, where we introduce SDR—a groundbreaking decentralized stable token that combines cryptographic innovation with financial stability. In this comprehensive whitepaper, we delve into the conceptual foundations, technical intricacies, and transformative potential that SDR brings to the decentralized financial landscape.
-                            </p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Splendor Blockchain</p>
                         </div>
 
                         <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Introduction</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>What is Splendor Blockchain?</p>
 
                             <p className={"mt-[20px] text-[#3B454E]"}>
-                            The Rise of SDR in Decentralized Finance
-                            In the dynamic world of decentralized finance, SDR emerges as a beacon of change. It goes beyond being just another token, incorporating meticulous design principles and cryptographic brilliance to redefine stability in the decentralized space.
+                            Splendor Blockchain is a decentralized platform built on the Substrate framework, offering a secure, scalable environment for decentralized applications and financial transactions.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>What programming languages are used in Splendor Blockchain?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            Splendor Blockchain utilizes Solidity and Rust as its primary programming languages for smart contract development.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>How does Splendor Blockchain ensure privacy in transactions?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            Splendor Blockchain incorporates default zero-knowledge proofs in its SRC26 smart contract, ensuring enhanced privacy for all transactions.
                             </p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Understanding the SDR Concept</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>What makes Splendor Blockchain transactions faster and more cost-effective?</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>
-                            Drawing Inspiration from IMF's Special Drawing Rights
-                            SDR, or Special Drawing Rights, is at the heart of SDR's design. This decentralized stable token is intricately backed by Splendor (SPL) and draws inspiration from the International Monetary Fund's (IMF) concept of freely usable currencies.
-                            </p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>Splendor Blockchain boasts faster and more cost-effective transactions due to its innovative architecture and the use of Solidity and Rust programming languages.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Liberating Stability from Singular Fiat Dependencies</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>What is the smallest unit of Splendor and how divisible is it?</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>
-                            Unlike stable tokens tied to a single fiat currency, SDR embraces decentralization and mirrors the IMF's SDR pricing model. This liberation from dependency on any single national currency sets SDR apart, positioning it as a stable alternative.
-                            </p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>The smallest unit of Splendor is called a "toshi," and it is divisible. This divisibility enhances flexibility in transactions and usability.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Ethos of Decentralization and Anonymity</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>How does Splendor Blockchain differ from Bitcoin in terms of scarcity?</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>
-                            SDR's departure from centralized reserves is a testament to its ethos. Fully backed by SPL held in a permissionless reserve pool, SDR ensures cheaper transactions, faster settlements, and complete anonymity within a truly decentralized financial ecosystem.
-                            </p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>Splendor is more valuable than Bitcoin due to its capped total supply of 21 million coins and a unique reward system. The last Splendor coin will be mined in the year 2123, emphasizing its scarcity and long-term value.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Stewards of SDR: The Miners</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>What is the reward time for miners on Splendor Blockchain?</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>Within the Splendor Blockchain, miners play a crucial role as stewards of SDR, earning rewards based on their computational contributions. Those seeking to acquire SDR without mining can participate by locking up SPL as collateral through a smart contract mechanism.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>Miners on Splendor Blockchain receive rewards every 10 minutes with 1-second block intervals.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Ensuring Global Stability through Diversity</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Does Splendor Blockchain implement a halving mechanism?</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>Pegged to the IMF's SDR and backed by SPL, SDR offers users a diversified portfolio representing a basket of major international currencies. This shields users from the volatility of single currencies, providing a stable alternative in the ever-changing financial landscape.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>No, Splendor Blockchain does not implement a halving mechanism. The reward of 3.125 SPL remains consistent over time.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Mitigating Economic Uncertainties</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>What happens to the mining rewards on Splendor Blockchain?</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>SDR serves as a robust shield against economic uncertainties, offering businesses and individuals engaged in international transactions a reliable hedge against currency risks. This stability enhances confidence and facilitates smoother financial operations.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>The mining rewards of 3.125 SPL are locked in the Splendor Blockchain reserve pool. SDR corresponding to miners' computational power and storage is minted.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Leveraging the Splendor Blockchain</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Why is Splendor considered a scarce and valuable asset?</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>SDR harnesses the capabilities of the Splendor blockchain to ensure transparency and decentralization. The reserve pool smart contract, with autonomous adjustments, creates a trustless and secure financial system that underpins the SDR ecosystem.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>Splendor is considered a scarce and valuable asset due to its capped total supply of 21 million coins, no halving mechanism, and a unique reward system that emphasizes consistent incentives and scarcity.</p>
+                        </div>
+
+                        <div id={"whatIsSplendor"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Splendor Coin (SPL)</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Streamlining Cross-Border Transactions</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>What is SPL (Splendor Coin)?</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>SDR transcends geographical borders, enabling seamless cross-border transactions without the need for currency conversions. This feature positions SDR as a catalyst for international trade and financial efficiency.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>SPL is the native utility token of Splendor Blockchain, used for transaction fees, governance, and as collateral for acquiring SDR on Splendor Blockchain.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Beyond a Financial Instrument</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>What is the significance of the 21 million total supply of SPL?</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>Unraveling the layers of SDR reveals more than a financial instrument—it represents a paradigm shift. SDR's vision of financial freedom positions it as a true alternative to Central Bank Digital Currencies, empowering individuals and embodying decentralized principles.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>The 21 million total supply of SPL emphasizes scarcity, aligning with the principles of valuable digital assets like Bitcoin.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Conclusion</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>How does the mining reward structure contribute to the value of SPL?</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>In conclusion, SDR stands as a testament to stability, reliability, and inclusivity. As the financial landscape evolves, SDR's decentralized future offers a compelling vision. Embracing the decentralization revolution, SDR emerges as a guiding force, illuminating the path towards a more inclusive and equitable financial ecosystem.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>The mining reward structure, with 3.125 SPL every 10 minutes, reinforces the scarcity of SPL, contributing to its value as a digital asset.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Can SPL be traded on external cryptocurrency exchanges?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>Yes, SPL can be traded on various external cryptocurrency exchanges, providing liquidity and accessibility to a broader audience.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Is SPL divisible, and if so, to what extent?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>Yes, SPL is divisible, with each unit being as small as one Satoshi, allowing for flexibility in transactions and usability.</p>
+                        </div>
+
+                        <div id={"whatIsSplendor"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>SDR (Splendor Decentralized Stable Token)</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>What is the pegging mechanism of SDR to the IMF's Special Drawing Rights (SDR)?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>SDR is pegged to the IMF's SDR, representing a diversified portfolio of major international currencies.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>How is SDR created on Splendor Blockchain?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>SDR is created by minting corresponding to miners' computational power and storage, utilizing the mining rewards locked in the Splendor Blockchain reserve pool.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Can SDR be used for international transactions?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>Yes, SDR serves as a stable and reliable alternative for international transactions, providing a hedge against currency risks.</p>
+                        </div>
+
+                        <div id={"whatIsSplendor"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>SDR Interest Rate:</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>How does the SDR interest rate program work on Splendor Blockchain?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>Users participate by interacting with the interest-paying smart contract, registering their commitment with an initial amount and timeframe. The 8% annual interest rate, paid daily, is applied to the initial amount.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>What happens if a user moves SDR tokens before the committed period concludes?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>If a user moves SDR tokens before the committed period concludes, the interest rate payments cease. The mechanism encourages users to honor their commitment for uninterrupted interest payments.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Is the 8% interest rate applied to the entire SDR balance or the initially committed amount?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>The 8% interest rate is applied exclusively to the initially committed amount communicated to the smart contract during the registration process.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Can users choose different lockup periods for the SDR interest rate program?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>Yes, users can choose lockup periods ranging from 1 to 12 months based on their investment strategy and financial goals.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>How does the SDR interest rate program contribute to the overall stability of the Splendor ecosystem?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>The SDR interest rate program incentivizes users to commit to longer lockup periods, promoting stability in the ecosystem by reducing token volatility and enhancing long-term commitment.</p>
                         </div>
                     </div>
                 </div>
