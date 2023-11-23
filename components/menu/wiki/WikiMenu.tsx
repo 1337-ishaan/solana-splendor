@@ -20,7 +20,7 @@ const WikiMenu: NextPage<IWikiMenu> = ({showMobileMenu}) => {
                     {
                         id: 1,
                         name: "Q&A",
-                        link: "/wiki",
+                        link: "/wiki/qa",
                     },
                     {
                         id: 2,
@@ -34,23 +34,13 @@ const WikiMenu: NextPage<IWikiMenu> = ({showMobileMenu}) => {
                     },
                     {
                         id: 4,
-                        name: "Elevating Crypto Transactions",
+                        name: "Splendor Blokchain Tokens",
                         link: "/wiki/transactions",
-                    },
-                    {
-                        id: 5,
-                        name: "The Significance of Repelent for Splendor Blockchain",
-                        link: "/wiki/significance"
                     },
                     {
                         id: 5,
                         name: "SDR Interest Payment Mechanism",
                         link: "/wiki/sdr"
-                    },
-                    {
-                        id: 6,
-                        name: "QA",
-                        link: "/wiki/qa"
                     }
                 ]
             },
@@ -81,7 +71,7 @@ const WikiMenu: NextPage<IWikiMenu> = ({showMobileMenu}) => {
 
     return(
         <div className={"flex flex-col justify-between bg-white mt-[70px] " +
-            `fixed h-full w-[330px] z-[5000] drop-shadow-2xl  max-[1200px]:w-[20%] max-[800px]:${showMobileMenu?"w-[330px]":"hidden"}`}>
+            `fixed h-full w-[330px] z-[5000] drop-shadow-2xl max-[1200px]:min-[801px]:w-[20%] max-[800px]:${showMobileMenu?"w-[330px]":"hidden"}`}>
             <div className={"flex flex-col mt-[30px] mx-[25px] max-[1200px]:mx-[5px]"}>
                 {
                     menuItems.map(

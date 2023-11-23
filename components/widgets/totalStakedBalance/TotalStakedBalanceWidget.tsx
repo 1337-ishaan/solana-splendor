@@ -7,7 +7,7 @@ const TotalStakedBalanceWidget = () => {
     Chart.register(ArcElement);
     const data = {
         datasets: [{
-            data: [60,40],
+            data: [92,8],
             backgroundColor: [
                 '#433462',
                 '#8001ff',
@@ -21,7 +21,7 @@ const TotalStakedBalanceWidget = () => {
             border-[#FFFFFF33] border-[1px] mr-[10px] relative bg-[#09081c] bg-opacity-40 mt-[10px] 
             max-[800px]:h-[300px] max-[800px]:mt-[20px] max-[800px]:py-[15px]`}>
             <div>
-                <p className={"text-white text-[18px] text-white font-bold"}>Validating APR</p>
+                <p className={"text-white text-[18px] text-white font-bold"}>SDR APY</p>
                 <p className={"text-[#a0aec0] text-[12px]"}>
                     From your node
                 </p>
@@ -38,7 +38,7 @@ const TotalStakedBalanceWidget = () => {
                             <p className={"text-[12px] text-[#a0aec0]"}>100%</p>
                         </div>
                         <div className={"text-center"}>
-                            <p className={"text-[25px]"}>42%</p>
+                            <p className={"text-[25px]"}>8%</p>
                             <p className={"text-[10px] text-[#a0aec0]"}>Based on SPL rewards</p>
                         </div>
                     </div>

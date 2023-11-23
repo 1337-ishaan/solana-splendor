@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const StartMining: NextPage = () => {
   return (
-    <section id="about" className="pt-[100px] bg-white mt-[100px] flex flex-col items-center
+    <section id="about" className="pt-[100px] bg-white mt-[50px] flex flex-col items-center
     justify-center text-black text-center max-[800px]:pt-[50px]">
       <div className="px-[15px] ">
           <h1 className={"text-[70px] font-normal text-left text-[#073B4C] mx-[200px] max-[800px]:text-[50px] " +

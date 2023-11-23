@@ -22,16 +22,16 @@ const HowItsWork: NextPage = () => {
               <span className={"font-bold"}>How </span>
               it works
           </h1>
-          <div className={"mt-[100px] flex flex-row justify-center max-[800px]:flex-col max-[800px]:mx-0 " +
+          <div className={"mt-[100px] flex flex-wrap justify-center max-[800px]:flex-col max-[800px]:mx-0 " +
               "max-[800px]:items-center max-[800px]:mt-0"}>
-              <div className={"flex mr-[40px] flex-col min-w-[240px] w-[240px] max-[800px]:mt-[50px]"}>
+              <div className={"flex mr-[40px] flex-col min-w-[240px] w-[240px] max-[800px]:mt-[50px] max-[800px]:w-[70%]"}>
                 <div className={"flex flex-row items-start h-[80px]"}>
                     <div className={"w-[6px] h-[60px] bg-[#447CD5]"}></div>
                     <div className={"ml-[20px]"}>
                         <Image src={Wallet} alt={"Wallet"} />
                     </div>
                 </div>
-                <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[100px]"}>
+                <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[100px] max-[800px]:h-auto"}>
                     Choose a Splendor-Compatible Wallet:
                 </div>
                 <div className={"flex flex-row items-end"}>
@@ -72,14 +72,14 @@ const HowItsWork: NextPage = () => {
                 </div>
             </div>
 
-              <div className={"flex mr-[40px] flex-col min-w-[240px] w-[240px] max-[800px]:mt-[50px]"}>
+              <div className={"flex mb-[40px] mr-[40px] flex-col min-w-[240px] w-[240px] max-[800px]:mt-[50px] max-[800px]:w-[70%]"}>
                   <div className={"flex flex-row items-start h-[80px]"}>
                       <div className={"w-[6px] h-[60px] bg-[#447CD5]"}></div>
                       <div className={"ml-[10px]"}>
                           <Image src={Connect} alt={"Wallet"} />
                       </div>
                   </div>
-                  <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[100px]"}>
+                  <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[100px] max-[800px]:h-auto"}>
                       Install and Set Up the Wallet:
                   </div>
                   <div className={"flex flex-row items-end"}>
@@ -91,14 +91,14 @@ const HowItsWork: NextPage = () => {
                   </div>
               </div>
 
-              <div className={"flex mr-[40px] flex-col min-w-[240px] w-[240px] max-[800px]:mt-[50px]"}>
+              <div className={"flex mb-[40px] mr-[40px] flex-col min-w-[240px] w-[240px] max-[800px]:mt-[50px] max-[800px]:w-[70%]"}>
                   <div className={"flex flex-row items-start h-[80px]"}>
                       <div className={"w-[6px] h-[60px] bg-[#447CD5]"}></div>
                       <div className={"ml-[20px]"}>
                         <Image src={Transact} alt={"Wallet"} />
                       </div>
                   </div>
-                  <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[100px]"}>
+                  <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[100px] max-[800px]:h-auto"}>
                       Acquire SPL Tokens:
                   </div>
                   <div className={"flex flex-row items-end"}>
@@ -110,14 +110,14 @@ const HowItsWork: NextPage = () => {
                   </div>
               </div>
 
-              <div className={"flex mr-[40px] flex-col min-w-[240px] w-[240px] max-[800px]:mt-[50px]"}>
+              <div className={"flex mr-[40px] flex-col min-w-[240px] w-[240px] max-[800px]:mt-[50px] max-[800px]:w-[70%]"}>
                   <div className={"flex flex-row items-start h-[80px]"}>
                       <div className={"w-[6px] h-[60px] bg-[#447CD5]"}></div>
                       <div className={"ml-[20px]"}>
                         <Image src={Use} alt={"Wallet"} />
                       </div>
                   </div>
-                  <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[100px]"}>
+                  <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[100px] max-[800px]:h-auto"}>
                       Interact with the Splendor Network:
                   </div>
                   <div className={"flex flex-row items-end"}>

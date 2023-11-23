@@ -6,6 +6,7 @@ import HowItsWork from "../components/section/HowItsWork/WhoWeAre";
 import DoMoreWithSplendor from "../components/section/DoMoreWithSplendor/DoMoreWithSplendor";
 import StartMining from "../components/section/StartMining/StartMining";
 import SplendorTokens from "../components/section/SplendorTokens/SplendorTokens";
+import SplendorBlockchain from "../components/section/SplendorBlockchain";
 
 const Home: NextPage = () => {
     return (
@@ -16,10 +17,13 @@ const Home: NextPage = () => {
             <div className="fix w-full">
                 <WhoWeAre />
 
-                <HowItsWork/>
                 <DualToken />
-                <StartMining />
+                <HowItsWork/>
+
                 <SplendorTokens />
+                <StartMining />
+
+                <SplendorBlockchain />
                 <DoMoreWithSplendor />
             </div>
         </LayoutOne>

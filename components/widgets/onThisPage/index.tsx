@@ -6,7 +6,7 @@ import {IOnThisPage} from "./types";
 
 const OnThisPage:NextPage<IOnThisPage> = ({menuElements}) => {
     return (
-        <div className={"bg-black h-[200px] w-full relative max-[800px]:h-[150px]"}>
+        <div className={`bg-black h-[200px] w-full relative max-[800px]:h-[150px] ${!menuElements.length&&"max-[800px]:hidden"}`}>
             <div className={"absolute right-[50%] left-[50%] w-[100px] h-full " +
                 "flex flex-col items-center justify-center max-[800px]:hidden"}>
                 <div className={"blur-[10px]"}>

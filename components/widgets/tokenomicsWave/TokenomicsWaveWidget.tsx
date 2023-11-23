@@ -61,20 +61,20 @@ const TokenomicsWaveWidget = () => {
 
     const statisticsInNumbers:IStatisticsInNumber[][] = [
         [
-            {title:"Market Cap",value:"$280.38m"},
-            {title:"Finalized blocks",value:"1,416,750"},
+            {title:"Market Cap",value:"unvailable"},
+            {title:"Finalized blocks",value:"unvailable"},
         ],
         [
-            {title:"24h SPL Mined",value:"124 SPL"},
-            {title:"Delegations",value:"21,711,982 SPL"},
+            {title:"24h SPL Mined",value:"unvailable"},
+            {title:"Delegations",value:"unvailable"},
         ],
         [
-            {title:"Validating APY",value:"25.99%"},
-            {title:"Total Accounts",value:"46,750"},
+            {title:"SDR APY",value:"8%"},
+            {title:"Total Accounts",value:"unvailable"},
         ],
         [
-            {title:"Staking APY",value:"21.31%"},
-            {title:"Transfers",value:"86,283"},
+            {title:"Staking APY",value:"unvailable"},
+            {title:"Transfers",value:"unvailable"},
         ],
     ]
 
