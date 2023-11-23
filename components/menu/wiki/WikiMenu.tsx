@@ -30,12 +30,12 @@ const WikiMenu: NextPage<IWikiMenu> = ({showMobileMenu}) => {
                     {
                         id: 3,
                         name: "Enhancing Security in the Splendor Blockchain Ecosystem",
-                        link: "/wiki/transactions",
+                        link: "/wiki/security",
                     },
                     {
                         id: 4,
                         name: "Elevating Crypto Transactions",
-                        link: "/wiki/security",
+                        link: "/wiki/transactions",
                     },
                     {
                         id: 5,

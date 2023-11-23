@@ -37,84 +37,135 @@ const Unveiling: NextPage = () => {
                     />
                     <div className={"w-[70%] py-[50px] mx-auto max-[800px]:w-full max-[800px]:px-[10px]"}>
                         <div id={"whatIsSplendor"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Enhancing Security in the Splendor Blockchain Ecosystem: The Repelent Mechanism</p>
-                            <p className={"mt-[20px] text-[#3B454E] "}>
-                            In the ever-evolving landscape of blockchain technology, security is paramount. Splendor Blockchain, fortified by its advanced SRC26 smart contract, has implemented a sophisticated security mechanism known as "Repelent." This mechanism serves as a formidable deterrent, actively safeguarding the ecosystem against bad actors attempting to infiltrate by constantly monitoring and repelling transactions linked to blacklisted addresses identified by international agencies.
-                            </p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Elevating Crypto Transactions: Privacy, Speed, and Affordability on Splendor Blockchain</p>
+                            <p className={"mt-[20px] text-[#3B454E] "}>The Splendor Blockchain, fortified by its SRC26 smart contract with default zero-knowledge proofs, redefines the crypto landscape by combining privacy, speed, and affordability in every transaction. This document explores the tokens on Splendor Blockchain, showcasing how this revolutionary approach benefits users and advances the broader crypto community.</p>
                         </div>
 
                         <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>SRC26 Smart Contract Architecture</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Ethereum (ETH)</p>
 
                             <p className={"mt-[20px] text-[#3B454E]"}>
-                            At the core of Splendor's security infrastructure lies the SRC26 smart contract, meticulously designed to facilitate decentralized token swaps. The Repelent mechanism is intricately woven into the fabric of SRC26, acting as an intelligent gatekeeper to fortify the ecosystem against unauthorized access.
+                            Transactions on Splendor enhance the speed of Ethereum transactions while maintaining privacy through default zero-knowledge proofs. The result is faster and more confidential ETH transactions.
                             </p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Constant Blacklist Monitoring</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>USDT and USDC</p>
 
                             <p className={"mt-[20px] text-[#3B454E]"}>
-                            The Repelent mechanism operates by perpetually monitoring blacklisted addresses maintained by recognized international agencies. These addresses are meticulously curated to encompass entities involved in illicit activities, fraud, or any other activities deemed detrimental to the integrity of the blockchain.
+                            Stablecoin transactions on Splendor Blockchain become not only more private but also faster and cost-effective. USDT and USDC users can now enjoy quick and affordable transfers with enhanced confidentiality.
                             </p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Dynamic Link Analysis</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>XRP</p>
 
                             <p className={"mt-[20px] text-[#3B454E]"}>
-                            The Repelent mechanism engages in dynamic link analysis, scrutinizing the origin and destination of transactions attempting to enter the Splendor Blockchain. This analysis involves evaluating the transaction history, associated metadata, and any conceivable links to blacklisted addresses
+                            XRP transactions on Splendor Blockchain gain speed and privacy, making cross-border transactions more efficient and confidential for users.
                             </p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Real-Time Transaction Blocking</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Solana (SOL) and Tron (TRX)</p>
 
                             <p className={"mt-[20px] text-[#3B454E]"}>
-                            Upon identifying a transaction associated with a blacklisted address, the Repelent mechanism swiftly intervenes. Real-time blocking mechanisms are initiated, preventing the unauthorized transfer of tokens from any external blockchain to Splendor. This proactive measure ensures that the ecosystem remains resilient against potential threats.
-                            </p>
+                            High-throughput blockchains like Solana and Tron experience optimized performance on Splendor, with transactions becoming faster, more affordable, and inherently private.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Transparent Governance Protocol</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Bitcoin Cash (BCH)</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>The Repelent mechanism operates under a transparent governance protocol, allowing for continuous updates to the blacklist database based on recommendations from international agencies and the consensus of the Splendor community. This dynamic approach ensures that the system adapts to evolving security threats in real-time.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>Bitcoin Cash transactions on Splendor Blockchain benefit from increased speed and lower costs, making them more efficient and cost-effective for users.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Decentralized Decision-Making</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Monero (XMR)</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>To fortify decentralization principles, decisions regarding the Repelent mechanism's operation and blacklist updates are subject to decentralized governance. This ensures that the Splendor community actively participates in shaping the security protocols, fostering a collaborative approach to maintaining the integrity of the ecosystem.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>Monero transactions become even more private and faster on Splendor Blockchain, aligning with XMR's commitment to anonymity.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Enhanced Security Audits</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Polygon (MATIC) and DAI</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>Splendor Blockchain places a premium on security audits, conducting regular assessments to fortify the Repelent mechanism. External security experts and auditing firms are engaged to rigorously evaluate the SRC26 smart contract, ensuring that it remains impervious to vulnerabilities and emerging threat vectors.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>Polygon and DAI transactions on Splendor Blockchain enjoy default zero-knowledge proofs, making them faster, more cost-effective, and inherently private.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Preserving Ecosystem Integrity</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Uniswap (UNI), Aave (AAVE) and Sushiswap (SUSHI)</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>Repelent stands as the first line of defense, actively preserving the integrity of the Splendor Blockchain ecosystem. By preventing the ingress of transactions linked to blacklisted addresses, Splendor ensures that the network remains a secure and trustworthy environment.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>DeFi platforms on Splendor, such as Uniswap, Aave, and Sushiswap, witness improved speed, lower costs, and increased privacy, creating a more efficient decentralized financial ecosystem.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Mitigating Risks of Illicit Activities</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Pancakeswap (CAKE)</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>The dynamic link analysis and real-time blocking capabilities of Repelent mitigate the risks associated with illicit activities, fraud, and unauthorized access. This not only protects the network but also fosters a secure environment for users engaging in decentralized transactions.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>Pancakeswap transactions on Splendor Blockchain become faster, more affordable, and private, ensuring optimal performance for users within decentralized exchanges.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
-                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Upholding Regulatory Compliance</p>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>EURt and EURc</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>Splendor Blockchain is committed to upholding regulatory compliance. The Repelent mechanism aligns with international standards by actively adhering to blacklists curated by recognized agencies, ensuring that the network operates within legal frameworks.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>Stablecoins EURt and EURc on Splendor Blockchain offer not only stability but also enhanced speed, affordability, and privacy, creating a globally inclusive and efficient stablecoin alternative.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Polkadot (DOT) and Atom (ATOM)</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>Polkadot and Atom transactions on Splendor benefit from increased speed, lower costs, and default zero-knowledge proofs, contributing to a more efficient cross-chain interoperability.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Chainlink (LINK) and Tether Gold</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>Chainlink transactions on Splendor are faster, more affordable, and inherently private, ensuring decentralized oracle services with optimal performance. Tether Gold transactions leverage the speed and privacy features provided by default on Splendor Blockchain.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>1inch</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>1inch transactions on Splendor Blockchain now include default zero-knowledge proofs, ensuring optimal decentralized exchange services with enhanced speed, lower costs, and privacy.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Arbitrum and Lido</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>Arbitrum and Lido transactions on Splendor Blockchain incorporate default zero-knowledge proofs, ensuring not only increased speed and affordability but also more private and secure token transfers within a decentralized environment.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>The Advantages for the Crypto Community</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>The integration of default zero-knowledge proofs, along with speed, affordability, and scalability, on Splendor Blockchain brings unparalleled advantages to the broader crypto community:</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Privacy with Speed</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>Splendor Blockchain offers users the perfect blend of privacy and speed, ensuring that transactions are not only confidential but also executed swiftly.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Affordability</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>The low cost of transactions on Splendor makes crypto activities more accessible to a wider audience, fostering inclusivity and adoption across diverse user groups</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Scalability</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>The scalability of Splendor Blockchain ensures that as the crypto community grows, the network can handle increased demand efficiently, maintaining high-performance standards.</p>
+                        </div>
+
+                        <div id={"developerGuide"} className={"pt-[65px]"}>
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Advancing Decentralization</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>Splendor Blockchain aligns with the principles of decentralization by providing users with a fast, affordable, and private environment, empowering them to take control of their financial data and transactions.</p>
                         </div>
 
                         <div id={"developerGuide"} className={"pt-[65px]"}>
                             <p className={"text-[24px] text-[#3B454E] font-bold"}>Conclusion</p>
 
-                            <p className={"mt-[20px] text-[#3B454E]"}>In the realm of blockchain security, the Repelent mechanism implemented within the SRC26 smart contract emerges as a sophisticated and effective deterrent against bad actors attempting to infiltrate the Splendor Blockchain ecosystem. Through constant monitoring, dynamic link analysis, and real-time transaction blocking, Splendor not only fortifies its network against potential threats but also exemplifies a commitment to transparency, decentralization, and the highest standards of security within the decentralized finance landscape.</p>
+                            <p className={"mt-[20px] text-[#3B454E]"}>Splendor Blockchain's integration of default zero-knowledge proofs, coupled with speed, affordability, and scalability, marks a transformative leap forward in the crypto space. As the crypto industry evolves, Splendor Blockchain stands as a beacon, contributing to a more private, secure, and inclusive decentralized future for users worldwide. The amalgamation of privacy, speed, and affordability positions Splendor Blockchain at the forefront of crypto innovation, reshaping the landscape for the benefit of all.</p>
                         </div>
                     </div>
                 </div>
