@@ -41,7 +41,17 @@ const WikiMenu: NextPage<IWikiMenu> = ({showMobileMenu}) => {
                         id: 5,
                         name: "SDR Interest Payment Mechanism",
                         link: "/wiki/sdr"
-                    }
+                    },
+                    {
+                        id: 6,
+                        name: "Explorer",
+                        link: "/wiki/explorer"
+                    },
+                    {
+                        id: 7,
+                        name: "ZK Snarks",
+                        link: "/wiki/zk"
+                    },
                 ]
             },
         ]

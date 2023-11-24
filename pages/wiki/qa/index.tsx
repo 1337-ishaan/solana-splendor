@@ -193,6 +193,100 @@ const Unveiling: NextPage = () => {
 
                             <p className={"mt-[20px] text-[#3B454E]"}>The SDR interest rate program incentivizes users to commit to longer lockup periods, promoting stability in the ecosystem by reducing token volatility and enhancing long-term commitment.</p>
                         </div>
+                            <div id={"whatIsSplendor"} className={"pt-[65px]"}>
+                                <p className={"text-[24px] text-[#3B454E] font-bold"}>Splendor Explorer</p>
+                            </div>
+                        <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
+        
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>What is SplendorExplorer, and how does it contribute to the Splendor Blockchain experience?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            SplendorExplorer is the official explorer for the Splendor Blockchain. It serves as a user-friendly platform that allows individuals to explore and verify transactions on the Splendor Blockchain.</p>
+                        </div>
+                        <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
+        
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>How can I access SplendorExplorer?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            You can access SplendorExplorer by visiting the official website at splendorexplorer.com</p>
+                        </div>
+                        <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
+        
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>What information can I verify using SplendorExplorer?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            SplendorExplorer enables users to verify transaction details on the Splendor Blockchain. You can validate the timestamp, amount, and other essential information associated with a specific transaction.</p>
+                        </div>
+                        <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
+        
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>What is the purpose of the "Transaction Verification" feature on SplendorExplorer?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            The "Transaction Verification" feature allows users to confirm the details of a specific transaction by providing the sending wallet address, receiving wallet address, and the unique transaction hash.</p>
+                        </div>
+                        <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
+        
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>How does SplendorExplorer prioritize privacy in transaction verification?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            SplendorExplorer maintains the privacy of transactions by requiring accurate and specific information for verification. Without the correct transaction hash and wallet addresses, the transaction remains private.</p>
+                        </div>
+                        <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
+        
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Can I explore transactions on SplendorExplorer without providing specific details?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            No, SplendorExplorer requires specific details such as the sending and receiving wallet addresses and the transaction hash for verification. This ensures the privacy of transactions.</p>
+                        </div>
+                        <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
+        
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>What happens if I provide incorrect or incomplete information for transaction verification?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            If the provided information is incorrect or incomplete, SplendorExplorer will not display transaction details. This safeguard ensures the privacy and accuracy of the verification process.</p>
+                        </div>
+                        <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
+        
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Is SplendorExplorer the only way to explore transactions on Splendor Blockchain?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            Yes, SplendorExplorer is the official platform designed for exploring and verifying transactions on the Splendor Blockchain. It provides a user-friendly interface for this purpose.</p>
+                        </div>
+                        <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
+        
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Can I use SplendorExplorer to explore transactions from any Splendor wallet?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            Yes, SplendorExplorer is designed to explore transactions from any Splendor wallet. Users can verify transactions associated with their wallets through this platform.</p>
+                        </div>
+                        <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
+        
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>How often is SplendorExplorer updated with new transaction data?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            SplendorExplorer is continuously updated with new transaction data in real-time, providing users with the latest information on the Splendor Blockchain.</p>
+                        </div>
+                        <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
+        
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Does SplendorExplorer display information about wallet balances?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            No, SplendorExplorer focuses on transaction verification and does not display wallet balances. It is dedicated to providing specific details related to individual transactions.</p>
+                        </div>
+                        <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
+        
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Can I use SplendorExplorer to track the progress of a transaction in real-time?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            Yes, SplendorExplorer allows users to track the progress of a transaction in real-time by providing accurate information for verification.</p>
+                        </div>
+                        <div id={"benefitsAndUseCases"} className={"pt-[65px]"}>
+        
+                            <p className={"text-[24px] text-[#3B454E] font-bold"}>Is SplendorExplorer available in multiple languages?</p>
+
+                            <p className={"mt-[20px] text-[#3B454E]"}>
+                            As of the latest update, SplendorExplorer primarily supports English. Additional language support may be introduced in future updates.</p>
+                        </div>
                     </div>
                 </div>
             </div>
