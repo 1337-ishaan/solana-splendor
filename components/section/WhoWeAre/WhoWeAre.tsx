@@ -14,14 +14,16 @@ const WhoWeAre: NextPage = () => {
       <div className="px-[15px] w-full">
         <div className="flex flex-col items-center max-[800px]:flex-col justify-center w-full">
           <div className={"flex flex-row max-[800px]:items-center"}>
-            <Image src={logo} alt={'logo'} />
+            <div className={"z-[-1]"}>
+              <Image src={logo} alt={'logo'} />
+            </div>
             <p className={"ml-[10px] text-black text-[70px] leading-[1.2] font-medium text-[#073B4C] " +
                 "max-[800px]:text-[50px] max-[800px]:text-center"}>SPLENDOR</p>
           </div>
           <p className={"text-black text-[45px] leading-[1.2] font-[200] text-[#073B4C] " +
               "max-[800px]:text-[30px] max-[800px]:text-center max-[800px]:mt-[15px]"}>The evolved version of Bitcoin</p>
 
-          <div className="mt-[150px] w-full">
+          <div className="mt-[150px] w-full z-[-1]">
             <VideoPlayer
                 src={"https://drive.google.com/uc?id=1SQLSeacpJP6TJrT_k3WJIy_uQfHeeUeY&export=download"} />
           </div>
@@ -46,7 +48,7 @@ const WhoWeAre: NextPage = () => {
                 FAST
               </div>
               <div className={"pt-[10px] text-black max-[800px]:h-auto max-[800px]:py-[10px] max-[800px]:text-center"}>
-                Splendor is built on the Substrate framework and boasts exceptional speed in its blockchain transactions, with a block confirmed every second. This rapid confirmation rate positions Splendor as an efficient and swift blockchain solution, offering users a seamless and responsive experience for their transactions.
+              In a landscape where every second counts, Splendor addresses the pressing need for swift and reliable transaction confirmation. The blockchain's remarkable capability to produce a block every second ensures that users experience minimal latency, fostering a seamless and dynamic environment for decentralized applications (DApps) and transactions.
               </div>
             </div>
 

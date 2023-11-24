@@ -5,13 +5,13 @@ const WelcomeWidget = () => {
             max-[800px]:h-[300px] max-[800px]:mt-[20px] max-[800px]:py-[25px]`}>
             <div>
                 <p className={"text-[#a0aec0] text-[12px] text-[#a0aec0]"}>Welcome back,</p>
-                <p className={"text-white text-[25px] font-bold text-white pt-[0px] pb-[10px]"}>Mark Sobakerken</p>
+                <p className={"text-white text-[25px] font-bold text-white pt-[0px] pb-[10px]"}></p>
                 <p className={"text-[14px] text-[#a0aec0]"}>
                     Glad to see you again!<br />
                     Check your last earnings
                 </p>
                 <p className={"text-[14px] text-[#a0aec0] mt-[40px] break-all"}>
-                    0x5F5438fF981544bef19A9dc15C1eB31829dd97F6
+
                 </p>
             </div>
             <a href={"/"}>

@@ -34,11 +34,11 @@ const menuItems: MenuItem[] = [
   },
   {
     title: "WHITEPAPER",
-    route: "https://drive.google.com/file/d/1TqmvDRKdseMKVBTKR5XrxTJyYPPUK2y7/view?usp=sharing",
+    route: "https://drive.google.com/uc?id=15mhPCfTpLj_y224ZUvEIroOQwqEvIpX3&export=download",
     download: true,
   },
   {
-    title: "PROJECTS UPDATE",
+    title: "PROJECT UPDATES",
     route: "",
   },
 ];
@@ -85,12 +85,12 @@ export default function HeaderOne() {
   return (
       <>
         {showRegisterModal&&<RegisterModal closeModal={hideRegisterModal}/>}
-        <header className={`flex gap-10 z-[9999] items-center drop-shadow-2xl bg-white py-[30px] px-2 w-full 
-      max-[800px]:fixed ${fixedMenu?'min-[800px]:fixed':''} max-[800px]:justify-end`}>
-          <div className={"ml-[50px] max-[800px]:hidden"}>
+        <header className={`flex gap-[25px] max-[1280px]:gap-[20px] z-[9999] items-center drop-shadow-2xl bg-white py-[30px] px-2 w-full 
+      max-[1280px]:px-0 max-[800px]:fixed ${fixedMenu?'min-[1080px]:fixed':''} max-[1180px]:justify-end`}>
+          <div className={"ml-[50px] max-[1280px]:ml-[20px] max-[1180px]:hidden"}>
             <Image src={logo} width={20} height={20} alt="logo" />
           </div>
-          <div className={"hidden max-[800px]:block"}>
+          <div className={"hidden max-[1180px]:block"}>
             <Hamburger toggled={isOpen} toggle={setIsOpen} />
             {isOpen&&
                 <div onClick={closeMobileMenu} className={`h-[11000px] fixed z-[99999] top-0 left-0 w-full`}>
@@ -112,7 +112,7 @@ export default function HeaderOne() {
                 </div>
             }
           </div>
-          <div className="flex gap-8 items-center text-black max-[800px]:hidden">
+          <div className="flex gap-[25px] items-center text-black max-[1280px]:gap-[15px] max-[1180px]:hidden">
             {menuItems.map((item, key) => {
               return item.hasOwnProperty("children") ? (
                   <Dropdown key={key} item={item} />
@@ -125,18 +125,20 @@ export default function HeaderOne() {
               );
             })}
           </div>
-          <div className={"absolute right-[100px] max-[800px]:left-0 max-[800px]:right-auto flex flex-row items-center justify-center"}>
+          <div className={"absolute right-[100px] max-[1280px]:right-[20px] max-[1180px]:left-0 max-[1180px]:right-auto flex flex-row items-center justify-center"}>
             {isMounted&&<div className={"mx-[10px]"}>
               <ConnectButton/>
             </div>}
             {
                 isMounted&&isConnected&&
-                <button
-                    onClick={openRegisterModal}
-                    className={"w-[150px] max-[800px]:w-[100px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px]"}
-                >
-                  Dashboard
-                </button>
+                <Link href={"/dashboard"}>
+                  <button
+                      /*onClick={openRegisterModal}*/
+                      className={"w-[150px] max-[1180px]:w-[100px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px]"}
+                  >
+                    Dashboard
+                  </button>
+                </Link>
             }
           </div>
         </header>

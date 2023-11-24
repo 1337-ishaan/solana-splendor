@@ -27,10 +27,12 @@ const StartMining: NextPage = () => {
                           <li className={"list-[disc]"}>no special equipment needed</li>
                       </ul>
                   </div>
-                  <button className={"mt-[50px] bg-black rounded-[10px] p-[15px] w-[200px] text-white cursor-pointer " +
-                      "max-[800px]:mb-[10px] max-[800px]:mt-[20px]"}>
-                      Download
-                  </button>
+                  <a href="/dashboard/download">
+                    <button className={"mt-[50px] bg-black rounded-[10px] p-[15px] w-[200px] text-white cursor-pointer " +
+                        "max-[800px]:mb-[10px] max-[800px]:mt-[20px]"}>
+                        Download
+                    </button>
+                  </a>
               </div>
               <Image className={"ml-[30px] mt-[50px] max-[800px]:ml-0"} src={Dashboard} width={1000} alt={"Dashboard"} />
           </div>

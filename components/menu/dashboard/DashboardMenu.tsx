@@ -75,7 +75,6 @@ const Menu = () => {
                 }*/}
             </div>
             <div className={"flex items-center justify-center mb-[20px]"}>
-                <Image src={backgroundBottomMenuWidget} alt={"backgroundBottomMenuWidget"} />
             </div>
         </div>
     )

@@ -32,6 +32,7 @@ const InfoWidgets = () => {
         fetchBTCData();
     }, []);
 
+
     const testInfoDataWidgets: TWidgetInfo[] = [
         {
             id: 1,
