@@ -649,6 +649,11 @@ const getSPLPriceInUSD = async (spl_Contract: ethers.Contract): Promise<ISPLData
   };
 };
 
+interface ISPLData {
+    price: string,
+    rate: number
+}
+
 const InfoWidgets: React.FC = () => {
   const [splData, setSPLData] = useState<ISPLData>({ price: "0.00", rate: 0 });
   const [btcPrice, setBTCPrice] = useState<string>("0.00");
@@ -676,7 +681,7 @@ const InfoWidgets: React.FC = () => {
             id: 1,
             title: "SPL Markercap",
             value: `$${splData.price}`,
-            rate: parseFloat(splData.rate),
+            rate: parseFloat(String(splData.rate)),
             icon: wallet,
             link: '/',
         },
