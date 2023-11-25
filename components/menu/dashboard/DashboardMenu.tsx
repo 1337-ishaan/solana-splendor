@@ -21,15 +21,15 @@ const Menu = () => {
             selected: false,
             link: "/dashboard",
         },
-        {
+        /*{
             id: 2,
             name: "Tokenomics",
             icon: tokenomicsIcon,
             selected: false,
             link: "/dashboard/tokenomics",
-        },
+        },*/
         {
-            id: 3,
+            id: 2,
             name: "Download",
             icon: downloadIcon,
             selected: false,
@@ -47,8 +47,10 @@ const Menu = () => {
             "max-[1100px]:w-[200px] max-[800px]:w-[100px]"}>
             <div className={"flex flex-col"}>
                 <div className={"flex flex-col items-center"}>
-                    <div className={"mt-[50px] block max-[800px]:hidden"}>
+                    <div  className={"mt-[50px] block max-[800px]:hidden"}>
+                        <a href="https://splendor.org/"> {/* Enlace a una página específica */}
                         <Image  src={logo} alt={"logo"} />
+                        </a>
                     </div>
                     <div className={"mt-[50px] hidden max-[800px]:block"}>
                         <Image src={logoSmall} alt={"logoSmall"} />

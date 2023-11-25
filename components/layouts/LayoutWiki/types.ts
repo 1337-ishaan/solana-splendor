@@ -1,9 +1,10 @@
 import {ReactNode} from "react";
-import {IHeaderWiki} from "../../header/HeaderWiki/types";
+import {IOnThisPageButton} from "../../buttons/onThisPageButton/types";
 
-export interface ILayoutWiki extends IHeaderWiki{
+export interface ILayoutWiki{
     children?: ReactNode;
     title: string;
     description: string;
     hideHeader?: boolean;
+    menuElements: IOnThisPageButton[];
 }

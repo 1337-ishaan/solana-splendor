@@ -44,6 +44,7 @@ const WikiMenu: NextPage<IWikiMenu> = ({showMobileMenu}) => {
                     },
                     {
                         id: 6,
+
                         name: "Explorer",
                         link: "/wiki/explorer"
                     },
@@ -52,6 +53,16 @@ const WikiMenu: NextPage<IWikiMenu> = ({showMobileMenu}) => {
                         name: "ZK Snarks",
                         link: "/wiki/zk"
                     },
+                    {
+                        id: 8,
+                        name: "Zero Knowledge",
+                        link: "/wiki/zero"
+                    },
+                    {
+                        id: 9,
+                        name: "Bridge",
+                        link: "/wiki/bridge"
+                    }
                 ]
             },
         ]

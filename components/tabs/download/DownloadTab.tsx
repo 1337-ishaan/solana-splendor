@@ -1,14 +1,14 @@
 import Image from "next/image";
-import downloadScreen from "../../../assets/icons/download/downloadScreen.png";
+import downloadScreen from "../../../assets/icons/download/desktop.png";
 import appleSvg from "../../../assets/icons/download/apple.svg";
 import windowSvg from "../../../assets/icons/download/windows.svg";
 import ubuntuSvg from "../../../assets/icons/download/ubuntu.svg";
 
 const Download = () => {
     return(
-        <div className={"flex flex-col w-full h-full px-[20px] pb-[20px]"}>
-            <p className="mt-[70px] text-center text-[35px] font-bold text-white pt-[0px] pb-[10px]">Download Dashboard</p>
-            <p className="mt-[50px] text-center text-[25px] font-thin text-white pt-[0px] pb-[10px] mx-[15%]">
+        <div className={"flex flex-col w-full h-full px-[6px] pb-[6px]"}>
+            <p className="mt-[40px] text-center text-[22px] font-bold text-white pt-[0px] pb-[2px]">Download Dashboard</p>
+            <p className="mt-[30px] text-center text-[18px] font-thin text-white pt-[0px] pb-[2px] mx-[15%]">
                 Download the app to get started using the Dashboard Platform today. Or, if you prefer a browser experience, you can try the web version of Dashboard.
             </p>
 

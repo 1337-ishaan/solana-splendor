@@ -21,12 +21,12 @@ export interface MenuItem {
 
 const menuItems: MenuItem[] = [
   {
-    title: "DOCUMENTATIONS",
-    route: "/wiki",
+    title: "DOCUMENTATION",
+    route: "https://toshinakamoto.gitbook.io/documentation/",
   },
   {
     title: "ECOSYSTEM",
-    route: "/explore-ecosystem",
+    route: "",
   },
   {
     title: "TOKENS",
@@ -34,7 +34,7 @@ const menuItems: MenuItem[] = [
   },
   {
     title: "WHITEPAPER",
-    route: "https://drive.google.com/uc?id=15mhPCfTpLj_y224ZUvEIroOQwqEvIpX3&export=download",
+    route: "https://drive.google.com/uc?id=1cUOd_iHZoPDpvkU0kiQIZ7gFN6XlSwL7&export=download",
     download: true,
   },
   {
