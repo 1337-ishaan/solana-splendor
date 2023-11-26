@@ -1,40 +1,17 @@
 import {NextPage} from "next";
 import LayoutWiki from "../../../components/layouts/LayoutWiki";
-import WikiMenu from "../../../components/menu/wiki/WikiMenu";
-import OnThisPage from "../../../components/widgets/onThisPage";
 import {useState} from "react";
 
 const Unveiling: NextPage = () => {
-    const [showMobileMenu, setShowMobileMenu] = useState(false);
-    const openMobileMenu = ()=>setShowMobileMenu(true);
-    const closeMobileMenu = ()=>setShowMobileMenu(false);
 
+    // @ts-ignore
     return (
         <LayoutWiki
             title={"Splendor Wiki"}
             description={"Splendor Wiki"}
-            openMobileMenu={openMobileMenu}
-            closeMobileMenu={closeMobileMenu}>
-            <div className={"h-full flex flex-row"}>
-                <WikiMenu showMobileMenu={showMobileMenu} />
-                <div className={"min-[801px]:w-full ml-[330px] h-full " +
-                    "mt-[70px] max-[1200px]:ml-[20%] max-[800px]:ml-0"}>
-                    <OnThisPage
-                        menuElements={[
-                            {
-                                text: "Introduction",
-                                hash: "#whatIsSplendor"
-                            },
-                            {
-                                text: "Benefits and use cases of Splendor",
-                                hash: "#benefitsAndUseCases"
-                            },
-                            {
-                                text: "Developer Guide",
-                                hash: "#developerGuide"
-                            }
-                        ]}
-                    />
+            menuElements={[]}>
+            <div>
+
                     <div className={"w-[70%] py-[50px] mx-auto max-[800px]:w-full max-[800px]:px-[10px]"}>
                         <div id={"whatIsSplendor"} className={"pt-[65px]"}>
                             <p className={"text-[24px] text-[#3B454E] font-bold"}>SplendorExplorer: Questions and Answers</p>
@@ -128,7 +105,7 @@ const Unveiling: NextPage = () => {
 
                             <p className={"mt-[20px] text-[#3B454E]"}>
                            Verifying Transactions on Splendor Blockchain using SplendorExplorer
-Splendor Blockchain prioritizes privacy and security through the implementation of zero-knowledge proofs. This ensures that transaction details are kept confidential unless explicitly verified. Here's a step-by-step guide on how to check a transaction on Splendor Blockchain using SplendorExplorer:
+                            Splendor Blockchain prioritizes privacy and security through the implementation of zero-knowledge proofs. This ensures that transaction details are kept confidential unless explicitly verified. Here's a step-by-step guide on how to check a transaction on Splendor Blockchain using SplendorExplorer:
                             </p>
                             <p className={"mt-[20px] text-[#3B454E]"}>
                                 Step 1: Access SplendorExplorer
@@ -333,9 +310,7 @@ Splendor Blockchain prioritizes privacy and security through the implementation 
                             </p>
                         </div>
 
-
                     </div>
-                </div>
             </div>
         </LayoutWiki>
     );
