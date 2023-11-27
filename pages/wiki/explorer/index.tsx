@@ -1,8 +1,13 @@
 import {NextPage} from "next";
 import LayoutWiki from "../../../components/layouts/LayoutWiki";
+import WikiMenu from "../../../components/menu/wiki/WikiMenu";
+import OnThisPage from "../../../components/widgets/onThisPage";
 import {useState} from "react";
 
 const Unveiling: NextPage = () => {
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
+    const openMobileMenu = ()=>setShowMobileMenu(true);
+    const closeMobileMenu = ()=>setShowMobileMenu(false);
 
     // @ts-ignore
     return (

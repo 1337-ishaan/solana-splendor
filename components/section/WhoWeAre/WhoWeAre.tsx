@@ -23,7 +23,7 @@ const WhoWeAre: NextPage = () => {
           <p className={"text-black text-[45px] leading-[1.2] font-[200] text-[#073B4C] " +
               "max-[800px]:text-[30px] max-[800px]:text-center max-[800px]:mt-[15px]"}>The evolved version of Bitcoin</p>
 
-          <div className="mt-[150px] w-full z-[-1]">
+          <div className="mt-[150px] w-full">
             <VideoPlayer
                 src={"https://drive.google.com/uc?id=1SQLSeacpJP6TJrT_k3WJIy_uQfHeeUeY&export=download"} />
           </div>

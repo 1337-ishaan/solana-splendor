@@ -1,7 +1,11 @@
 import {NextPage} from "next";
 import LayoutWiki from "../../../components/layouts/LayoutWiki";
+import {useState} from "react";
 
 const Unveiling: NextPage = () => {
+    const [showMobileMenu, setShowMobileMenu] = useState(false);
+
+
     // @ts-ignore
     return (
         <LayoutWiki
