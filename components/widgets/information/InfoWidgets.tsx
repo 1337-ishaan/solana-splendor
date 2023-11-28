@@ -648,7 +648,19 @@ const getSPLPriceInUSD = async (spl_Contract: ethers.Contract): Promise<ISPLData
       rate: parseFloat(fixPercentage)
   };
 };
-
+const getSPLMarketcap = async (spl_Contract: ethers.Contract): Promise<string> => {
+  try {
+    const supply = await spl_Contract.totalSupply();
+    const getSupply = ethers.utils.formatEther(supply);
+    const _spl = ethers.utils.parseUnits("1");
+    const priceCal = await spl_Contract.getPriceOfSPLInUSD(_spl);
+    const getPriceCal = ethers.utils.formatUnits(priceCal, 36);
+    const marketCap = parseFloat(getPriceCal) * parseFloat(getSupply);
+    return Number(marketCap).toFixed(2);
+  } catch (error) {
+    return "0.00";
+  }
+};
 interface ISPLData {
     price: string,
     rate: number
@@ -657,6 +669,7 @@ interface ISPLData {
 const InfoWidgets: React.FC = () => {
   const [splData, setSPLData] = useState<ISPLData>({ price: "0.00", rate: 0 });
   const [btcPrice, setBTCPrice] = useState<string>("0.00");
+  const [marketCap, setMarketCap] = useState<string>("0.00");
 
   useEffect(() => {
     const fetchSPLData = async () => {
@@ -665,6 +678,8 @@ const InfoWidgets: React.FC = () => {
       const spl_Contract = new ethers.Contract(splAddress, spl_ABI, signer);
       const data = await getSPLPriceInUSD(spl_Contract);
       setSPLData(data);
+      const marketCapData = await getSPLMarketcap(spl_Contract);
+      setMarketCap(marketCapData); // Asume que tienes un estado llamado marketCap
     };
 
     const fetchBTCData = async () => {
@@ -679,8 +694,8 @@ const InfoWidgets: React.FC = () => {
   const testInfoDataWidgets: TWidgetInfo[] = [
               {
             id: 1,
-            title: "SPL Markercap",
-            value: `$${splData.price}`,
+            title: "SPL Marketcap",
+            value: `$${marketCap}`, // Aquí se usa el estado marketCap
             rate: parseFloat(String(splData.rate)),
             icon: wallet,
             link: '/',
@@ -695,9 +710,9 @@ const InfoWidgets: React.FC = () => {
         },
         {
             id: 3,
-            title: "Bitcoin Price in 24 Hours",
-            value: `$${btcPrice}`,
-            rate: -14,
+            title: "SPL Price in 24 Hours",
+            value: `$${splData.price}`,
+            rate: parseFloat(String(splData.rate)),
             icon: btc,
             link: '/',
         },

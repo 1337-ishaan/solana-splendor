@@ -5,10 +5,15 @@ import inchSvg from "../../../assets/icons/home/splendorBlockchain/1inch.svg";
 import aave from "../../../assets/icons/home/splendorBlockchain/aave.svg";
 import arbitrumArbLogoSvg from "../../../assets/icons/home/splendorBlockchain/arbitrum-arb-logo.svg";
 import atomSvg from "../../../assets/icons/home/splendorBlockchain/atom.svg";
+import opti from "../../../assets/icons/home/splendorBlockchain/opti.svg";
 import bchSvg from "../../../assets/icons/home/splendorBlockchain/bch.svg";
 import daiSvg from "../../../assets/icons/home/splendorBlockchain/dai.svg";
 import dotSvg from "../../../assets/icons/home/splendorBlockchain/dot.svg";
 import ethSvg from "../../../assets/icons/home/splendorBlockchain/eth.svg";
+import avalanche from "../../../assets/icons/home/splendorBlockchain/avalanche.png";
+import binanceusd from "../../../assets/icons/home/splendorBlockchain/binance-usd.png";
+import bnb from "../../../assets/icons/home/splendorBlockchain/bnb.png";
+import wbtc from "../../../assets/icons/home/splendorBlockchain/wbtc.png";
 import linkSvg from "../../../assets/icons/home/splendorBlockchain/link.svg";
 import maticSvg from "../../../assets/icons/home/splendorBlockchain/matic.svg";
 import pancakeswapCakeLogoSvg from "../../../assets/icons/home/splendorBlockchain/pancakeswap-cake-logo.svg";
@@ -32,11 +37,8 @@ const SplendorBlockchain: NextPage = () => {
         { img: ethSvg, title: "ETH" },
         { img: usdtSvg, title: "USDT" },
         { img: usdcSvg, title: "USDC" },
-        { img: xprSvg, title: "XPR" },
-        { img: solSvg, title: "SOLANA" },
         { img: trxSvg, title: "TRON" },
-        { img: bchSvg, title: "BITCOIN CASH" },
-        { img: xmrSvg, title: "MONERO" },
+        { img: wbtc, title: "WBTC" },
         { img: maticSvg, title: "POLYGON" },
 
         { img: daiSvg, title: "DAI" },
@@ -46,14 +48,16 @@ const SplendorBlockchain: NextPage = () => {
         { img: pancakeswapCakeLogoSvg, title: "PANCAKESWAP" },
         { img: EURTSvg, title: "EURt" },
         { img: EURCSvg, title: "EURc" },
-        { img: dotSvg, title: "POLKADOT" },
 
-        { img: atomSvg, title: "ATOM" },
         { img: linkSvg, title: "CHAINLINK" },
         { img: tetherGoldXautLogoSvg, title: "TETHER GOLD" },
         { img: inchSvg, title: "1inch" },
         { img: arbitrumArbLogoSvg, title: "Arbitrum" },
         { img: stethStethLogoSvg, title: "Libo" },
+        { img: avalanche, title: "Avalanche" },
+        { img: bnb, title: "Binance" },
+        { img: opti, title: "Optimism" },
+        { img: binanceusd, title: "BUSD" },
     ];
 
     const Icon: NextPage<IconDate> = ({img, title}) => (
