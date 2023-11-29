@@ -69,7 +69,7 @@ const TotalEarningsWidget = () => {
     };
 
     return (
-        <div className={`min-w-[450px] h-full mt-[20px] py-[8px] px-[20px] justify-between flex-[6] flex-col 
+        <div className={`min-w-[450px] h-full mt-[10px] py-[8px] px-[20px] justify-between flex-[6] flex-col 
             items-start mr-1 rounded-[20px] flex bg-[#181537] bg-opacity-90
             border-[#FFFFFF33] border-[1px] mr-[10px] max-[800px]:min-w-full 
             max-[800px]:h-[420px] max-[800px]:py-[15px]`}>

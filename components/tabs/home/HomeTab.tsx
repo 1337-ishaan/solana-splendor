@@ -4,7 +4,7 @@ import DiagramWidgets from "../../widgets/diagram/DiagramWidgets";
 
 const Home = () => {
   return (
-    <div className="flex flex-col w-full h-screen px-[20px] pb-[20px]">
+    <div className="flex flex-col w-full h-screen px-[5px] pb-[5px]">
       <InfoWidgets />
       <DiagramWidgets />
     </div>

@@ -10,7 +10,7 @@ const SplendorTokens: NextPage = () => {
     justify-center text-black text-center bg-gradient-to-b from-[#f7f8fc] to-white">
       <div className="px-[15px] ">
           <h1 className={"text-[50px] font-normal text-center text-[#073B4C] mx-[200px] max-[800px]:text-[30px] max-[800px]:mx-0"}>
-              <span className={"font-bold"}>Splendor Drawing Rights(SDR) </span>
+              <span className={"font-bold"}>Splendor Drawing Rights (SDR) </span>
           </h1>
 
           <div className={"flex flex-col justify-center mt-[50px] mx-[15%] max-[800px]:flex-col max-[800px]:mt-0 max-[800px]:mx-0"}>

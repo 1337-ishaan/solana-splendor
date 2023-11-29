@@ -9,7 +9,7 @@ import opti from "../../../assets/icons/home/splendorBlockchain/opti.svg";
 import bchSvg from "../../../assets/icons/home/splendorBlockchain/bch.svg";
 import daiSvg from "../../../assets/icons/home/splendorBlockchain/dai.svg";
 import dotSvg from "../../../assets/icons/home/splendorBlockchain/dot.svg";
-import sdr from "../../../assets/icons/home/splendorBlockchain/sdr.jpeg";
+import sdr from "../../../../bankor/Splendor/assets/icons/home/splendorBlockchain/sdr.jpeg";
 import ethSvg from "../../../assets/icons/home/splendorBlockchain/eth.svg";
 import avalanche from "../../../assets/icons/home/splendorBlockchain/avalanche.png";
 import binanceusd from "../../../assets/icons/home/splendorBlockchain/binance-usd.png";
@@ -96,9 +96,13 @@ const SplendorBlockchain: NextPage = () => {
                   iconsData.slice(17,iconsData.length).map(({img, title})=><Icon img={img} title={title} />)
               }
           </div>
-          <button className={"w-[150px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px] mt-[40px]"}>
-              Buy Tokens
-          </button>
+          <button
+                className={"w-[150px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px] mt-[40px]"}
+                onClick={() => window.location.href = 'https://octaocean.com'}
+            >
+                Buy Tokens
+            </button>
+
       </div>
     </section>
   );
