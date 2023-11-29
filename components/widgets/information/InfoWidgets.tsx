@@ -692,10 +692,10 @@ const InfoWidgets: React.FC = () => {
   }, []);
 
   const testInfoDataWidgets: TWidgetInfo[] = [
-              {
+        {
             id: 1,
             title: "SPL Marketcap",
-            value: `$${marketCap}`, // Aquí se usa el estado marketCap
+            value: `$${parseFloat(marketCap).toLocaleString()}`, // Formatea marketCap con comas
             rate: parseFloat(String(splData.rate)),
             icon: wallet,
             link: '/',
@@ -711,7 +711,7 @@ const InfoWidgets: React.FC = () => {
         {
             id: 3,
             title: "SPL Price in 24 Hours",
-            value: `$${splData.price}`,
+            value: `$${parseFloat(splData.price).toLocaleString()}`, // Formatea splData.price con comas
             rate: parseFloat(String(splData.rate)),
             icon: btc,
             link: '/',
