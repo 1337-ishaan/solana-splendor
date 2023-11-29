@@ -9,7 +9,7 @@ import opti from "../../../assets/icons/home/splendorBlockchain/opti.svg";
 import bchSvg from "../../../assets/icons/home/splendorBlockchain/bch.svg";
 import daiSvg from "../../../assets/icons/home/splendorBlockchain/dai.svg";
 import dotSvg from "../../../assets/icons/home/splendorBlockchain/dot.svg";
-import sdr from "../../../../bankor/Splendor/assets/icons/home/splendorBlockchain/sdr.jpeg";
+import sdr from "../../../assets/icons/home/splendorBlockchain/sdr.jpeg";
 import ethSvg from "../../../assets/icons/home/splendorBlockchain/eth.svg";
 import avalanche from "../../../assets/icons/home/splendorBlockchain/avalanche.png";
 import binanceusd from "../../../assets/icons/home/splendorBlockchain/binance-usd.png";
