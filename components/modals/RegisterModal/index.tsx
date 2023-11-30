@@ -7,6 +7,7 @@ import {NextPage} from "next";
 import {IRegisterModal} from "./types";
 import closeSvg from "../../../assets/icons/common/close.svg";
 import Image from "next/image";
+import { toast } from "react-toastify";
 
 const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
     const { isConnected, address, isDisconnected } = useAccount();
@@ -22,7 +23,7 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
             });
             console.log("Address: ", addressWallet)
             setAddr("");
-            alert("DATA ADDEDE SUCCESFULLY");
+            toast.success("Registered succesfully")
         } catch(error) {
             alert("Error uploading data");
         }
