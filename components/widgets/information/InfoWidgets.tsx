@@ -1,9 +1,8 @@
 import {TWidgetInfo} from "./types";
 import {ApiAdminPanel} from "../../../api/bittensor";
 import wallet from "../../../assets/icons/dashboard/wallet.svg";
-import planet from "../../../assets/icons/dashboard/planet.svg";
+import logo from "../../../assets/icons/common/splendor_logo_only.svg";
 import storage from "../../../assets/icons/dashboard/storage.svg";
-import sales from "../../../assets/icons/dashboard/sales.svg";
 import btc from "../../../assets/icons/dashboard/btc.png";
 import dolar from "../../../assets/icons/dashboard/dolar.png";
 import InfoWidget from "../info/InfoWidget";
@@ -692,35 +691,35 @@ const InfoWidgets: React.FC = () => {
   }, []);
 
   const testInfoDataWidgets: TWidgetInfo[] = [
-        {
+              {
             id: 1,
             title: "SPL Marketcap",
-            value: `$${parseFloat(marketCap).toLocaleString()}`, // Formatea marketCap con comas
-            rate: parseFloat(String(splData.rate)),
+            value: `$${marketCap}`, // Aquí se usa el estado marketCap
+            rate:  undefined,
             icon: wallet,
             link: '/',
         },
        {
             id: 2,
-            title: "Earnings in 24 Hours",
+            title: "Earnings",
             value: "$204",
             rate: 5,
-            icon: dolar,
+            icon: logo,
             link: '/',
         },
         {
             id: 3,
-            title: "SPL Price in 24 Hours",
-            value: `$${parseFloat(splData.price).toLocaleString()}`, // Formatea splData.price con comas
+            title: "SPL Price",
+            value: `$${splData.price}`,
             rate: parseFloat(String(splData.rate)),
             icon: btc,
             link: '/',
         },
         {
             id: 4,
-            title: "Storage used from the users",
+            title: "SDR Price",
             value: "2.3T",
-            rate: 18,
+            rate: undefined,
             icon: storage,
             link: '/',
         }

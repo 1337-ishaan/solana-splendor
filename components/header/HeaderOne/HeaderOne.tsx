@@ -25,11 +25,11 @@ const menuItems: MenuItem[] = [
     route: "https://toshinakamoto.gitbook.io/documentation/",
   },
   {
-    title: "ECOSYSTEM",
+    title: "EXPLORER",
     route: "",
   },
   {
-    title: "TOKENS",
+    title: "DEX",
     route: "",
   },
   {
@@ -38,8 +38,8 @@ const menuItems: MenuItem[] = [
     download: true,
   },
   {
-    title: "PROJECT UPDATES",
-    route: "",
+    title: "WALLET",
+    route: "https://metamask.io/",
   },
 ];
 

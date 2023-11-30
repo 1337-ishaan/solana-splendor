@@ -5,7 +5,7 @@ import Image from "next/image";
 import React, {useMemo} from "react";
 import homeIcon from "../../../assets/icons/dashboard/home.svg";
 import downloadIcon from "../../../assets/icons/dashboard/download.svg";
-import tokenomicsIcon from "../../../assets/icons/tokenomics/tokenomics.svg";
+import documentIcon from "../../../assets/icons/dashboard/document.svg";
 import MenuButton from "../../buttons/menu/MenuButton/MenuButton";
 import {IMenuItem} from "./types";
 import backgroundBottomMenuWidget from "../../../assets/icons/dashboard/backgroundBottomMenuWidget.svg";
@@ -34,6 +34,13 @@ const Menu = () => {
             icon: downloadIcon,
             selected: false,
             link: "/dashboard/download",
+        },
+        {
+            id: 3,
+            name: "Documentation",
+            icon: documentIcon,
+            selected: false,
+            link: "https://app.gitbook.com/o/Tk0Lau8L3hdltpYxM76K/s/KmZEOGaUY3EkDrLIHK5T/",
         }
     ]
     const additionsButtons:IMenuItem[] = []

@@ -1,7 +1,8 @@
-export interface IInfoWidget{
+export type TWidgetInfo = {
+    id: number;
     title: string;
     value: string;
-    rate: number;
+    rate: number | undefined;
     icon: string;
     link: string;
 }
