@@ -704,7 +704,7 @@ const InfoWidgets: React.FC = () => {
             title: "Earnings",
             value: "$204",
             rate: 5,
-            icon: storage,
+            icon: logo,
             link: '/',
         },
         {
