@@ -34,6 +34,7 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
                         disabled
                         value={addressWallet}
                     ></input>
+                    <p className="text-center text-[10px] mt-[10px] m-[auto]">Payments will be executed each 24 hours (12 hrs UTC-5)</p>
                 </div>
                 <button className={
                     "w-full text-[#073B4C] bg-white border-[#073B4C] border-[1px] rounded-[10px] p-[10px] " +
