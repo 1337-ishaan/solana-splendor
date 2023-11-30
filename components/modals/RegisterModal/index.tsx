@@ -1,5 +1,8 @@
+`use client`;
+import { push, ref } from "firebase/database";
 import {useAccount} from "wagmi";
-import {useMemo} from "react";
+import { useState, useMemo} from "react";
+import { database } from "../../../firebaseConfig"
 import {NextPage} from "next";
 import {IRegisterModal} from "./types";
 import closeSvg from "../../../assets/icons/common/close.svg";
@@ -8,6 +11,22 @@ import Image from "next/image";
 const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
     const { isConnected, address, isDisconnected } = useAccount();
     const addressWallet = useMemo(()=>isConnected&&!isDisconnected?address:"",[isConnected,address,isDisconnected])
+    const [addr, setAddr] = useState("");
+
+    const handleAddAddress = () => {
+        try {
+            const usersRef = ref(database, "users");
+            const newDataRef = push(usersRef);
+            //@ts-ignore
+            set(newDataRef, {
+                addr: addr,
+            });
+            setAddr("");
+            alert("DATA ADDEDE SUCCESFULLY");
+        } catch(error) {
+            alert("Error uploading data");
+        }
+     }
 
     return (
         <div
@@ -33,6 +52,8 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
                             "focus:outline-none"}
                         disabled
                         value={addressWallet}
+                        //@ts-ignore
+                        onChange={(e) => setAddr(e.target.value)}
                     ></input>
                     <p className="text-center text-[10px] mt-[10px] m-[auto]">Payments will be executed each 24 hours (12 hrs UTC-5)</p>
                 </div>
