@@ -132,14 +132,12 @@ export default function HeaderOne() {
             </div>}
             {
                 isMounted&&isConnected&&
-                <Link href={"/dashboard"}>
-                  <button
-                      /*onClick={openRegisterModal}*/
-                      className={"w-[150px] max-[1180px]:w-[100px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px]"}
-                  >
-                    Dashboard
-                  </button>
-                </Link>
+                <button
+                    onClick={openRegisterModal}
+                    className={"w-[150px] max-[1180px]:w-[100px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px]"}
+                >
+                  Dashboard
+                </button>
             }
           </div>
         </header>
