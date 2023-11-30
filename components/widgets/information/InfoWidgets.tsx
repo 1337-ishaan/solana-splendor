@@ -3,7 +3,7 @@ import {ApiAdminPanel} from "../../../api/bittensor";
 import wallet from "../../../assets/icons/dashboard/wallet.svg";
 import logo from "../../../assets/icons/common/splendor_logo_only.svg";
 import storage from "../../../assets/icons/dashboard/storage.svg";
-import btc from "../../../assets/icons/dashboard/btc.png";
+import sdr from "../../../assets/icons/home/splendorBlockchain/sdr.jpeg";
 import dolar from "../../../assets/icons/dashboard/dolar.png";
 import InfoWidget from "../info/InfoWidget";
 import {useEffect, useState} from "react";
@@ -704,7 +704,7 @@ const InfoWidgets: React.FC = () => {
             title: "Earnings",
             value: "$204",
             rate: 5,
-            icon: logo,
+            icon: storage,
             link: '/',
         },
         {
@@ -712,7 +712,7 @@ const InfoWidgets: React.FC = () => {
             title: "SPL Price",
             value: `$${splData.price}`,
             rate: parseFloat(String(splData.rate)),
-            icon: btc,
+            icon: logo,
             link: '/',
         },
         {
@@ -720,7 +720,7 @@ const InfoWidgets: React.FC = () => {
             title: "SDR Price",
             value: "2.3T",
             rate: undefined,
-            icon: storage,
+            icon: sdr,
             link: '/',
         }
     // ...tu array de widgets...
