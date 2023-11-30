@@ -40,7 +40,7 @@ const Menu = () => {
             name: "Documentation",
             icon: documentIcon,
             selected: false,
-            link: "https://toshinakamoto.gitbook.io/documentation/",
+            link: "https://toshinakamoto.gitbook.io/documentation/guides",
         }
     ]
     const additionsButtons:IMenuItem[] = []
