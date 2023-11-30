@@ -1,5 +1,4 @@
-export type TWidgetInfo = {
-    id: number;
+export interface IInfoWidget{
     title: string;
     value: string;
     rate: number | undefined;
