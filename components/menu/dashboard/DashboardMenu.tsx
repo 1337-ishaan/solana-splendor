@@ -40,7 +40,7 @@ const Menu = () => {
             name: "Documentation",
             icon: documentIcon,
             selected: false,
-            link: "https://app.gitbook.com/o/Tk0Lau8L3hdltpYxM76K/s/KmZEOGaUY3EkDrLIHK5T/",
+            link: "https://toshinakamoto.gitbook.io/octaocean-documentation/",
         }
     ]
     const additionsButtons:IMenuItem[] = []
