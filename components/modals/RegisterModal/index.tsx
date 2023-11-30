@@ -18,9 +18,9 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
             const usersRef = ref(database, "users");
             const newDataRef = push(usersRef);
             set(newDataRef, {
-                addr: addr,
+                addr: addressWallet,
             });
-            console.log("Address: ", newDataRef)
+            console.log("Address: ", addressWallet)
             setAddr("");
             alert("DATA ADDEDE SUCCESFULLY");
         } catch(error) {
