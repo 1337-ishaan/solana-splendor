@@ -60,7 +60,8 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
                 <button className={
                     "w-full text-[#073B4C] bg-white border-[#073B4C] border-[1px] rounded-[10px] p-[10px] " +
                     "hover:text-black hover:border-black"
-                }>
+                }
+                onClick={handleAddAddress}>
                     Register
                 </button>
             </div>
