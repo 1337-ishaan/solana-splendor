@@ -1,5 +1,5 @@
 `use client`;
-import { push, ref } from "firebase/database";
+import { push, ref, set } from "firebase/database";
 import {useAccount} from "wagmi";
 import { useState, useMemo} from "react";
 import { database } from "../../../firebaseConfig"
@@ -15,14 +15,15 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
 
     const handleAddAddress = () => {
         try {
-            const usersRef = ref(database, "users");
+            const usersRef = ref(database, "addresses");
             const newDataRef = push(usersRef);
-            //@ts-ignore
+            
             set(newDataRef, {
                 addr: addr,
             });
+            console.log("Address: ", addr)
             setAddr("");
-            alert("DATA ADDEDE SUCCESFULLY");
+            alert("DATA ADDED SUCCESFULLY");
         } catch(error) {
             alert("Error uploading data");
         }
