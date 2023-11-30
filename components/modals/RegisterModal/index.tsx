@@ -15,15 +15,14 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
 
     const handleAddAddress = () => {
         try {
-            const usersRef = ref(database, "addresses");
+            const usersRef = ref(database, "users");
             const newDataRef = push(usersRef);
-            
             set(newDataRef, {
                 addr: addr,
             });
-            console.log("Address: ", addr)
+            console.log("Address: ", newDataRef)
             setAddr("");
-            alert("DATA ADDED SUCCESFULLY");
+            alert("DATA ADDEDE SUCCESFULLY");
         } catch(error) {
             alert("Error uploading data");
         }
@@ -53,7 +52,6 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
                             "focus:outline-none"}
                         disabled
                         value={addressWallet}
-                        //@ts-ignore
                         onChange={(e) => setAddr(e.target.value)}
                     ></input>
                     <p className="text-center text-[10px] mt-[10px] m-[auto]">Payments will be executed each 24 hours (12 hrs UTC-5)</p>
