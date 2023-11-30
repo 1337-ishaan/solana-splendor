@@ -23,7 +23,11 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
             });
             console.log("Address: ", addressWallet)
             setAddr("");
-            toast.success("Registered succesfully")
+            toast.success("Registered succesfully", {
+                onClose: () => {
+                    window.location.href = '/dashboard';
+                }
+            });
         } catch(error) {
             toast.error("Refistered failed")
         }
