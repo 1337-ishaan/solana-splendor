@@ -25,7 +25,7 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
             setAddr("");
             toast.success("Registered succesfully")
         } catch(error) {
-            alert("Error uploading data");
+            toast.error("Refistered failed")
         }
      }
 
