@@ -9,13 +9,13 @@ const Download = () => {
         <div className={"flex flex-col w-full h-full px-[6px] pb-[6px]"}>
             <p className="mt-[40px] text-center text-[22px] font-bold text-white pt-[0px] pb-[2px]">Download Dashboard</p>
             <p className="mt-[30px] text-center text-[18px] font-thin text-white pt-[0px] pb-[2px] mx-[15%]">
-                Download the app to get started using the Dashboard Platform today. Or, if you prefer a browser experience, you can try the web version of Dashboard.
+                Download splendor core and start mining. Or, if you prefer a browser experience, you can try the web version of Dashboard.
             </p>
 
             <div className="mt-[80px] flex flex-row flex-1 justify-between max-[800px]:flex-col">
                 <div className={"flex flex-col flex-2 pl-[50px] pr-[30px]"}>
-                    <p className={"text-left text-white text-[30px] max-[800px]:text-center"}>The Dashboard app</p>
-                    <p className={"text-left text-white font-thin mt-[30px] max-[800px]:text-center"}>Download the app to get started with the Dashboard Platform.</p>
+                    <p className={"text-left text-white text-[30px] max-[800px]:text-center"}>Splendor Core</p>
+                    <p className={"text-left text-white font-thin mt-[30px] max-[800px]:text-center"}>Download the app to get started with the Splendor Core.</p>
                     <div className={"mt-[30px] flex flex-row justify-between"}>
                         <button className={"bg-[#4f49f0] w-[200px] h-[40px] rounded-[5px] text-white cursor-pointer mr-[5px]"}>
                             <div className={"flex flex-row justify-center items-center"}>
@@ -50,9 +50,6 @@ const Download = () => {
                             </div>
                         </button>
                     </div>
-                    <p className={"mt-[30px] text-white text-[14px] font-thin max-[800px]:mb-[30px] max-[800px]:text-center"}>
-                        By downloading and using Dashboard, I agree to the Privacy Policy and Terms.
-                    </p>
                 </div>
                 <div className={"flex flex-3"}>
                     <Image src={downloadScreen} alt={"downloadScreen"} width={896} height={560} />
