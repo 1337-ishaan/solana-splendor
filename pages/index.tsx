@@ -3,7 +3,6 @@ import DualToken from "../components/section/BuildWithWhatYouAlreadyKnow/compone
 import LayoutOne from "../components/layouts/LayoutOne";
 import {NextPage} from "next";
 import HowItsWork from "../components/section/HowItsWork/WhoWeAre";
-import DoMoreWithSplendor from "../components/section/DoMoreWithSplendor/DoMoreWithSplendor";
 import StartMining from "../components/section/StartMining/StartMining";
 import SplendorTokens from "../components/section/SplendorTokens/SplendorTokens";
 import SplendorBlockchain from "../components/section/SplendorBlockchain";

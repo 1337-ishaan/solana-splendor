@@ -690,11 +690,19 @@ const InfoWidgets: React.FC = () => {
     fetchBTCData();
   }, []);
 
-  const testInfoDataWidgets: TWidgetInfo[] = [
+    function formatNumber(numberString: string){
+        const number = Number(numberString);
+        if(isNaN(number))
+            return numberString;
+        return number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    }
+
+
+    const testInfoDataWidgets: TWidgetInfo[] = [
               {
             id: 1,
             title: "SPL Marketcap",
-            value: `$${marketCap}`, // Aquí se usa el estado marketCap
+            value: `$${formatNumber(marketCap)}`, // Aquí se usa el estado marketCap
             rate:  undefined,
             icon: wallet,
             link: '/',
@@ -710,7 +718,7 @@ const InfoWidgets: React.FC = () => {
         {
             id: 3,
             title: "SPL Price",
-            value: `$${splData.price}`,
+            value: `$${formatNumber(splData.price)}`,
             rate: parseFloat(String(splData.rate)),
             icon: logo,
             link: '/',
@@ -727,12 +735,10 @@ const InfoWidgets: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-row justify-center flex-1 items-center flex-wrap">
+    <div className="flex flex-col h-screen mx-[30px] min-w-[440px]">
         {testInfoDataWidgets.map(
-          button => <InfoWidget {...button} key={button.id} />
+            button => <InfoWidget {...button} key={button.id} />
         )}
-      </div>
     </div>
   );
 };

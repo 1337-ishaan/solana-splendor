@@ -15,20 +15,25 @@ const WhoWeAre: NextPage = () => {
         <div className="flex flex-col items-center max-[800px]:flex-col justify-center w-full">
           <div className={"flex flex-row max-[800px]:items-center"}>
 
-              <Image src={logo} alt={'logo'} height="50px" />
-
+              <div className={"max-[800px]:h-[40px] max-[800px]:w-[40px] flex items-center justify-center"}>
+                <Image src={logo} alt={'logo'} height={60} width={60} />
+              </div>
             <p className={"ml-[10px] text-black text-[70px] leading-[1.2] font-medium text-[#073B4C] " +
                 "max-[800px]:text-[50px] max-[800px]:text-center"}>SPLENDOR</p>
           </div>
-          <p className={"text-black text-[45px] leading-[1.2] font-[200] text-[#073B4C] " +
-              "max-[800px]:text-[30px] max-[800px]:text-center max-[800px]:mt-[15px]"}>The evolved version of Bitcoin</p>
+          <p className={"text-black text-[45px] leading-[1.2] font-thin text-[#073B4C] " +
+              "max-[800px]:text-[30px] max-[800px]:text-center max-[800px]:mt-[15px]"}>
+            The evolved version
+            <br className={"hidden max-[800px]:block"} />
+            <span> of Bitcoin</span>
+          </p>
 
           <div className="mt-[120px] w-full">
             <VideoPlayer
                 src={"https://drive.google.com/uc?id=1SQLSeacpJP6TJrT_k3WJIy_uQfHeeUeY&export=download"} />
           </div>
           <div className={"flex flex-row justify-center w-full mt-[150px] max-[800px]:flex-col max-[800px]:mt-0"}>
-            <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+            <div className={"flex flex-col justify-start min-w-[20%] w-[20%] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
               <div className={"w-[70px] h-[70px] mb-[20px]"}>
                 <Image src={anonymousSvg} alt={"anonymousSvg"} height={70} width={70}/>
               </div>
@@ -40,7 +45,7 @@ const WhoWeAre: NextPage = () => {
               </div>
             </div>
 
-            <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+            <div className={"flex flex-col justify-start min-w-[20%] w-[20%] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
               <div className={"w-[70px] h-[70px] mb-[20px]"}>
                 <Image src={fastSvg} alt={"fastSvg"} />
               </div>
@@ -52,7 +57,7 @@ const WhoWeAre: NextPage = () => {
               </div>
             </div>
 
-            <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+            <div className={"flex flex-col justify-start min-w-[20%] w-[20%] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
               <div className={"w-[70px] h-[70px] mb-[20px]"}>
                 <Image src={scalableSvg} alt={"scalableSvg"} />
               </div>
@@ -64,7 +69,7 @@ const WhoWeAre: NextPage = () => {
               </div>
             </div>
 
-            <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+            <div className={"flex flex-col justify-start min-w-[20%] w-[20%] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
               <div className={"w-[70px] h-[70px] mb-[20px]"}>
                 <Image src={decentralizedSvg} alt={"decentralizedSvg"} />
               </div>

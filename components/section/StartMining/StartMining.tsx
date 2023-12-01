@@ -2,6 +2,7 @@ import React from "react";
 import {NextPage} from "next";
 import Dashboard from "../../../assets/icons/home/dashboard.webp";
 import Image from "next/image";
+import Link from "next/link";
 
 const StartMining: NextPage = () => {
   return (
@@ -15,7 +16,7 @@ const StartMining: NextPage = () => {
           </h1>
           <div className={"mt-[50px] flex flex-row justify-center mx-[100px] max-[800px]:flex-col " +
               "max-[800px]:mx-0"}>
-              <div className={"max-[800px]:items-center"}>
+              <div className={"max-[800px]:items-center max-[800px]:mb-[20px]"}>
                   <div className={"flex flex-col text-left mr-[10px]"}>
                       <p className={"text-[#073B4C] leading-10"}>Create your account</p>
                       <p className={"text-[#073B4C] leading-10"}>Download Splendor Core</p>
@@ -23,18 +24,24 @@ const StartMining: NextPage = () => {
                       <p className={"text-[#073B4C] leading-10"}>Run a node</p>
                       <p className={"text-[#073B4C] leading-10"}>Start mining</p>
                       <ul className={"text-[#75858A] ml-[50px]"}>
-                          <li className={"list-[disc]"}>easy install</li>
+                          <li className={"list-[disc] mb-[10px]"}>easy install</li>
                           <li className={"list-[disc]"}>no special equipment needed</li>
                       </ul>
                   </div>
-                  <a href="/dashboard/download">
-                    <button className={"mt-[50px] bg-black rounded-[10px] p-[15px] w-[200px] text-white cursor-pointer " +
-                        "max-[800px]:mb-[10px] max-[800px]:mt-[20px]"}>
-                        Download
-                    </button>
-                  </a>
+                  <button className={"mt-[50px] bg-black rounded-[10px] p-[15px] w-[200px] text-white cursor-pointer " +
+                      "max-[800px]:mb-[10px] max-[800px]:mt-[20px] max-[800px]:hidden"}>
+                      <Link href="/dashboard/download">
+                          Download
+                      </Link>
+                  </button>
               </div>
               <Image className={"ml-[30px] mt-[50px] max-[800px]:ml-0"} src={Dashboard} width={1000} alt={"Dashboard"} />
+              <button className={"mt-[50px] bg-black rounded-[10px] p-[15px] w-[200px] text-white cursor-pointer " +
+                  "max-[800px]:mb-[10px] max-[800px]:mt-[20px] hidden max-[800px]:block"}>
+                  <Link href="/dashboard/download">
+                      Download
+                  </Link>
+              </button>
           </div>
       </div>
     </section>

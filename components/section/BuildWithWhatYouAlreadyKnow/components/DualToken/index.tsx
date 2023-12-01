@@ -1,6 +1,6 @@
 import React from "react";
-import minuteBlockTimeSvg from "../../../../../assets/icons/home/10MinuteBlockTime.svg";
-import logo from "../../../../../assets/icons/home/logo.svg";
+import minuteBlockTimeSvg from "../../../../../assets/icons/home/10min.svg";
+import miltokensSvg from "../../../../../assets/icons/home/21mil_tokens.svg";
 import blockRewardSplSvg from "../../../../../assets/icons/home/blockRewardSpl.svg";
 import lastBlockToBeMinedSvg from "../../../../../assets/icons/home/lastBlockToBeMined.svg";
 import noHalvingSvg from "../../../../../assets/icons/home/noHalving.svg";
@@ -10,7 +10,7 @@ import DualItem from "../DualItem";
 const DualToken: NextPage = () => {
     const firstRow = [
         {
-            img: logo,
+            img: miltokensSvg,
             text: "21 MILLION COINS"
         },
         {
@@ -26,7 +26,7 @@ const DualToken: NextPage = () => {
     const secondRow = [
         {
             img: lastBlockToBeMinedSvg,
-            text: "Last Block to be Mined in the year 2123"
+            text: "Last Block to be Mined\n in the year 2123"
         },
         {
             img: noHalvingSvg,
@@ -44,7 +44,7 @@ const DualToken: NextPage = () => {
                 <p className={"px-0 text-[#727885] text-center"}>Decoupling governance and utility functionalities<br />
                     for enhanced flexibility and efficiency.
                 </p>
-                <div className={"flex flex-wrap w-[80%] justify-evenly mt-[30px]"}>
+                <div className={"flex flex-wrap w-[80%] justify-evenly mt-[30px] max-[800px]:mt-[40px] max-[800px]:flex-col gap-[40px]"}>
                     {
                         firstRow.map(
                             (props, key)=>
@@ -52,7 +52,8 @@ const DualToken: NextPage = () => {
                         )
                     }
                 </div>
-                <div className={"flex flex-wrap w-[80%] justify-evenly min-[800px]:mt-[30px]"}>
+                <div className={"flex flex-wrap w-[80%] justify-evenly max-[800px]:mt-[40px] min-[800px]:mt-[30px] " +
+                    "max-[800px]:flex-col gap-[40px]"}>
                     {
                         secondRow.map(
                             (props, key)=>
