@@ -6,7 +6,7 @@ import anonymousSvg from "../../../assets/icons/home/anonymous.svg";
 import fastSvg from "../../../assets/icons/home/fast.svg";
 import scalableSvg from "../../../assets/icons/home/scalable.svg";
 import decentralizedSvg from "../../../assets/icons/home/decentralized.svg";
-import logo from "../../../assets/icons/home/logo.svg";
+import logo from "../../../assets/icons/common/logo-blue.jpeg";
 
 const WhoWeAre: NextPage = () => {
   return (
@@ -14,7 +14,7 @@ const WhoWeAre: NextPage = () => {
       <div className="px-[15px] w-full">
         <div className="flex flex-col items-center max-[800px]:flex-col justify-center w-full">
           <div className={"flex flex-row max-[800px]:items-center"}>
-            <div className={"z-[-1]"}>
+            <div className={"z-[-1]  "}>
               <Image src={logo} alt={'logo'} />
             </div>
             <p className={"ml-[10px] text-black text-[70px] leading-[1.2] font-medium text-[#073B4C] " +
