@@ -690,11 +690,19 @@ const InfoWidgets: React.FC = () => {
     fetchBTCData();
   }, []);
 
-  const testInfoDataWidgets: TWidgetInfo[] = [
+    function formatNumber(numberString: string){
+        const number = Number(numberString);
+        if(isNaN(number))
+            return numberString;
+        return number.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    }
+
+
+    const testInfoDataWidgets: TWidgetInfo[] = [
               {
             id: 1,
             title: "SPL Marketcap",
-            value: `$${marketCap}`, // Aquí se usa el estado marketCap
+            value: `$${formatNumber(marketCap)}`, // Aquí se usa el estado marketCap
             rate:  undefined,
             icon: wallet,
             link: '/',
@@ -710,7 +718,7 @@ const InfoWidgets: React.FC = () => {
         {
             id: 3,
             title: "SPL Price",
-            value: `$${splData.price}`,
+            value: `$${formatNumber(splData.price)}`,
             rate: parseFloat(String(splData.rate)),
             icon: logo,
             link: '/',
