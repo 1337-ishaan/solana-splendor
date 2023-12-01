@@ -727,12 +727,10 @@ const InfoWidgets: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-col">
-      <div className="flex flex-row justify-center flex-1 items-center flex-wrap">
+    <div className="flex flex-col h-screen mx-[30px] min-w-[440px]">
         {testInfoDataWidgets.map(
-          button => <InfoWidget {...button} key={button.id} />
+            button => <InfoWidget {...button} key={button.id} />
         )}
-      </div>
     </div>
   );
 };
