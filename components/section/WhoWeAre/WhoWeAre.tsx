@@ -45,7 +45,7 @@ const WhoWeAre: NextPage = () => {
               </div>
             </div>
 
-            <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+            <div className={"flex flex-col justify-start min-w-[20%] w-[20%] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
               <div className={"w-[70px] h-[70px] mb-[20px]"}>
                 <Image src={fastSvg} alt={"fastSvg"} />
               </div>
@@ -57,7 +57,7 @@ const WhoWeAre: NextPage = () => {
               </div>
             </div>
 
-            <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+            <div className={"flex flex-col justify-start min-w-[20%] w-[20%] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
               <div className={"w-[70px] h-[70px] mb-[20px]"}>
                 <Image src={scalableSvg} alt={"scalableSvg"} />
               </div>
@@ -69,7 +69,7 @@ const WhoWeAre: NextPage = () => {
               </div>
             </div>
 
-            <div className={"flex flex-col justify-start min-w-[300px] w-[300px] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
+            <div className={"flex flex-col justify-start min-w-[20%] w-[20%] mr-[20px] text-black max-[800px]:w-full max-[800px]:items-center max-[800px]:mt-[50px]"}>
               <div className={"w-[70px] h-[70px] mb-[20px]"}>
                 <Image src={decentralizedSvg} alt={"decentralizedSvg"} />
               </div>
