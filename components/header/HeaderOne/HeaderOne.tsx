@@ -34,7 +34,7 @@ const menuItems: MenuItem[] = [
   },
   {
     title: "WHITEPAPER",
-    route: "https://drive.google.com/uc?id=1ec_Y2lu_bGXuXauuC6q1_ziWMQwmZ3IZ&export=download",
+    route: "https://drive.google.com/uc?id=13V3LXZbkZWyYecK6wTu7wlbM12Nqgfkc&export=download",
     download: true,
   },
   {
