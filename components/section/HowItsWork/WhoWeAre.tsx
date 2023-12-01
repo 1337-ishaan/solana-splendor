@@ -31,7 +31,7 @@ const HowItsWork: NextPage = () => {
                         <Image src={Wallet} alt={"Wallet"} />
                     </div>
                 </div>
-                <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[100px] max-[800px]:h-auto"}>
+                <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[110px] max-[800px]:h-auto"}>
                     Choose a Splendor-Compatible Wallet:
                 </div>
                 <div className={"flex flex-row items-end"}>
@@ -79,7 +79,7 @@ const HowItsWork: NextPage = () => {
                           <Image src={Connect} alt={"Wallet"} />
                       </div>
                   </div>
-                  <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[100px] max-[800px]:h-auto"}>
+                  <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[110px] max-[800px]:h-auto"}>
                       Install and Set Up the Wallet:
                   </div>
                   <div className={"flex flex-row items-end"}>
@@ -98,7 +98,7 @@ const HowItsWork: NextPage = () => {
                         <Image src={Transact} alt={"Wallet"} />
                       </div>
                   </div>
-                  <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[100px] max-[800px]:h-auto"}>
+                  <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[110px] max-[800px]:h-auto"}>
                       Acquire SPL Tokens:
                   </div>
                   <div className={"flex flex-row items-end"}>
@@ -117,7 +117,7 @@ const HowItsWork: NextPage = () => {
                         <Image src={Use} alt={"Wallet"} />
                       </div>
                   </div>
-                  <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[100px] max-[800px]:h-auto"}>
+                  <div className={"mt-[30px] text-[25px] text-left text-[#073B4C] leading-8 w-[85%] h-[110px] max-[800px]:h-auto"}>
                       Interact with the Splendor Network:
                   </div>
                   <div className={"flex flex-row items-end"}>

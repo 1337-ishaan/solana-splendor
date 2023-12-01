@@ -86,7 +86,7 @@ export default function HeaderOne() {
       <>
         {showRegisterModal&&<RegisterModal closeModal={hideRegisterModal}/>}
         <header className={`flex gap-[25px] max-[1280px]:gap-[20px] z-[9999] items-center drop-shadow-2xl bg-white py-[30px] px-2 w-full 
-      max-[1280px]:px-0 max-[1180px]:fixed ${fixedMenu?'min-[1080px]:fixed':''} max-[1180px]:justify-between`}>
+      max-[1280px]:px-0 max-[1180px]:fixed ${fixedMenu?'min-[1080px]:fixed':''} justify-between`}>
           <div className={"ml-[50px] mr-[150px] max-[1280px]:ml-[20px] max-[1180px]:hidden"}>
             <Image src={logo} width={20} height={20} alt="logo" />
           </div>
@@ -113,7 +113,6 @@ export default function HeaderOne() {
             }
           </div>
           <div className="flex gap-[25px] items-center justify-center text-black max-[1280px]:gap-[15px] max-[1180px]:hidden">
-
             {menuItems.map((item, key) => {
               return item.hasOwnProperty("children") ? (
                   <Dropdown key={key} item={item} />
@@ -126,7 +125,7 @@ export default function HeaderOne() {
               );
             })}
           </div>
-          <div className={"absolute right-[100px] ml-[100px] max-[1280px]:right-[20px] max-[1180px]:left-0 max-[1180px]:right-auto flex flex-row items-center justify-center"}>
+          <div className={"ml-[100px] max-[1280px]:right-[20px] max-[1180px]:left-0 max-[1180px]:right-auto flex flex-row items-center justify-center"}>
             {isMounted&&<div className={"mx-[10px]"}>
               <ConnectButton/>
             </div>}

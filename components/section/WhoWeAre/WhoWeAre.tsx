@@ -21,7 +21,7 @@ const WhoWeAre: NextPage = () => {
             <p className={"ml-[10px] text-black text-[70px] leading-[1.2] font-medium text-[#073B4C] " +
                 "max-[800px]:text-[50px] max-[800px]:text-center"}>SPLENDOR</p>
           </div>
-          <p className={"text-black text-[45px] leading-[1.2] font-[200] text-[#073B4C] " +
+          <p className={"text-black text-[45px] leading-[1.2] font-thin text-[#073B4C] " +
               "max-[800px]:text-[30px] max-[800px]:text-center max-[800px]:mt-[15px]"}>
             The evolved version
             <br className={"hidden max-[800px]:block"} />
