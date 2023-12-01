@@ -24,7 +24,6 @@ const Home: NextPage = () => {
                 <StartMining />
 
                 <SplendorBlockchain />
-                <DoMoreWithSplendor />
             </div>
         </LayoutOne>
     );

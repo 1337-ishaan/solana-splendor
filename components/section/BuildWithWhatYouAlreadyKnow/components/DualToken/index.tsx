@@ -1,6 +1,6 @@
 import React from "react";
 import minuteBlockTimeSvg from "../../../../../assets/icons/home/10MinuteBlockTime.svg";
-import millionCoinsSvg from "../../../../../assets/icons/home/21millionCoins.svg";
+import logo from "../../../../../assets/icons/home/logo.svg";
 import blockRewardSplSvg from "../../../../../assets/icons/home/blockRewardSpl.svg";
 import lastBlockToBeMinedSvg from "../../../../../assets/icons/home/lastBlockToBeMined.svg";
 import noHalvingSvg from "../../../../../assets/icons/home/noHalving.svg";
@@ -10,7 +10,7 @@ import DualItem from "../DualItem";
 const DualToken: NextPage = () => {
     const firstRow = [
         {
-            img: millionCoinsSvg,
+            img: logo,
             text: "21 MILLION COINS"
         },
         {
