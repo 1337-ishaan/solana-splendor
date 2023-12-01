@@ -36,7 +36,7 @@ const HowItsWork: NextPage = () => {
                 </div>
                 <div className={"flex flex-row items-end"}>
                     <div className={"w-[90%] h-[1px] bg-[#073B4C] mb-[8px]"}></div>
-                    <p className={"text-black ml-[10px] text-[20px] text-[#073B4C]"}>01</p>
+                    <p className={"ml-[10px] text-[20px] text-[#073B4C]"}>01</p>
                 </div>
                 <div className={"flex flex-col w-[90%] mt-[10px]"}>
                     <Link href={"https://trustwallet.com/es/"}>
@@ -103,7 +103,7 @@ const HowItsWork: NextPage = () => {
                   </div>
                   <div className={"flex flex-row items-end"}>
                       <div className={"w-[90%] h-[1px] bg-[#073B4C] mb-[8px]"}></div>
-                      <p className={"text-black ml-[10px] text-[20px] text-[#073B4C]"}>03</p>
+                      <p className={"ml-[10px] text-[20px] text-[#073B4C]"}>03</p>
                   </div>
                   <div className={"flex flex-col w-[90%] mt-[10px] text-left text-[#073B4C]"}>
                       Obtain SPL tokens to use within the Splendor network. You can acquire SPL tokens through various means, such as purchasing them on supported exchanges, receiving them in transactions, or participating in token distributions or mining activities if applicable.
