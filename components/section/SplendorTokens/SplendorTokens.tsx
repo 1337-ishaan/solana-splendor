@@ -3,6 +3,7 @@ import {NextPage} from "next";
 import Image from "next/image";
 import splendorTokenSvg from "../../../assets/icons/home/splendorToken.svg";
 import stablecoinSvg from "../../../assets/icons/home/stablecoin.svg";
+import SdrVideoPlayer from "../../media/VideoPlayer/sdrVideo";
 
 const SplendorTokens: NextPage = () => {
   return (
@@ -34,6 +35,9 @@ const SplendorTokens: NextPage = () => {
                           What is a Decentralized Stablecoin: This is a type of cryptocurrency that aims to maintain a stable value. Unlike Bitcoin, which can have volatile prices, this stablecoin is designed to have a consistent value.                  </div>
                   </div>
               </div>
+          </div>
+          <div className="mt-[3rem]">
+            <SdrVideoPlayer src={"https://drive.google.com/uc?id=1woJ8eX-IDMDn6lJMuu_hxWPD3iOa6ePI&export=download"} />
           </div>
 
       </div>
