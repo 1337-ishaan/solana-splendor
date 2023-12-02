@@ -2,6 +2,8 @@ import {TWidgetInfo} from "./types";
 import {ApiAdminPanel} from "../../../api/bittensor";
 import wallet from "../../../assets/icons/dashboard/wallet.svg";
 import logo from "../../../assets/icons/common/splendor_logo_only.svg";
+import logow from "../../../assets/icons/common/logo-white.svg";
+import sdr1 from "../../../assets/icons/common/sdr.svg";
 import storage from "../../../assets/icons/dashboard/storage.svg";
 import sdr from "../../../assets/icons/home/splendorBlockchain/sdr.jpeg";
 import dolar from "../../../assets/icons/dashboard/dolar.png";
@@ -712,7 +714,7 @@ const InfoWidgets: React.FC = () => {
             title: "Earnings",
             value: "$204",
             rate: 5,
-            icon: logo,
+            icon: logow,
             link: '/',
         },
         {
@@ -720,7 +722,7 @@ const InfoWidgets: React.FC = () => {
             title: "SPL Price",
             value: `$${formatNumber(splData.price)}`,
             rate: parseFloat(String(splData.rate)),
-            icon: logo,
+            icon: logow,
             link: '/',
         },
         {
@@ -728,7 +730,7 @@ const InfoWidgets: React.FC = () => {
             title: "SDR Price",
             value: `1.332260`,
             rate: undefined,
-            icon: sdr,
+            icon: sdr1,
             link: '/',
         }
     // ...tu array de widgets...
