@@ -14,7 +14,15 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
     const addressWallet = useMemo(()=>isConnected&&!isDisconnected?address:"",[isConnected,address,isDisconnected])
     const [addr, setAddr] = useState("");
 
+    let isProcessing = false;
+
     const handleAddAddress = async () => {
+      if (isProcessing) {
+        return; // Prevent recursive call
+      }
+
+      isProcessing = true;
+
       try {
         const usersRef = ref(database, "users");
         const newDataRef = push(usersRef);
@@ -30,6 +38,8 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
         toast.error("Registration failed");
         console.error("ERROR: ", error);
         console.log("VALUE:", address, "Passed: ", addr);
+      } finally {
+        isProcessing = false; // Reset processing flag
       }
     };
 
