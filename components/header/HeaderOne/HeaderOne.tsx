@@ -76,6 +76,9 @@ export default function HeaderOne() {
     window.addEventListener("scroll", stickNavbar);
     return () => window.removeEventListener("scroll", stickNavbar);
   }, []);
+  const redirectToDashboard = () => {
+    window.location.href = '/dashboard';
+  };
 
   const closeMobileMenu = ()=>setIsOpen(false)
 
@@ -131,7 +134,7 @@ export default function HeaderOne() {
             </div>}
             {isMounted && isConnected &&
                 <button
-                    onClick={openRegisterModal}
+                    onClick={redirectToDashboard}
                     className={` mr-[10px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px] ${
         window.innerWidth <= 768 ? 'dashboard-button-mobile' : 'w-[150px]'
       }`}
