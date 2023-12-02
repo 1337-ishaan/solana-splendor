@@ -125,14 +125,16 @@ export default function HeaderOne() {
               );
             })}
           </div>
-          <div className={"ml-[100px] max-[1280px]:right-[20px] max-[1180px]:left-0 max-[1180px]:right-auto flex flex-row items-center justify-center"}>
-            {isMounted&&<div className={"mx-[10px]"}>
+          <div className={" max-[1280px]:right-[20px] max-[1180px]:left-0 max-[1180px]:right-auto flex flex-row items-center justify-center"}>
+            {isMounted&&
               <ConnectButton/>
-            </div>}
+            }
             {isMounted && isConnected &&
                 <button
                     onClick={openRegisterModal}
-                    className={"w-[150px] max-[1180px]:w-[100px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px] mr-[20px]"}
+                    className={`bg-white text-black border-black border-[1px] rounded-[10px] p-[10px] ${
+        window.innerWidth <= 768 ? 'dashboard-button-mobile' : 'w-[150px]'
+      }`}
                 >
                   Dashboard
                 </button>
