@@ -126,9 +126,9 @@ export default function HeaderOne() {
             })}
           </div>
           <div className={" max-[1280px]:right-[20px] max-[1180px]:left-0 max-[1180px]:right-auto flex flex-row items-center justify-center"}>
-            {isMounted&&
+            {isMounted&&<div className={"mx-[10px]"}>
               <ConnectButton/>
-            }
+            </div>}
             {isMounted && isConnected &&
                 <button
                     onClick={openRegisterModal}
