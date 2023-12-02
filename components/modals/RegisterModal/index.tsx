@@ -28,12 +28,10 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
         const newDataRef = push(usersRef);
         await set(newDataRef, { address: addressWallet });
         console.log("Address: ", addressWallet);
+        console.error("succesfully");
+        window.location.href = "/dashboard";
         setAddr("");
-        toast.success("Registered successfully", {
-          onClose: () => {
-            window.location.href = "/dashboard";
-          },
-        });
+
       } catch (error) {
         toast.error("Registration failed");
         console.error("ERROR: ", error);
