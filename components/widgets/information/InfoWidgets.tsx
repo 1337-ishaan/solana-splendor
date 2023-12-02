@@ -712,7 +712,7 @@ const InfoWidgets: React.FC = () => {
        {
             id: 2,
             title: "Earnings",
-            value: "204 SDR",
+            value: "0 SDR",
             rate: undefined,
             icon: sdr1,
             link: '/',
