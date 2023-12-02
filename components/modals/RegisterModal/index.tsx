@@ -18,20 +18,8 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
 
     const handleAddAddress = async () => {
         try {
-            const usersRef = ref(database, "users");
-            const newDataRef = push(usersRef);
-            await set(newDataRef, {address: addressWallet});
-            console.log("Address: ", addressWallet);
-            setAddr("");
+            window.location.href = "/dashboard";
 
-            // Use an anonymous function to prevent `toast.success()` from calling itself
-            (async () => {
-                toast.success("Registered successfully", {
-                    onClose: () => {
-                        window.location.href = "/dashboard";
-                    },
-                });
-            })();
         } catch (error) {
             toast.error("Registration failed");
             console.error("ERROR: ", error);
