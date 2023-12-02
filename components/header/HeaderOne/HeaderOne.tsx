@@ -129,16 +129,16 @@ export default function HeaderOne() {
             {isMounted&&<div className={"mx-[10px]"}>
               <ConnectButton/>
             </div>}
-            {
-                isMounted&&isConnected&&
+            {isMounted && isConnected &&
                 <button
                     onClick={openRegisterModal}
-                    className={"w-[150px] max-[1180px]:w-[100px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px]"}
+                    className={"w-[150px] max-[1180px]:w-[100px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px] mr-[20px]"}
                 >
                   Dashboard
                 </button>
             }
           </div>
+
         </header>
       </>
   );

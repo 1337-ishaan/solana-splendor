@@ -83,17 +83,19 @@ const SplendorBlockchain: NextPage = () => {
           </h1>
           <div className={"mt-[50px] flex flex-wrap mx-auto items-center justify-center"}>
               {
-                  iconsData.slice(0,9).map(({img, title})=><Icon img={img} title={title} />)
+                  iconsData.slice(0,9).map(({ img, title }, index) => (
+                      <Icon key={img + index} img={img} title={title} />
+                  ))
               }
           </div>
           <div className={"flex flex-wrap mx-auto items-center justify-center"}>
               {
-                  iconsData.slice(9,17).map(({img, title})=><Icon img={img} title={title} />)
+                  iconsData.slice(9,17).map(({img, title}, index) => <Icon key={img + index} img={img} title={title} />)
               }
           </div>
           <div className={"flex flex-wrap mx-auto items-center justify-center"}>
               {
-                  iconsData.slice(17,iconsData.length).map(({img, title})=><Icon img={img} title={title} />)
+                  iconsData.slice(17,iconsData.length).map(({img, title}, index) => <Icon key={img + index} img={img} title={title} />)
               }
           </div>
           <button
