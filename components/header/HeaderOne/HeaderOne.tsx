@@ -132,7 +132,7 @@ export default function HeaderOne() {
             {isMounted && isConnected &&
                 <button
                     onClick={openRegisterModal}
-                    className={`bg-white text-black border-black border-[1px] rounded-[10px] p-[10px] ${
+                    className={` mr-[10px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px] ${
         window.innerWidth <= 768 ? 'dashboard-button-mobile' : 'w-[150px]'
       }`}
                 >
