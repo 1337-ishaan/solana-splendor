@@ -14,24 +14,24 @@ const RegisterModal: NextPage<IRegisterModal> = ({closeModal}) => {
     const addressWallet = useMemo(()=>isConnected&&!isDisconnected?address:"",[isConnected,address,isDisconnected])
     const [addr, setAddr] = useState("");
 
-    const handleAddAddress = () => {
-        try {
-            const usersRef = ref(database, "users");
-            const newDataRef = push(usersRef);
-            set(newDataRef, {
-                addr: addressWallet,
-            });
-            console.log("Address: ", addressWallet)
-            setAddr("");
-            toast.success("Registered succesfully", {
-                onClose: () => {
-                    window.location.href = '/dashboard';
-                }
-            });
-        } catch(error) {
-            toast.error("Refistered failed")
-        }
-     }
+    const handleAddAddress = async () => {
+      try {
+        const usersRef = ref(database, "users");
+        const newDataRef = push(usersRef);
+        await set(newDataRef, { address: addressWallet });
+        console.log("Address: ", addressWallet);
+        setAddr("");
+        toast.success("Registered successfully", {
+          onClose: () => {
+            window.location.href = "/dashboard";
+          },
+        });
+      } catch (error) {
+        toast.error("Registration failed");
+        console.error("ERROR: ", error);
+        console.log("VALUE:", address, "Passed: ", addr);
+      }
+    };
 
     return (
         <div
