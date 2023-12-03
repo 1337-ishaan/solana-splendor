@@ -19,7 +19,7 @@ const Download = () => {
                     <div className={"mt-[30px] flex flex-row justify-between"}>
                         <button className={"bg-[#4f49f0] w-[200px] h-[40px] rounded-[5px] text-white cursor-pointer mr-[5px]"}>
                             <a
-                                href="https://firebasestorage.googleapis.com/v0/b/uploadsplendorfiles.appspot.com/o/blockchain-downloader-1.0.0.rar?alt=media&token=d23120c8-886d-4cba-9d51-65e6d7cd6496"
+                                href="https://firebasestorage.googleapis.com/v0/b/uploadsplendorfiles.appspot.com/o/blockchain-downloader-1.0.0.zip?alt=media&token=e6182494-eae4-4570-9c50-a333994ce5e6"
                                 target="_blank"  // Esto abre el enlace en una nueva pestaña o ventana
                                 rel="noopener noreferrer"  // Se recomienda para seguridad
                               >
@@ -31,7 +31,7 @@ const Download = () => {
                         </button>
                         <button className={"bg-[#4f49f0] w-[200px] h-[40px] rounded-[5px] text-white cursor-pointer"}>
                             <a
-                                href="https://firebasestorage.googleapis.com/v0/b/uploadsplendorfiles.appspot.com/o/blockchain-downloader-1.0.0.rar?alt=media&token=d23120c8-886d-4cba-9d51-65e6d7cd6496"
+                                href="https://firebasestorage.googleapis.com/v0/b/uploadsplendorfiles.appspot.com/o/blockchain-downloader-1.0.0.zip?alt=media&token=e6182494-eae4-4570-9c50-a333994ce5e6"
                                 target="_blank"  // Esto abre el enlace en una nueva pestaña o ventana
                                 rel="noopener noreferrer"  // Se recomienda para seguridad
                               >
@@ -47,7 +47,7 @@ const Download = () => {
                     <div className={"mt-[30px] flex flex-row justify-between"}>
                         <button className={"bg-[#4f49f0] w-[200px] h-[40px] rounded-[5px] text-white cursor-pointer mr-[5px]"}>
                             <a
-                                href="https://firebasestorage.googleapis.com/v0/b/uploadsplendorfiles.appspot.com/o/blockchain-downloader.rar?alt=media&token=91755e3f-08cd-41f4-ad35-957a4d4b7732"
+                                href="https://firebasestorage.googleapis.com/v0/b/uploadsplendorfiles.appspot.com/o/blockchain-downloader%20Setup%201.0.0.zip?alt=media&token=fbefadd8-3638-4aaf-84cd-f66e35e843e0"
                                 target="_blank"  // Esto abre el enlace en una nueva pestaña o ventana
                                 rel="noopener noreferrer"  // Se recomienda para seguridad
                               >
@@ -60,12 +60,18 @@ const Download = () => {
                             </a>
                         </button>
                         <button className={"bg-[#4f49f0] w-[200px] h-[40px] rounded-[5px] text-white cursor-pointer"}>
+                            <a
+                                href=""
+                                target="_blank"  // Esto abre el enlace en una nueva pestaña o ventana
+                                rel="noopener noreferrer"  // Se recomienda para seguridad
+                              >
                             <div className={"flex flex-row justify-center items-center"}>
                                 <Image height={18} width={18} src={ubuntuSvg} alt={"ubuntuSvg"} />
                                 <p className={"ml-[5px]"}>
                                     Ubuntu
                                 </p>
                             </div>
+                                </a>
                         </button>
                     </div>
                 </div>
