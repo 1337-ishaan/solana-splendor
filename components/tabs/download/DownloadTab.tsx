@@ -74,7 +74,7 @@ const Download = () => {
                             <div className={"flex flex-row justify-center items-center"}>
                                 <Image height={18} width={18} src={ubuntuSvg} alt={"ubuntuSvg"} />
                                 <p className={"ml-[5px]"}>
-                                    Ubuntu
+                                    Linux
                                 </p>
                             </div>
                                 </a>
