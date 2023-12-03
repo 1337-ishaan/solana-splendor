@@ -1,6 +1,6 @@
 import React from "react";
 import {NextPage} from "next";
-import Dashboard from "../../../assets/icons/home/dashboard.webp";
+import Dashboard from "../../../assets/icons/dashboard/dashboard.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,7 +18,6 @@ const StartMining: NextPage = () => {
               "max-[800px]:mx-0"}>
               <div className={"max-[800px]:items-center max-[800px]:mb-[20px]"}>
                   <div className={"flex flex-col text-left mr-[10px]"}>
-                      <p className={"text-[#073B4C] leading-10"}>Create your account</p>
                       <p className={"text-[#073B4C] leading-10"}>Download Splendor Core</p>
                       <p className={"text-[#073B4C] leading-10"}>Install</p>
                       <p className={"text-[#073B4C] leading-10"}>Run a node</p>
