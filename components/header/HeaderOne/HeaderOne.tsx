@@ -41,6 +41,10 @@ const menuItems: MenuItem[] = [
     title: "WALLET",
     route: "https://metamask.io/",
   },
+  {
+    title: "GITHUB",
+    route: "https://github.com/ToshiNakamoto/Splendor-Blockchain",
+  },
 ];
 
 export default function HeaderOne() {
