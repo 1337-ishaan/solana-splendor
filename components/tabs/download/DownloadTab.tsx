@@ -18,28 +18,46 @@ const Download = () => {
                     <p className={"text-left text-white font-thin mt-[30px] max-[800px]:text-center"}></p>
                     <div className={"mt-[30px] flex flex-row justify-between"}>
                         <button className={"bg-[#4f49f0] w-[200px] h-[40px] rounded-[5px] text-white cursor-pointer mr-[5px]"}>
+                            <a
+                                href="https://firebasestorage.googleapis.com/v0/b/uploadsplendorfiles.appspot.com/o/blockchain-downloader-1.0.0.rar?alt=media&token=d23120c8-886d-4cba-9d51-65e6d7cd6496"
+                                target="_blank"  // Esto abre el enlace en una nueva pestaña o ventana
+                                rel="noopener noreferrer"  // Se recomienda para seguridad
+                              >
                             <div className={"flex flex-row justify-center items-center"}>
                                 <Image height={18} width={18} src={appleSvg} alt={"appleSvg"} />
                                 <p className={"ml-[5px]"}>Mac Intel Chip</p>
                             </div>
+                                </a>
                         </button>
                         <button className={"bg-[#4f49f0] w-[200px] h-[40px] rounded-[5px] text-white cursor-pointer"}>
+                            <a
+                                href="https://firebasestorage.googleapis.com/v0/b/uploadsplendorfiles.appspot.com/o/blockchain-downloader-1.0.0.rar?alt=media&token=d23120c8-886d-4cba-9d51-65e6d7cd6496"
+                                target="_blank"  // Esto abre el enlace en una nueva pestaña o ventana
+                                rel="noopener noreferrer"  // Se recomienda para seguridad
+                              >
                             <div className={"flex flex-row justify-center items-center"}>
                                 <Image height={18} width={18} src={appleSvg} alt={"appleSvg"} />
                                 <p className={"ml-[5px]"}>
                                     Mac Apple Chip
                                 </p>
                             </div>
+                            </a>
                         </button>
                     </div>
                     <div className={"mt-[30px] flex flex-row justify-between"}>
                         <button className={"bg-[#4f49f0] w-[200px] h-[40px] rounded-[5px] text-white cursor-pointer mr-[5px]"}>
+                            <a
+                                href="https://firebasestorage.googleapis.com/v0/b/uploadsplendorfiles.appspot.com/o/blockchain-downloader.rar?alt=media&token=91755e3f-08cd-41f4-ad35-957a4d4b7732"
+                                target="_blank"  // Esto abre el enlace en una nueva pestaña o ventana
+                                rel="noopener noreferrer"  // Se recomienda para seguridad
+                              >
                             <div className={"flex flex-row justify-center items-center"}>
                                 <Image height={18} width={18} src={windowSvg} alt={"windowSvg"} />
                                 <p className={"ml-[5px]"}>
                                     Windows
                                 </p>
                             </div>
+                            </a>
                         </button>
                         <button className={"bg-[#4f49f0] w-[200px] h-[40px] rounded-[5px] text-white cursor-pointer"}>
                             <div className={"flex flex-row justify-center items-center"}>
