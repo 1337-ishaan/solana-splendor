@@ -41,8 +41,8 @@ const DualToken: NextPage = () => {
                 <h1 className="title text-[#073B4C] text-[70px] max-[800px]:text-[50px]">
                     Tokenomics
                 </h1>
-                <p className={"px-0 text-[#727885] text-center"}>Decoupling governance and utility functionalities<br />
-                    for enhanced flexibility and efficiency.
+                <p className={"px-0 text-[#727885] text-center"}><br />
+
                 </p>
                 <div className={"flex flex-wrap w-[80%] justify-evenly mt-[30px] max-[800px]:mt-[40px] max-[800px]:flex-col gap-[40px]"}>
                     {
