@@ -24,8 +24,12 @@ const Download = () => {
                                 rel="noopener noreferrer"  // Se recomienda para seguridad
                               >
                             <div className={"flex flex-row justify-center items-center"}>
-                                <Image height={18} width={18} src={appleSvg} alt={"appleSvg"} />
-                                <p className={"ml-[5px]"}>Mac Intel Chip</p>
+                             <div className="w-[18px] sm:w-[18px] md:w-[24px]">
+                              <Image height={18} width={18} src={appleSvg} alt="appleSvg" />
+                            </div>
+                            <p className="ml-[5px] text-xs sm:text-sm md:text-base">
+                              Mac Apple Chip
+                            </p>
                             </div>
                                 </a>
                         </button>
@@ -36,9 +40,11 @@ const Download = () => {
                                 rel="noopener noreferrer"  // Se recomienda para seguridad
                               >
                             <div className={"flex flex-row justify-center items-center"}>
-                                <Image height={18} width={18} src={appleSvg} alt={"appleSvg"} />
-                                <p className={"ml-[5px]"}>
-                                    Mac Apple Chip
+                              <div className="w-[18px] sm:w-[18px] md:w-[24px]">
+                                  <Image height={18} width={18} src={appleSvg} alt="appleSvg" />
+                                </div>
+                                <p className="ml-[5px] text-xs sm:text-sm md:text-base">
+                                  Mac Apple Chip
                                 </p>
                             </div>
                             </a>
@@ -75,7 +81,7 @@ const Download = () => {
                         </button>
                     </div>
                 </div>
-                <div className={"flex flex-3"}>
+                <div className={"flex flex-3 mt-[5px]"}>
                     <Image src={downloadScreen} alt={"downloadScreen"} width={896} height={560} />
                 </div>
             </div>

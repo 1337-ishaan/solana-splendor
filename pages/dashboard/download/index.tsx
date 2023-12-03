@@ -15,7 +15,7 @@ const Dashboard: NextPage = () => {
             <div className={"h-full flex flex-row"}>
                 <div className={`${classes.dashboardBG} bg-center bg-no-repeat bg-cover fixed h-full w-full z-[-1] fixed`} />
                 <Menu />
-                <div className={"min-[801px]:w-full ml-[280px] max-[1100px]:ml-[200px] max-[800px]:ml-[110px] h-full"}>
+                <div className={"min-[801px]:w-full ml-[280px] max-[1100px]:ml-[200px] max-[800px]:ml-[110px] h-full min-w-[300px]"}>
                     <DownloadTab />
                 </div>
             </div>
