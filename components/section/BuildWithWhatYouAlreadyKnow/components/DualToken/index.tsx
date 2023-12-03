@@ -15,11 +15,11 @@ const DualToken: NextPage = () => {
         },
         {
             img: minuteBlockTimeSvg,
-            text: "10 Minute Rewards time"
+            text: "1 second block time"
         },
         {
             img: blockRewardSplSvg,
-            text: "3.125 SPL every 10 minutes"
+            text: "3.125 SPL entering the reserve pool every 10 minutes"
         }
     ]
 

@@ -106,7 +106,8 @@ const HowItsWork: NextPage = () => {
                       <p className={"ml-[10px] text-[20px] text-[#073B4C]"}>03</p>
                   </div>
                   <div className={"flex flex-col w-[90%] mt-[10px] text-left text-[#073B4C]"}>
-                  <p>Obtain SPL tokens to use within the Splendor network. You can acquire SPL tokens through various means, such as purchasing them on supported exchanges, receiving them in transactions, or run a node and start mining SDR which you can instantly swap for SPL on <Link className="text-[#1975B5]" href="https://octaocean.com/">octaocean.com</Link></p>
+                  <p>Obtain SPL tokens to use within the Splendor network. You can acquire SPL tokens through various means, such as purchasing them on supported exchanges, receiving them in transactions, or run a node and start mining SDR which you can instantly swap for SPL on <a className="text-[#1E90FF]" href="https://octaocean.com/">octaocean.com</a></p>
+
                   </div>
               </div>
 
