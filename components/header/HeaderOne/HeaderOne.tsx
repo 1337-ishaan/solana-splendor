@@ -26,7 +26,7 @@ const menuItems: MenuItem[] = [
   },
   {
     title: "EXPLORER",
-    route: "",
+    route: "https://splendorexplorer.com",
   },
   {
     title: "DEX",
