@@ -37,7 +37,7 @@ const SplendorTokens: NextPage = () => {
               </div>
           </div>
           <div className="mt-[3rem]">
-            <SdrVideoPlayer src={"https://drive.google.com/uc?id=1woJ8eX-IDMDn6lJMuu_hxWPD3iOa6ePI&export=download"} />
+            <SdrVideoPlayer src={"https://drive.google.com/uc?id=1i4cvL6dWYI3N-JApIqgOH5b9GYTGN0pc&export=download"} />
           </div>
 
       </div>
