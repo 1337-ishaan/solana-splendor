@@ -100,9 +100,9 @@ const SplendorBlockchain: NextPage = () => {
           </div>
           <button
                 className={"w-[150px] bg-white text-black border-black border-[1px] rounded-[10px] p-[10px] mt-[40px]"}
-                onClick={() => window.location.href = 'https://octaocean.com'}
+                onClick={() => window.location.href = 'https://octaocean.com/bridge'}
             >
-                Buy Tokens
+                Bridge Access
             </button>
 
       </div>
