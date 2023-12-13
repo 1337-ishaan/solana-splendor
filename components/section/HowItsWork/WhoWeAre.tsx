@@ -126,7 +126,7 @@ const HowItsWork: NextPage = () => {
                       <p className={"text-[#073B4C] ml-[10px] text-[20px]"}>04</p>
                   </div>
                   <div className={"flex flex-col w-[90%] mt-[10px] text-left text-[#073B4C]"}>
-                    <p>  Once your wallet is set up and funded with SPL coins, you can start interacting with the Splendor network. Send and receive SPL tokens, explore decentralized applications (dApps) built on Splendor. Receive 8% anual return paid daily for any SDR you want to commit  not to use in your wallet without any lock ups. Available periods of 1, 3, 6, 9, and 12 months. To learn more visit <a className="text-[#1E90FF]" href="https://octaocean.com/">octaocean.com</a></p>
+                    <p>  Once your wallet is set up and funded with SPL coins, you can start interacting with the Splendor network. Send and receive SPL tokens, explore decentralized applications (dApps) built on Splendor. Receive 8% annual return paid daily for any SDR you want to commit  not to use in your wallet without any lock ups. Available periods of 1, 3, 6, 9, and 12 months. To learn more visit <a className="text-[#1E90FF]" href="https://octaocean.com/">octaocean.com</a></p>
                   </div>
               </div>
           </div>
