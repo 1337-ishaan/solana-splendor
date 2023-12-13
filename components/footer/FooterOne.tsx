@@ -7,7 +7,7 @@ import {NextPage} from "next";
 const FooterOne: NextPage = () => {
   return (
     <footer>
-      <div className="bg-[#0d1f34]">
+      <div className="bg-[#0D1F34]">
         <div className="px-[15px] mx-[auto]">
           <div className="py-[55px] px-0">
             <div className={"flex flex-col"}>
