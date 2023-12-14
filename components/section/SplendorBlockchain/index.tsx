@@ -4,11 +4,8 @@ import Image from "next/image";
 import inchSvg from "../../../assets/icons/home/splendorBlockchain/1inch.svg";
 import aave from "../../../assets/icons/home/splendorBlockchain/aave.svg";
 import arbitrumArbLogoSvg from "../../../assets/icons/home/splendorBlockchain/arbitrum-arb-logo.svg";
-import atomSvg from "../../../assets/icons/home/splendorBlockchain/atom.svg";
 import opti from "../../../assets/icons/home/splendorBlockchain/opti.svg";
-import bchSvg from "../../../assets/icons/home/splendorBlockchain/bch.svg";
 import daiSvg from "../../../assets/icons/home/splendorBlockchain/dai.svg";
-import dotSvg from "../../../assets/icons/home/splendorBlockchain/dot.svg";
 import sdr from "../../../assets/icons/home/splendorBlockchain/sdr.jpeg";
 import ethSvg from "../../../assets/icons/home/splendorBlockchain/eth.svg";
 import avalanche from "../../../assets/icons/home/splendorBlockchain/avalanche.png";
@@ -18,16 +15,12 @@ import wbtc from "../../../assets/icons/home/splendorBlockchain/wbtc.png";
 import linkSvg from "../../../assets/icons/home/splendorBlockchain/link.svg";
 import maticSvg from "../../../assets/icons/home/splendorBlockchain/matic.svg";
 import pancakeswapCakeLogoSvg from "../../../assets/icons/home/splendorBlockchain/pancakeswap-cake-logo.svg";
-import solSvg from "../../../assets/icons/home/splendorBlockchain/sol.svg";
 import stethStethLogoSvg from "../../../assets/icons/home/splendorBlockchain/steth-steth-logo.svg";
 import sushiSvg from "../../../assets/icons/home/splendorBlockchain/sushi.svg";
 import tetherGoldXautLogoSvg from "../../../assets/icons/home/splendorBlockchain/tether-gold-xaut-logo.svg";
-import trxSvg from "../../../assets/icons/home/splendorBlockchain/trx.svg";
 import uniSvg from "../../../assets/icons/home/splendorBlockchain/uni.svg";
 import usdcSvg from "../../../assets/icons/home/splendorBlockchain/usdc.svg";
 import usdtSvg from "../../../assets/icons/home/splendorBlockchain/usdt.svg";
-import xmrSvg from "../../../assets/icons/home/splendorBlockchain/xmr.svg";
-import xprSvg from "../../../assets/icons/home/splendorBlockchain/xpr.svg";
 import EURCSvg from "../../../assets/icons/home/splendorBlockchain/EURC.svg";
 import EURTSvg from "../../../assets/icons/home/splendorBlockchain/EURT.svg";
 
@@ -54,7 +47,7 @@ const SplendorBlockchain: NextPage = () => {
         { img: tetherGoldXautLogoSvg, title: "TETHER GOLD" },
         { img: inchSvg, title: "1inch" },
         { img: arbitrumArbLogoSvg, title: "Arbitrum" },
-        { img: stethStethLogoSvg, title: "Libo" },
+        { img: stethStethLogoSvg, title: "Lido" },
         { img: avalanche, title: "Avalanche" },
         { img: bnb, title: "Binance" },
         { img: opti, title: "Optimism" },
