@@ -1,6 +1,7 @@
 import React from "react";
 import {NextPage} from "next";
 import Dashboard from "../../../assets/icons/dashboard/dashboard.png";
+import Node from "../../../assets/icons/dashboard/node.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -34,7 +35,9 @@ const StartMining: NextPage = () => {
                       </Link>
                   </button>
               </div>
-              <Image className={"ml-[30px] mt-[50px] max-[800px]:ml-0"} src={Dashboard} width={1000} alt={"Dashboard"} />
+              <div className="rounded-[10px] ml-[20px]">
+                <Image className={"ml-[40px] mt-[50px] max-[500px]:ml-0 rounded-[10px]"} src={Node} width={700} height={500} alt={"Dashboard"} />
+              </div>
               <button className={"mt-[50px] bg-black rounded-[10px] p-[15px] w-[200px] text-white cursor-pointer " +
                   "max-[800px]:mb-[10px] max-[800px]:mt-[20px] hidden max-[800px]:block"}>
                   <Link href="/dashboard/download">

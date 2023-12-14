@@ -4,9 +4,10 @@ export const splendor = {
   id: 111_8,
   name: 'Splendor',
   network: 'splendor',
+  iconUrl: "https://splendor.org/_next/static/media/logo-blue.8568a559.svg",
   nativeCurrency: {
     decimals: 18,
-    name: 'Splendor Mainnet',
+    name: 'Splendor',
     symbol: 'SPL',
   },
   rpcUrls: {

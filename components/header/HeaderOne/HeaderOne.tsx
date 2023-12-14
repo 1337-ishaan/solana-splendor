@@ -30,7 +30,7 @@ const menuItems: MenuItem[] = [
   },
   {
     title: "DEX",
-    route: "",
+    route: "https://octaocean.com",
   },
   {
     title: "WHITEPAPER",
