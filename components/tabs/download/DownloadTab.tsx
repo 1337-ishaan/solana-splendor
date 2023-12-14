@@ -12,7 +12,7 @@ const Download = () => {
             id: 1,
             title: "Windows",
             icon: windowsSvg,
-            urlDownload: "",
+            urlDownload: "https://www.dropbox.com/scl/fi/pxl477xeteve265vsntty/blockchain-downloader-Setup-1.0.0-3.exe?rlkey=0lzs4urhs7fhopdi3cvy9crmt&dl=1",
         },
         {
             id: 4,
