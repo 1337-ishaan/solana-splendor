@@ -1,7 +1,7 @@
 import React from "react";
 import {NextPage} from "next";
 import Dashboard from "../../../assets/icons/dashboard/dashboard.png";
-import Node from "../../../assets/icons/dashboard/node.png";
+import Node from "../../../assets/icons/dashboard/node.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
