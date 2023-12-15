@@ -51,7 +51,6 @@ const SplendorBlockchain: NextPage = () => {
         { img: avalanche, title: "Avalanche" },
         { img: bnb, title: "Binance" },
         { img: opti, title: "Optimism" },
-        { img: binanceusd, title: "BUSD" },
     ];
 
     const Icon: NextPage<IconDate> = ({img, title}) => (
