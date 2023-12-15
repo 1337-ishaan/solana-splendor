@@ -10,8 +10,8 @@ import { NextPage } from "next";
 const Dashboard: NextPage = () => {
   return (
     <LayoutOne
-      title={"Decentercloud Dashboard"}
-      description={"Decentercloud Dashboard"}
+      title={"Splendor Core"}
+      description={"Splendor Core"}
       hideFooter={true}
       hideHeader={true}
     >
