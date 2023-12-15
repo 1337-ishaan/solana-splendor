@@ -7,8 +7,8 @@ import DownloadTab from "../../../components/tabs/download/DownloadTab";
 const Dashboard: NextPage = () => {
     return(
         <LayoutOne
-            title={"Decentercloud Dashboard"}
-            description={"Decentercloud Dashboard"}
+            title={"Splendor Core"}
+            description={"Splendor Core"}
             hideFooter={true}
             hideHeader={true}
         >
