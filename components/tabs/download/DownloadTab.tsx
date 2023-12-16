@@ -12,24 +12,25 @@ const Download = () => {
             id: 1,
             title: "Windows",
             icon: windowsSvg,
-            urlDownload: "https://www.dropbox.com/scl/fi/pxl477xeteve265vsntty/blockchain-downloader-Setup-1.0.0-3.exe?rlkey=0lzs4urhs7fhopdi3cvy9crmt&dl=1",
+            urlDownload: "https://www.dropbox.com/scl/fi/yn6e9uvfze78t9owim3ti/splendor-blockchain-miner-Setup-1.0.1.exe?rlkey=qps2ogndlb36fukbfwft4rrib&dl=1",
         },
         {
             id: 4,
             title: "Ubuntu",
             icon: ubuntuSvg,
+            urlDownload: "https://www.dropbox.com/scl/fi/ug1zywmvq6zyoaxz77efa/splendor-blockchain-miner_1.0.0_amd64.zip?rlkey=nozl03v392hzl0lsryyk7fk4d&dl=1",
         },
         {
             id: 2,
             title: "Apple Silicon",
             icon: macM1Svg,
-            urlDownload: "https://www.dropbox.com/scl/fi/7ft1ckfe04bps5z0bue89/blockchain-downloader-1.0.0-arm64.dmg?rlkey=1pd129unjit0uposvac3vc5cg&dl=1"
+            urlDownload: "https://www.dropbox.com/scl/fi/umjjpk3oaav6z2g33goi7/splendor-blockchain-miner-1.0.1-arm64.dmg?rlkey=uze0k8bmqm2hsbhbyodlcdsuv&dl=1"
         },
         {
             id: 3,
             title: "Apple Intel",
             icon: macIntelSvg,
-            urlDownload: "https://www.dropbox.com/scl/fi/7ft1ckfe04bps5z0bue89/blockchain-downloader-1.0.0-arm64.dmg?rlkey=1pd129unjit0uposvac3vc5cg&dl=1"
+            urlDownload: "https://www.dropbox.com/scl/fi/umjjpk3oaav6z2g33goi7/splendor-blockchain-miner-1.0.1-arm64.dmg?rlkey=uze0k8bmqm2hsbhbyodlcdsuv&dl=1"
         },
     ]
     return (
