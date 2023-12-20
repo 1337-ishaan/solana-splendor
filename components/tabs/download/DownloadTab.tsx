@@ -12,7 +12,7 @@ const Download = () => {
             id: 1,
             title: "Windows",
             icon: windowsSvg,
-            urlDownload: "https://www.dropbox.com/scl/fi/yn6e9uvfze78t9owim3ti/splendor-blockchain-miner-Setup-1.0.1.exe?rlkey=qps2ogndlb36fukbfwft4rrib&dl=1",
+            urlDownload: "https://www.dropbox.com/scl/fi/8iuod8447enz6wedtkmvi/splendor-blockchain-miner-Setup-1.0.2.exe?rlkey=wi5wt7vwittymygdj3jyjc7o3&dl=1",
         },
         {
             id: 4,
