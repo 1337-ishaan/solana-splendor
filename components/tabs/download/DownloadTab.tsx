@@ -24,13 +24,13 @@ const Download = () => {
             id: 2,
             title: "Apple Silicon",
             icon: macM1Svg,
-            urlDownload: "https://www.dropbox.com/scl/fi/umjjpk3oaav6z2g33goi7/splendor-blockchain-miner-1.0.1-arm64.dmg?rlkey=uze0k8bmqm2hsbhbyodlcdsuv&dl=1"
+            urlDownload: "https://www.dropbox.com/scl/fi/4drucd20jlbx2v1dflj7m/splendor-blockchain-miner-1.0.1.dmg.zip?rlkey=wq2yk68dj99bxq2l58lezuoqg&dl=1"
         },
         {
             id: 3,
             title: "Apple Intel",
             icon: macIntelSvg,
-            urlDownload: "https://www.dropbox.com/scl/fi/umjjpk3oaav6z2g33goi7/splendor-blockchain-miner-1.0.1-arm64.dmg?rlkey=uze0k8bmqm2hsbhbyodlcdsuv&dl=1"
+            urlDownload: "https://www.dropbox.com/scl/fi/4drucd20jlbx2v1dflj7m/splendor-blockchain-miner-1.0.1.dmg.zip?rlkey=wq2yk68dj99bxq2l58lezuoqg&dl=1"
         },
     ]
     return (
