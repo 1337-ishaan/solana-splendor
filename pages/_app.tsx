@@ -9,6 +9,30 @@ import {publicProvider} from "wagmi/providers/public";
 import {connectorsForWallets, darkTheme, RainbowKitProvider} from "@rainbow-me/rainbowkit";
 import "@rainbow-me/rainbowkit/styles.css";
 import { coinbaseWallet, injectedWallet, metaMaskWallet, safeWallet, trustWallet, walletConnectWallet, rainbowWallet, braveWallet } from '@rainbow-me/rainbowkit/wallets';
+import { ArcanaConnector } from "@arcana/auth-wagmi";
+import { getAuthProvider } from '../helpers/getArcanaAuth';
+
+// declare arcana rainbow connector
+
+const ArcanaRainbowConnector = ({ chains }:any) => {
+    return {
+      id: "arcana-auth",
+      name: "Arcana login with Email/Social",
+      iconUrl: 'sequenceLogo',
+      iconBackground: "#101010",
+      createConnector:  () => {
+        const connector = new ArcanaConnector({
+          chains,
+          options: {
+            auth: getAuthProvider()
+          }
+        });
+        return {
+          connector
+        };
+      }
+    };
+  };
 
 const { chains, provider } = configureChains(
     [splendor],
@@ -19,14 +43,15 @@ const connectors = connectorsForWallets([
     {
         groupName: "Recommended",
         wallets: [
-            injectedWallet({chains: [splendor]}),
+            // injectedWallet({chains: [splendor]}),
+            ArcanaRainbowConnector({chains:[splendor]}),
             metaMaskWallet({projectId: "98b1060271e2c3344ecc26f627ad7c02", chains: [splendor]}),
-            rainbowWallet({projectId: "98b1060271e2c3344ecc26f627ad7c02", chains: [splendor]}),
-            walletConnectWallet({projectId: "98b1060271e2c3344ecc26f627ad7c02", chains: [splendor]}),
-            trustWallet({projectId: "98b1060271e2c3344ecc26f627ad7c02", chains: [splendor]}),
-            coinbaseWallet({chains: [splendor], appName: "Octaocean"}),
-            safeWallet({chains: [splendor]}),
-            braveWallet({chains: [splendor]})
+            // rainbowWallet({projectId: "98b1060271e2c3344ecc26f627ad7c02", chains: [splendor]}),
+            // walletConnectWallet({projectId: "98b1060271e2c3344ecc26f627ad7c02", chains: [splendor]}),
+            // trustWallet({projectId: "98b1060271e2c3344ecc26f627ad7c02", chains: [splendor]}),
+            // coinbaseWallet({chains: [splendor], appName: "Octaocean"}),
+            // safeWallet({chains: [splendor]}),
+            // braveWallet({chains: [splendor]}),
         ]
     }
 ])
